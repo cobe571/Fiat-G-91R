@@ -1,0 +1,83 @@
+*** Fiat G.91 History English/Italian ***
+
+<!-- The History file for the G-91R model                        -->
+<!-- License:  GNU GENERAL PUBLIC LICENSE Version 2, June 1991   -->
+<!-- Author:   Patrizio Melis     https://github.com/cobe571     -->
+<!-- Author:   Joshua Davidson    https://github.com/Octal450    -->
+
+
+*** ENGLISH ***
+
+The Fiat G.91 was a fighter-reconnaissance single jet engine with swept-wing designed by Ing. Giuseppe Gabrielli and produced by the italian company Fiat Aviazione.
+
+The G.91 is a low-wing monoplane, with arrow configuration with 37° angle; the fuselage, with the half-shell structure in light alloy, supports the engine in the rear trunk, immediately in front of which are arranged the fuel tanks and housings of the landing gear.
+
+In the bow section is arranged the cockpit, beneath which is located the dynamic air intake for the engine; the pilotage position was equipped with an ejection seat Martin Baker Mk.3 that it was later brought to the configuration 0 and 0 share speed, thanks to a pack of rockets arranged below which led him to a share which enables it to open the parachute and let back ground the pilot without damage with the aircraft stationary on the ground.
+
+Machine-Guns (or, depending on the version, the guns) are arranged next to the air intake, under the cabin at the bow and are housed cameras and equipment for the control of the same. The tail planes in addition to the empennage are also composed of a ventral fin of reduced size.
+
+The complete gear is a type tricycle gear: the front leg, in withdrawing backwards, performs a 90° rotation and the wheel is housed beneath the plate of the air intake; the rear legs have place in the semi-wings, with the wheels that, drawing back towards the inside, are housed in the fuselage.
+
+Depending on the version, the wing panels are hooked two or four pylons which you can apply fuel tanks or war cargo (usually bombs or unguided rocket launchers).
+
+Throughout its life, the G.91 was powered by the Bristol Siddeley Orpheus turbojet (the same engine that powered the Folland Gnat).
+
+The prototype was equipped with a turbo-reactor derived from that used for a missile ground-ground. For this reason he had a life span of only 300 hours (TBO) at the end of which it was to be audited general. Equipped with an excellent weight / thrust, it had a complex system of fuel adjustment composed of parts variously located throughout the engine. Characteristic start system that occurred at the hands of a small gas turbine driven by the combustion of a charge of cordite.
+
+
+*** ITALIANO ***
+
+Il Fiat G.91, era un cacciabombardiere-ricognitore monomotore a getto ed ala a freccia progettato dall'Ing. Giuseppe Gabrielli e prodotto dall'azienda italiana Fiat Aviazione.
+
+Il G.91 è un monoplano ad ala bassa, con configurazione a freccia con un angolo di 37°; la fusoliera, con struttura a semiguscio in lega leggera, alloggia il motore nel tronco posteriore, subito davanti al quale sono disposti i serbatoi del carburante e gli alloggiamenti del carrello d'atterraggio.
+
+Nella sezione di prua è disposto l'abitacolo, sotto al quale è posizionata la presa d'aria dinamica per il motore; la postazione di pilotaggio era equipaggiata con un seggiolino eiettabile Martin Baker Mk.3 che successivamente fu portato alla configurazione 0 quota e 0 velocità, grazie ad un pacco di razzi disposti inferiormente che lo portavano ad una quota tale da poter far aprire il paracadute e far ritornare a terra il pilota senza danno con velivolo fermo a terra.
+
+Le mitragliatrici (o, secondo le versioni, i cannoni) sono disposte a fianco della presa d'aria, sotto la cabina ed all'estrema prua sono alloggiate le macchine fotografiche e le apparecchiature di controllo delle stesse. I piani di coda oltre agli impennaggi sono composti anche da una pinna ventrale di dimensioni ridotte.
+
+Il carrello è di tipo triciclo anteriore: la gamba anteriore, nel ritrarsi all'indietro, compie una rotazione di 90° e la ruota è alloggiata di piatto sotto la presa d'aria; le gambe posteriori trovano spazio nelle semiali, con le ruote che, ritraendosi verso l'interno, vengono alloggiate in fusoliera.
+
+A seconda delle versioni, alle semiali sono agganciati due o quattro piloni cui è possibile applicare serbatoi di carburante o carichi bellici (in genere bombe non guidate o lanciarazzi).
+
+Durante tutta la propria vita operativa il G.91 venne motorizzato con il turbogetto Bristol Siddeley Orpheus (lo stesso motore che equipaggiava il Folland Gnat).
+
+Il prototipo era equipaggiato con un turboreattore derivato da quello utilizzato per un missile terra-terra. Per questo motivo aveva una durata operativa di sole 300 ore (TBO) al termine delle quali doveva essere sottoposto a revisione generale. Dotato di un eccellente rapporto peso/spinta, aveva un complesso sistema di regolazione del carburante composto di parti variamente dislocate sul motore. Caratteristico il sistema di avviamento che avveniva ad opera di una piccola turbina azionata dai gas prodotti dalla combustione di una carica di cordite.
+
+
+*** Dimensions and Weights - Dimensioni e Pesi ***
+
+Lunghezza/Length: 10,29 m 
+
+Apertura alare/Wingspan: 8,56 m 
+
+Altezza/Height: 4,00 m 
+
+Superficie alare/Wing area: 16,43 m² 
+
+Peso a vuoto/Empty weight: 3100 kg 
+
+Peso max al decollo/Maximum take-off weight: 5500 kg 
+
+Propulsione - Propulsion
+
+Motore/Engine: 1 turbojet Bristol Siddeley Orpheus 803-02 
+
+Spinta/Thrust: 22,26 kN 
+
+Prestazioni - Performance
+
+Velocità max/Max speed: 0,78 Ma (1075 km/h on altitude) 
+
+Autonomia/Autonomy 1150 km 
+
+Tangenza/Tangency 13260 m 
+
+Armamento - Armament
+
+Mitragliatrici/Machine-Guns: 4 Browning M2 on 12,7 mm 
+
+Bombe caduta libera/Free fall bombs: Up to 2000 kg 
+
+Missili razzi/Missiles rockets: 38 SNEB da 68 mm 
+
+4 Piloni sub-alari/4 Underwing pylons

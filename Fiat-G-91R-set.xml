@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- The wrapper file for the Fiat-G-91R model                   -->
+<!-- License:  GNU GENERAL PUBLIC LICENSE Version 2, June 1991   -->
+<!-- Author:   Patrizio Melis     https://github.com/cobe571     -->
+<!-- Author:   Joshua Davidson    https://github.com/Octal450    -->
+
+<PropertyList include="Fiat-G-91R-common.xml">
+  
+  <sim>
+    
+    <description>Fiat G-91R (JSBSim)</description>
+    
+    <tags>
+      <tag>FIAT</tag>
+      <tag>single-engine</tag>
+      <tag>turbine</tag>
+    </tags>
+    
+    <author>Patrizio Melis (3D, FDM), Joshua Davidson (JSBsim Flight Dynamics, FDM, Systems), Necolatis (Datcom+)</author>
+    <status>alpha</status>
+    <aircraft-version>2.1</aircraft-version>
+    
+    <rating>
+      <FDM type="int">     4 </FDM>
+      <systems type="int"> 4 </systems>
+      <cockpit type="int"> 2 </cockpit>
+      <model type="int">   4 </model>
+    </rating>
+    
+    <flight-model>jsb</flight-model>
+    <!-- JSBSim start file -->
+    <aero>Fiat-G-91R-JSBSim</aero>
+    
+    <model>
+      <path>Aircraft/Fiat-G-91R/Models/Fiat-G-91R.xml</path>
+    </model>
+    
+    <startup>
+     <splash-texture>Aircraft/Fiat-G-91R/Fiat-G-91R-splash.png</splash-texture>
+    </startup>
+	
+	<sound>
+      <path type="string">Aircraft/Fiat-G-91R/Sounds/Fiat-G-91R-Sound.xml</path>
+    </sound>
+    
+    <menubar include="Dialogs/Fiat-G-91R-menu.xml"/>
+	
+   <help>
+    <title>Fiat G-91R</title>
+	<key>
+    <name>d</name>
+    <desc>Open/Close canopy</desc>
+    </key>
+	<key>
+    <name>e</name>
+    <desc>Guns fire</desc>
+    </key>
+    <key>
+    <name>S</name>
+    <desc>Colored Smoke</desc>
+    </key>
+   </help>
+    
+  </sim>
+  
+  <engines>
+    <engine n="0">
+      <running>true</running>
+    </engine>
+  </engines>
+  
+  <gear>
+    <brake-parking>1</brake-parking>
+  </gear>
+  
+  <nasal>
+   <sound_reload>
+     <file>Aircraft/Fiat-G-91R/Nasal/Sound/sound_reload.nas</file>
+   </sound_reload>
+   <engine>
+   </engine>
+   <light>
+     <file>Aircraft/Fiat-G-91R/Nasal/Lights/strobe.nas</file>
+   </light>
+   <Fiat-G-91R>
+     <file>Aircraft/Fiat-G-91R/Nasal/liveries.nas</file>
+   </Fiat-G-91R>
+  </nasal>
+
+</PropertyList>

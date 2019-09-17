@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- The Menu file for the Fiat G-91R 3D model                   -->
+<!-- License:  GNU GENERAL PUBLIC LICENSE Version 2, June 1991   -->
+<!-- Author:   Patrizio Melis     https://github.com/cobe571     -->
+<!-- Author:   Joshua Davidson    https://github.com/Octal450    -->
+
+
+<PropertyList>
+
+  <default>
+    <menu n="100">
+      <label>Fiat G-91R</label>
+      <enabled type="bool">true</enabled>
+      <item>
+        <label>Select Livery</label>
+        <binding>
+          <command>nasal</command>
+          <script>aircraft.livery.dialog.toggle()</script>
+        </binding>
+      </item>
+    </menu>
+  </default>
+
+</PropertyList>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- The Sounds file for the Fiat G-91R 3D model                 -->
+<!-- License:  GNU GENERAL PUBLIC LICENSE Version 2, June 1991   -->
+<!-- Author:   Patrizio Melis     https://github.com/cobe571     -->
+<!-- Author:   Joshua Davidson    https://github.com/Octal450    -->
+
+<!--
+
+  Flyby volume (Doppler volume)
+  http://sourceforge.net/p/flightgear/mailman/flightgear-devel/thread/4979A012.8000101%40gogo.co.nz/#msg21410290
+
+-->
+
+<PropertyList>
+
+  <fx>
+    
+    <wind>
+      <name>Wind-Internal</name>
+      <path>Aircraft/Fiat-G-91R/Sounds/Wind.wav</path>
+      <mode>looped</mode>
+      <condition>
+	<and>
+	  <greater-than>		
+	    <property>velocities/airspeed-kt</property>
+	    <value>20</value>
+	  </greater-than>
+	  <property>sim/current-view/internal</property>
+        </and>
+      </condition>
+      <property>velocities/airspeed-kt</property>
+      <volume>
+	<property>position/altitude-ft</property>
+	<factor>-0.000015</factor>
+	<offset>1.0</offset>
+	<min>0.1</min>
+	<max>1.0</max>
+      </volume>
+      <volume>
+	<property>velocities/airspeed-kt</property>
+	<factor>0.001</factor>
+	<min>0.01</min>
+	<max>5</max>
+      </volume>
+      <pitch>
+	<property>velocities/airspeed-kt</property>
+	<factor>0.001</factor>
+	<offset>1</offset>
+      </pitch>
+      <max-dist>100</max-dist>
+    </wind>
+    
+    <wind>
+      <name>Wind-External</name>
+      <path>Aircraft/Fiat-G-91R/Sounds/Wind.wav</path>
+      <mode>looped</mode>
+      <condition>
+	<and>
+	  <greater-than>		
+	    <property>velocities/airspeed-kt</property>
+	    <value>20</value>
+	  </greater-than>
+	  <not>
+	    <property>sim/current-view/internal</property>
+	  </not>  
+        </and>
+      </condition>
+      <property>velocities/airspeed-kt</property>
+      <volume>
+	<property>position/altitude-ft</property>
+	<factor>-0.000015</factor>
+	<offset>1.0</offset>
+	<min>0.1</min>
+	<max>1.0</max>
+      </volume>
+      <volume>
+	<property>velocities/airspeed-kt</property>
+	<factor>0.001</factor>
+	<min>0.01</min>
+	<max>5</max>
+      </volume>
+      <pitch>
+	<property>velocities/airspeed-kt</property>
+	<factor>0.002</factor>
+	<offset>1</offset>
+      </pitch>
+      <max-dist>100</max-dist>
+    </wind>
+
+    <engine>
+      <name>Engine-Internal</name>
+      <path>Aircraft/Fiat-G-91R/Sounds/Orpheus-Engine-IN.wav</path>
+      <mode>looped</mode>
+      <condition>
+	<and>
+	  <property>sim/current-view/internal</property> 
+	  <greater-than>
+	    <property>/engines/engine/n2</property>
+	    <value>59</value>
+	  </greater-than>
+	  <property>sim/current-view/internal</property>
+	</and>
+      </condition> 
+      <volume>
+	<property>/engines/engine/n2</property>
+	<factor type="double">0.01</factor>
+	<min>0.001</min>
+	<max>2</max>
+      </volume>
+      <pitch>
+	<property>/engines/engine/n2</property>
+	<factor>0.01</factor>
+      </pitch>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
+    </engine>
+    
+    <engine>
+      <name>Engine-External</name>
+      <path>Aircraft/Fiat-G-91R/Sounds/Orpheus-Engine-Out.wav</path>
+      <mode>looped</mode>
+      <condition>
+	<and>
+	  <greater-than>
+	    <property>/engines/engine/n2</property>
+	    <value>59</value>
+	  </greater-than>
+	  <not>
+	    <property>sim/current-view/internal</property>
+	  </not>
+        </and>
+      </condition>
+      <position>
+	<x>15.0</x>
+	<y>0.0</y>
+	<z>0.0</z>
+      </position>
+      <orientation>
+	<x>1</x>
+	<y>0</y>
+	<z>0</z>
+	<inner-angle>150</inner-angle>
+	<outer-angle>250</outer-angle>
+	<outer-gain>0.4</outer-gain>
+      </orientation>
+      <volume>
+	<property>/engines/engine/n2</property>
+	<factor type="double">0.01</factor>
+        <min>0.1</min>
+	<max>5</max>
+      </volume>
+      <pitch>
+	<property>/engines/engine/n2</property>
+	<factor>0.01</factor>
+      </pitch>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
+    </engine>
+    
+  </fx>
+
+</PropertyList>
