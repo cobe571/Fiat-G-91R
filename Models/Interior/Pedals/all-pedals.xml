@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <PropertyList>
   
   <!-- Left Pedal -->
   <model>
     <name>PedalL</name>
-    <path>Aircraft/Fiat-G91R4/Models/Interior/Panel/Pedals/pedal.xml</path>
+    <path>Aircraft/Fiat-G-91R/Models/Interior/Panel/Pedals/pedal.xml</path>
     <offsets>
       <x-m> -6.41148 </x-m>
       <y-m> -0.16235 </y-m>
@@ -16,7 +16,7 @@
   <!-- Right Pedal -->
   <model>
     <name>PedalR</name>
-    <path>Aircraft/Fiat-G91R4/Models/Interior/Panel/Pedals/pedal.xml</path>
+    <path>Aircraft/Fiat-G-91R/Models/Interior/Panel/Pedals/pedal.xml</path>
     <offsets>
       <x-m> -6.41148 </x-m>
       <y-m>  0.16235 </y-m>

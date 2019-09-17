@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <PropertyList>
 
@@ -25,7 +25,7 @@
   
   <!-- Effetto Rembrandt -->
   <effect>
-    <inherits-from>Aircraft/Fiat-G91R4/Models/Effects/Glass/glass</inherits-from>
+    <inherits-from>Aircraft/Fiat-G-91R/Models/Effects/Glass/glass</inherits-from>
     <object-name>   </object-name>
     <object-name>   </object-name>
   </effect>
@@ -38,7 +38,7 @@
   
   <!-- Yoke -->
   <model>
-    <path>Aircraft/Fiat-G91R4/Models/Interior/Yoke/yoke.xml</path>
+    <path>Aircraft/Fiat-G-91R/Models/Interior/Yoke/yoke.xml</path>
     <offsets>
       <x-m> -3.49 </x-m>
       <y-m>  0.00 </y-m>
@@ -48,7 +48,7 @@
   
   <!-- Throttle -->
   <model>
-    <path>Aircraft/Fiat-G91R4/Models/Interior/Throttle/throttle.xml</path>
+    <path>Aircraft/Fiat-G-91R/Models/Interior/Throttle/throttle.xml</path>
     <offsets>
       <x-m> -2.86683</x-m>
       <y-m> -0.25844</y-m>
@@ -58,7 +58,7 @@
   
   <!-- Pilot -->
   <model>
-    <path>Aircraft/Fiat-G91R4/Models/Interior/Pilot/pilot.xml</path>
+    <path>Aircraft/Fiat-G-91R/Models/Interior/Pilot/pilot.xml</path>
     <offsets>
       <x-m> -2.44203 </x-m>
       <y-m>  0.00000 </y-m>
@@ -68,7 +68,7 @@
   
   <!-- Seat -->
   <model>
-    <path>Aircraft/Fiat-G91R4/Models/Interior/Seat/Martin-Baker-MK3.xml</path>
+    <path>Aircraft/Fiat-G-91R/Models/Interior/Seat/Martin-Baker-MK3.xml</path>
     <offsets>
       <x-m> -2.47183 </x-m>
       <y-m>  0.00000 </y-m>
@@ -78,7 +78,7 @@
   
   <!-- Pannello di bordo principale/Main Panel -->
   <model>
-    <path>Aircraft/Fiat-G91R4/Models/Interior/Panel/panel.xml</path>
+    <path>Aircraft/Fiat-G-91R/Models/Interior/Panel/panel.xml</path>
     <offsets>
       <x-m> -3.25520 </x-m>
       <y-m>  0.00000 </y-m>
@@ -89,7 +89,7 @@
   
   <!-- Left Panel -->
   <model>
-    <path>Aircraft/Fiat-G91R4/Models/Interior/Panel/Left-Panel/left-panel.xml</path>
+    <path>Aircraft/Fiat-G-91R/Models/Interior/Panel/Left-Panel/left-panel.xml</path>
     <offsets>
       <x-m> -2.83440 </x-m>
       <y-m> -0.33910 </y-m>
@@ -99,7 +99,7 @@
   
   <!-- Right Panel -->
   <model>
-    <path>Aircraft/Fiat-G91R4/Models/Interior/Panel/Right-Panel/right-panel.xml</path>
+    <path>Aircraft/Fiat-G-91R/Models/Interior/Panel/Right-Panel/right-panel.xml</path>
     <offsets>
       <x-m> -2.83440 </x-m>
       <y-m>  0.33778 </y-m>
