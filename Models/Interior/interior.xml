@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>interior.ac</path>
+  
+  <offsets>
+   <x-m>0.0</x-m>
+   <y-m>0.0</y-m>
+   <z-m>-1.12</z-m>
+   <pitch-deg>1.5</pitch-deg>
+  </offsets>
+
+  <animation>
+  <!-- Oggetti opachi -->
+    <object-name>   </object-name>
+    <object-name>   </object-name>
+    <object-name>   </object-name>
+    <object-name>   </object-name>
+
+    <!-- Oggetti trasparenti -->
+    <object-name>   </object-name>
+    <object-name>   </object-name>
+  </animation>
+  
+  <!-- Effetto Rembrandt -->
+  <effect>
+    <inherits-from>Aircraft/Fiat-G91R4/Models/Effects/Glass/glass</inherits-from>
+    <object-name>   </object-name>
+    <object-name>   </object-name>
+  </effect>
+  
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <object-name>   </object-name>
+    <object-name>   </object-name>
+  </effect>
+  
+  <!-- Yoke -->
+  <model>
+    <path>Aircraft/Fiat-G91R4/Models/Interior/Yoke/yoke.xml</path>
+    <offsets>
+      <x-m> -3.49 </x-m>
+      <y-m>  0.00 </y-m>
+      <z-m> -1.01 </z-m>
+    </offsets>
+  </model> 
+  
+  <!-- Throttle -->
+  <model>
+    <path>Aircraft/Fiat-G91R4/Models/Interior/Throttle/throttle.xml</path>
+    <offsets>
+      <x-m> -2.86683</x-m>
+      <y-m> -0.25844</y-m>
+      <z-m>  2.02330</z-m>
+    </offsets>
+  </model>
+  
+  <!-- Pilot -->
+  <model>
+    <path>Aircraft/Fiat-G91R4/Models/Interior/Pilot/pilot.xml</path>
+    <offsets>
+      <x-m> -2.44203 </x-m>
+      <y-m>  0.00000 </y-m>
+      <z-m> -0.10555 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- Seat -->
+  <model>
+    <path>Aircraft/Fiat-G91R4/Models/Interior/Seat/Martin-Baker-MK3.xml</path>
+    <offsets>
+      <x-m> -2.47183 </x-m>
+      <y-m>  0.00000 </y-m>
+      <z-m> -0.11882 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- Pannello di bordo principale/Main Panel -->
+  <model>
+    <path>Aircraft/Fiat-G91R4/Models/Interior/Panel/panel.xml</path>
+    <offsets>
+      <x-m> -3.25520 </x-m>
+      <y-m>  0.00000 </y-m>
+      <z-m>  0.02543 </z-m>
+      <pitch-deg> -10 </pitch-deg>
+    </offsets>
+  </model>
+  
+  <!-- Left Panel -->
+  <model>
+    <path>Aircraft/Fiat-G91R4/Models/Interior/Panel/Left-Panel/left-panel.xml</path>
+    <offsets>
+      <x-m> -2.83440 </x-m>
+      <y-m> -0.33910 </y-m>
+      <z-m> -0.13230 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- Right Panel -->
+  <model>
+    <path>Aircraft/Fiat-G91R4/Models/Interior/Panel/Right-Panel/right-panel.xml</path>
+    <offsets>
+      <x-m> -2.83440 </x-m>
+      <y-m>  0.33778 </y-m>
+      <z-m> -0.10549 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- Canopy 
+  <animation>
+    <name>CanopyInterne</name>
+    <object-name>intverriere</object-name>
+    <object-name>inttourverriere</object-name>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>CanopyInterne</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>doors.crew.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>CanopyInterne</object-name>
+    <property>sim/model/door-positions/crew/position-norm</property>
+    <interpolation>
+      <entry><ind> 0 </ind><dep>   0 </dep></entry>
+      <entry><ind> 1 </ind><dep> -45 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m> -1.5216 </x-m>
+      <y-m>  0.0000 </y-m>
+      <z-m>  0.5554 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation> -->
+  
+</PropertyList>

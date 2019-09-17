@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>Pedal.ac</path>
+
+  <animation>
+    <!-- Objects -->
+    <object-name>Pedal</object-name>
+  </animation>
+ 
+</PropertyList>

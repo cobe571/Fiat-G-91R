@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>Throttle.ac</path>
+
+  <animation>
+    <!-- Oggetti opachi -->
+    <object-name>Throttle.000</object-name>
+	<object-name>Throttle.001</object-name>
+    <object-name>Throttle.002</object-name>
+    <object-name>Throttle.003</object-name>
+    <object-name>Throttle.004</object-name>
+    <object-name>Throttle.005</object-name>
+	<object-name>Throttle.006</object-name>
+    <object-name>Throttle.007</object-name>
+    <object-name>Throttle.008</object-name>
+    <object-name>Throttle.009</object-name>
+	<object-name>Throttle.010</object-name>
+	<object-name>Throttle.011</object-name>
+    <object-name>Throttle.012</object-name>
+    
+    <!-- Oggetti trasparenti -->
+  </animation>
+ 
+  <!-- Manetta -->
+  <animation>
+    <type>rotate</type>
+    <object-name>Throttle.008</object-name>
+    <property>controls/engines/engine[0]/throttle</property>
+    <factor> -65 </factor>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+</PropertyList>
