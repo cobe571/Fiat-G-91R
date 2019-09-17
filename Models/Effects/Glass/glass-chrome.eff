@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
+
 <!--This effect file is provided as a conveniency for usage on transparent objects.
 If you also need to use a normalmap along with trasnparency check the model-combined-bump.eff
 that is provided alongside this effect.
@@ -19,7 +20,7 @@ WARNING: do not remove the Transparency include at the end-->
     <reflection-correction type="float"> 1.0 </reflection-correction>
     <reflection-dynamic type="int"> 1 </reflection-dynamic>
     <texture n="4">
-      <image>Aircraft/Fiat-G91R4/Models/Effects/Glass/glass_shader.png</image>
+      <image>Aircraft/Fiat-G-91R/Models/Effects/Glass/glass_shader.png</image>
       <filter>linear-mipmap-linear</filter>
       <wrap-s>clamp</wrap-s>
       <wrap-t>clamp</wrap-t>
