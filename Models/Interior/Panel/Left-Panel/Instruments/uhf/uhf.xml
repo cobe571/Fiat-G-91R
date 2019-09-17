@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>uhf.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>fond</object-name>
+    <object-name>visses</object-name>
+    <object-name>chiffre1</object-name>
+    <object-name>chiffre2</object-name>
+    <object-name>chiffre3</object-name>
+    <object-name>chiffre4</object-name>
+    <object-name>chiffre5</object-name>
+    <object-name>buton1</object-name>
+    <object-name>buton2</object-name>
+    <object-name>buton3</object-name>
+    <object-name>buton4</object-name>
+    <object-name>buton5</object-name>
+    <object-name>buton6</object-name>
+    <object-name>buton7</object-name>
+    <object-name>buton8</object-name>
+    <object-name>switch1</object-name>
+    <object-name>switch2</object-name>
+    <object-name>switch3</object-name>
+    
+    <!-- Objets transparents -->
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>chiffre1</object-name>
+    <object-name>chiffre2</object-name>
+    <object-name>chiffre3</object-name>
+    <object-name>chiffre4</object-name>
+    <object-name>chiffre5</object-name>
+    <emission>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
+    </emission>
+  </animation>    
+  
+  <animation>
+    <type>textranslate</type>
+    <object-name>chiffre1</object-name>
+    <property>/instrumentation/comm[0]/frequencies/selected-mhz</property>
+    <factor>0.001</factor>
+    <step type="double">100</step>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>textranslate</type>
+    <object-name>chiffre2</object-name>
+    <property>/instrumentation/comm[0]/frequencies/selected-mhz</property>
+    <factor>0.01</factor>
+    <step type="double">10</step>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>textranslate</type>
+    <object-name>chiffre3</object-name>
+    <property>/instrumentation/comm[0]/frequencies/selected-mhz</property>
+    <factor>0.1</factor>
+    <step type="double">1</step>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>textranslate</type>
+    <object-name>chiffre4</object-name>
+    <property>/instrumentation/comm[0]/frequencies/selected-mhz</property>
+    <factor>1</factor>
+    <step type="double">0.1</step>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>textranslate</type>
+    <object-name>chiffre5</object-name>
+    <property>/instrumentation/comm[0]/frequencies/selected-mhz</property>
+    <factor>10</factor>
+    <step type="double">0.01</step>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>pick</type>
+    <object-name>buton1</object-name>
+    <visible>true</visible>
+    <action>
+      <button>3</button>
+      <binding>
+        <command>property-adjust</command>
+        <property>/instrumentation/comm[0]/frequencies/selected-mhz</property>
+        <step type="double">100</step>
+        <min>0</min>
+        <max>999.99</max>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
+    <type>pick</type>
+    <object-name>buton1</object-name>
+    <visible>true</visible>
+    <action>
+      <button>4</button>
+      <binding>
+        <command>property-adjust</command>
+        <property>/instrumentation/comm[0]/frequencies/selected-mhz</property>
+        <step type="double">-100</step>
+        <min>0</min>
+        <max>999.99</max>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
+    <type>pick</type>
+    <object-name>buton2</object-name>
+    <visible>true</visible>
+    <action>
+      <button>3</button>
+      <binding>
+        <command>property-adjust</command>
+        <property>/instrumentation/comm[0]/frequencies/selected-mhz</property>
+        <step type="double">10</step>
+        <min>0</min>
+        <max>999.99</max>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
+    <type>pick</type>
+    <object-name>buton2</object-name>
+    <visible>true</visible>
+    <action>
+      <button>4</button>
+      <binding>
+        <command>property-adjust</command>
+        <property>/instrumentation/comm[0]/frequencies/selected-mhz</property>
+        <step type="double">-10</step>
+        <min>0</min>
+        <max>999.99</max>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
+    <type>pick</type>
+    <object-name>buton3</object-name>
+    <visible>true</visible>
+    <action>
+      <button>3</button>
+      <binding>
+        <command>property-adjust</command>
+        <property>/instrumentation/comm[0]/frequencies/selected-mhz</property>
+        <step type="double">1</step>
+        <min>0</min>
+        <max>999.99</max>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
+    <type>pick</type>
+    <object-name>buton3</object-name>
+    <visible>true</visible>
+    <action>
+      <button>4</button>
+      <binding>
+        <command>property-adjust</command>
+        <property>/instrumentation/comm[0]/frequencies/selected-mhz</property>
+        <step type="double">-1</step>
+        <min>0</min>
+        <max>999.99</max>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
+    <type>pick</type>
+    <object-name>buton4</object-name>
+    <visible>true</visible>
+    <action>
+      <button>3</button>
+      <binding>
+        <command>property-adjust</command>
+        <property>/instrumentation/comm[0]/frequencies/selected-mhz</property>
+        <step type="double">0.1</step>
+        <min>0</min>
+        <max>999.99</max>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
+    <type>pick</type>
+    <object-name>buton4</object-name>
+    <visible>true</visible>
+    <action>
+      <button>4</button>
+      <binding>
+        <command>property-adjust</command>
+        <property>/instrumentation/comm[0]/frequencies/selected-mhz</property>
+        <step type="double">-0.1</step>
+        <min>0</min>
+        <max>999.99</max>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
+    <type>pick</type>
+    <object-name>buton5</object-name>
+    <visible>true</visible>
+    <action>
+      <button>3</button>
+      <binding>
+        <command>property-adjust</command>
+        <property>/instrumentation/comm[0]/frequencies/selected-mhz</property>
+        <step type="double">0.01</step>
+        <min>0</min>
+        <max>999.99</max>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
+    <type>pick</type>
+    <object-name>buton5</object-name>
+    <visible>true</visible>
+    <action>
+      <button>4</button>
+      <binding>
+        <command>property-adjust</command>
+        <property>/instrumentation/comm[0]/frequencies/selected-mhz</property>
+        <step type="double">-0.01</step>
+        <min>0</min>
+        <max>999.99</max>
+      </binding>
+    </action>
+  </animation>
+  
+</PropertyList>

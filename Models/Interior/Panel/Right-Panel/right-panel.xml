@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>right-panel.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>right</object-name>
+  
+    <!-- Objets transparents -->
+  </animation>
+
+  <!-- TACAN
+  <model>
+    <path>Aircraft/Aermacchi-MB-339/Models/Interior/Panel/Right/Instruments/tacan/tacan.xml</path>
+    <offsets>
+      <x-m> -0.108 </x-m>
+      <y-m> -0.020 </y-m>
+      <z-m>  0.000 </z-m>
+      <pitch-deg> -90 </pitch-deg>
+    </offsets>
+  </model> -->
+  
+  <!-- VOR-ILS
+  <model>
+    <path>Aircraft/Aermacchi-MB-339/Models/Interior/Panel/Right/Instruments/vor-ils/vor-ils.xml</path>
+    <offsets>
+      <x-m> -0.062 </x-m>
+      <y-m> -0.020 </y-m>
+      <z-m>  0.000 </z-m>
+      <pitch-deg> -90 </pitch-deg>
+    </offsets>
+  </model> -->
+  
+  <!-- ADF CONTROL
+  <model>
+    <path>Aircraft/Aermacchi-MB-339/Models/Interior/Panel/Right/Instruments/adf/adf.xml</path>
+    <offsets>
+      <x-m> -0.016 </x-m>
+      <y-m> -0.020 </y-m>
+      <z-m>  0.000 </z-m>
+      <pitch-deg> -90 </pitch-deg>
+    </offsets>
+  </model> -->
+  
+  <!-- AIR CONTROL PANEL
+  <model>
+    <path>Aircraft/Aermacchi-MB-339/Models/Interior/Panel/Right/Instruments/air/air.xml</path>
+    <offsets>
+      <x-m>  0.033 </x-m>
+      <y-m> -0.020 </y-m>
+      <z-m>  0.000 </z-m>
+      <pitch-deg> -90 </pitch-deg>
+    </offsets>
+  </model> -->
+  
+  <!-- LIGHT CONTROL PANEL
+  <model>
+    <path>Aircraft/Aermacchi-MB-339/Models/Interior/Panel/Right/Instruments/light/light.xml</path>
+    <offsets>
+      <x-m>  0.089 </x-m>
+      <y-m> -0.020 </y-m>
+      <z-m>  0.000 </z-m>
+      <pitch-deg> -90 </pitch-deg>
+    </offsets>
+  </model> -->
+  
+  <!-- ANTI-ICE
+  <model>
+    <path>Aircraft/Aermacchi-MB-339/Models/Interior/Panel/Right/Instruments/ice/ice.xml</path>
+    <offsets>
+      <x-m> -0.030 </x-m>
+      <y-m>  0.048 </y-m>
+      <z-m>  0.000 </z-m>
+      <pitch-deg> -90 </pitch-deg>
+    </offsets>
+  </model> -->
+  
+</PropertyList>

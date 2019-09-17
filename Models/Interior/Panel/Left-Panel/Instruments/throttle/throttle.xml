@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>throttle.ac</path>
+
+  <animation>
+    <object-name>fond</object-name>
+    <object-name>throttle</object-name>
+    <object-name>LevelFlap</object-name>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>throttle</object-name>
+    <property>/controls/engines/engine/throttle</property>
+    <factor> -70 </factor>
+    <center>
+      <x-m>  0.00000 </x-m>
+      <y-m>  0.00793 </y-m>
+      <z-m> -0.02859 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation> 
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>LevelFlap</object-name>
+    <property>surface-positions/flap-pos-norm</property>
+    <factor> 55 </factor>
+    <center>
+      <x-m>  0.00000 </x-m>
+      <y-m>  0.00793 </y-m>
+      <z-m> -0.02859 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+</PropertyList>
