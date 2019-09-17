@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+ 
+<propertylist>
+  <sim>
+    <model>
+      <livery>
+        <name>G1R4 Grid test</name>
+        <texture>G91R4-Grid.png</texture>
+	
+	<shininess>96</shininess>
+	<reflection-correction>-0.6</reflection-correction>
+	
+      </livery>
+    </model>
+  </sim>
+</propertylist>

@@ -1,0 +1,858 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- The animation file for the Fiat-G-91R model                 -->
+<!-- License:  GNU GENERAL PUBLIC LICENSE Version 2, June 1991   -->
+<!-- Author:   Patrizio Melis     https://github.com/cobe571     -->
+<!-- Author:   Joshua Davidson    https://github.com/Octal450    -->
+
+<PropertyList>
+
+  <path>G91R4.ac</path>
+
+  <offsets>
+   <x-m>  0.00 </x-m>
+   <y-m>  0.00 </y-m>
+   <z-m> -1.12 </z-m>
+   <pitch-deg> 1.5 </pitch-deg>
+  </offsets>
+  
+  <nasal>
+    <load>
+      var livery_update = aircraft.livery_update.new("Aircraft/Fiat-G-91R/Models/Liveries", 10);
+	  var self = cmdarg();
+      var float_0 = self.getNode("sim/multiplay/generic/float[0]", 1);
+      var float_1 = self.getNode("sim/multiplay/generic/float[1]", 1);
+      var crew_door = self.getNode("instrumentation/doors/crew/position-norm", 1);
+      var passenger_door = self.getNode("instrumentation/doors/passenger/position-norm", 1);
+      crew_door.alias(float_0);
+      passenger_door.alias(float_1);
+      <!--print ("Load Fiat-G-91R"); -->
+    </load>
+    <unload>
+      livery_update.stop();
+	  crew_door.unalias();
+      passenger_door.unalias();
+    </unload>
+  </nasal>
+  
+  <!-- Objects List -->
+  
+  
+  <!-- Material assignment -->
+  
+  <animation>
+    <type>material</type>
+    <object-name>Fuselage</object-name>
+    <object-name>Fusoliera.001</object-name>
+    <object-name>Fusoliera.002</object-name>
+    <object-name>Fusoliera.003</object-name>
+    <object-name>Fusoliera.004</object-name>
+    <object-name>Fusoliera.005</object-name>
+    <object-name>Fusoliera.006</object-name>
+    <object-name>Wings</object-name>
+    <object-name>Flap-L</object-name>
+    <object-name>Flap-R</object-name>
+    <object-name>Aileron-L</object-name>
+    <object-name>Aileron-R</object-name>
+    <object-name>Horizontal-Stabilizer</object-name>
+    <object-name>Elevator-L</object-name>
+    <object-name>Elevator-R</object-name>
+    <object-name>Door-Drag-Chute</object-name>
+    <object-name>Rudder</object-name>
+    <object-name>Rudder-Trim</object-name>
+    <object-name>G_91_landed.001</object-name>
+    <object-name>G_91_landed.002</object-name>
+    <object-name>G_91_landed.003</object-name>
+    <object-name>G_91_landed.004</object-name>
+    <object-name>G_91_landed.006</object-name>
+    <object-name>G_91_landed.010</object-name>
+    <object-name>Canopy-Front</object-name>
+    <object-name>Canopy-Main</object-name>
+    <object-name>Base-Green-Lamp</object-name>
+    <object-name>Base-Red-Lamp</object-name>
+    <object-name>Base-Red-Lamp-Top</object-name>
+    <object-name>Base-White-Lamp</object-name>
+    <object-name>Mirror-Green-Lamp</object-name>
+    <object-name>Mirror-Red-Lamp</object-name>
+    <object-name>Mirror-Red-Lamp-Top</object-name>
+    <object-name>Mirror-White-Lamp</object-name>
+    <object-name>Sphere.000</object-name>
+    <object-name>Sphere.001</object-name>
+    <object-name>Sphere.002</object-name>
+    <object-name>Sphere.005</object-name>
+    <property-base>sim/model/livery</property-base>
+    <texture-prop>G91R4-texture</texture-prop>
+    <texture>Liveries/G91R4.png</texture>
+  </animation>
+  
+  <animation>
+    <type>material</type>
+    <object-name>Inlet-Adduction</object-name>
+    <property-base>sim/model/livery</property-base>
+    <texture-prop>G91R4-texture</texture-prop>
+    <texture>Liveries/G91R4-Dark-Grey.png</texture>
+  </animation>
+  
+  <animation>
+    <type>material</type>
+    <object-name>Orpheus-Dark</object-name>
+    <property-base>sim/model/livery</property-base>
+    <texture-prop>G91R4-texture</texture-prop>
+    <texture>Liveries/G91R4-Black.png</texture>
+  </animation>
+  
+  <animation>
+    <type>material</type>
+    <object-name>Canopy-Gear-01</object-name>
+    <object-name>Canopy-Gear-02</object-name>
+    <object-name>Canopy-Gear-03</object-name>
+    <object-name>Canopy-Main.001</object-name>
+    <object-name>Fuselage.001</object-name>
+    <object-name>Fuselage.002</object-name>
+    <object-name>Support-Plate-Seat</object-name>
+    <object-name>Inner-Shell</object-name>
+    <property-base>sim/model/livery</property-base>
+    <texture-prop>G91R4-texture</texture-prop>
+    <texture>Liveries/G91R4-Fuselage-Internal.png</texture>
+  </animation>
+  
+  <animation>
+    <type>material</type>
+    <object-name>G_91_landed</object-name>
+    <object-name>G_91_landed.005</object-name>
+    <object-name>G_91_landed.007</object-name>
+    <object-name>G_91_landed.008</object-name>
+    <object-name>G_91_landed.009</object-name>
+    <object-name>G_91_landed.011</object-name>
+    <object-name>Sphere.002</object-name>
+    <object-name>Sphere.005</object-name>
+    <property-base>sim/model/livery</property-base>
+    <texture-prop>G91R4-texture</texture-prop>
+    <texture>Liveries/G91R4-Al.png</texture>
+  </animation>
+  
+  <animation>
+    <type>material</type>
+    <object-name>Wheel-F</object-name>
+    <object-name>Wheel-L</object-name>
+    <object-name>Wheel-R</object-name>
+    <property-base>sim/model/livery</property-base>
+    <texture-prop>G91R4-texture</texture-prop>
+    <texture>Liveries/G91R4-Black.png</texture>
+  </animation>
+  
+  <!-- Effects on materials -->
+  
+  <effect>
+    <inherits-from>Aircraft/Fiat-G-91R/Models/Effects/Glass/glass-chrome</inherits-from>
+    <object-name>Fuselage</object-name>
+    <object-name>Fusoliera.001</object-name>
+    <object-name>Fusoliera.002</object-name>
+    <object-name>Fusoliera.003</object-name>
+    <object-name>Fusoliera.004</object-name>
+    <object-name>Fusoliera.005</object-name>
+    <object-name>Fusoliera.006</object-name>
+    <object-name>Wings</object-name>
+    <object-name>Flap-L</object-name>
+    <object-name>Flap-R</object-name>
+    <object-name>Aileron-L</object-name>
+    <object-name>Aileron-R</object-name>
+    <object-name>Horizontal-Stabilizer</object-name>
+    <object-name>Door-Drag-Chute</object-name>
+    <object-name>Rudder</object-name>
+    <object-name>Rudder-Trim</object-name>
+    <object-name>Elevator-L</object-name>
+    <object-name>Elevator-R</object-name>
+    <object-name>Canopy-Front</object-name>
+    <object-name>Canopy-Main</object-name>
+    <object-name>G_91_landed</object-name>
+    <object-name>G_91_landed.001</object-name>
+    <object-name>G_91_landed.002</object-name>
+    <object-name>G_91_landed.003</object-name>
+    <object-name>G_91_landed.004</object-name>
+    <object-name>G_91_landed.005</object-name>
+    <object-name>G_91_landed.006</object-name>
+    <object-name>G_91_landed.007</object-name>
+    <object-name>G_91_landed.008</object-name>
+    <object-name>G_91_landed.009</object-name>
+    <object-name>G_91_landed.010</object-name>
+    <object-name>G_91_landed.011</object-name>
+    <object-name>Base-Green-Lamp</object-name>
+    <object-name>Base-Red-Lamp</object-name>
+    <object-name>Base-Red-Lamp-Top</object-name>
+    <object-name>Base-White-Lamp</object-name>
+    <object-name>Mirror-Green-Lamp</object-name>
+    <object-name>Mirror-Red-Lamp</object-name>
+    <object-name>Mirror-Red-Lamp-Top</object-name>
+    <object-name>Mirror-White-Lamp</object-name>
+    <object-name>Sphere.000</object-name>
+    <object-name>Sphere.001</object-name>
+    <object-name>Sphere.002</object-name>
+    <object-name>Sphere.005</object-name>
+  </effect>
+  
+  <effect>
+    <inherits-from>Aircraft/Fiat-G-91R/Models/Effects/internal_Light_Map</inherits-from>
+    <object-name>Inlet-Adduction</object-name>
+  </effect>
+  
+  <!-- Interior -->
+  <model>
+    <path>Aircraft/Fiat-G-91R/Models/Interior/interior.xml</path>
+  </model>
+    
+  <!-- Air Surfaces Animation -->
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>Flap-L</object-name>
+    <property>surface-positions/flap-pos-norm</property>
+    <factor> 40 </factor>
+    <axis>
+      <x1-m>  1.2035 </x1-m>
+      <y1-m> -2.2079 </y1-m>
+      <z1-m>  1.2224 </z1-m>
+      <x2-m>  0.4491 </x2-m>
+      <y2-m> -0.7926 </y2-m>
+      <z2-m>  1.1814 </z2-m>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>translate</type>
+    <object-name>Flap-L</object-name>
+    <property>surface-positions/flap-pos-norm</property>
+    <factor>0.2</factor>
+    <offset-m>0.0</offset-m>
+    <axis>
+      <x>1</x>
+      <y>0</y>
+      <z>0.7</z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>Flap-R</object-name>
+    <property>surface-positions/flap-pos-norm</property>
+    <factor> -40 </factor>
+    <axis>
+      <x1-m>  1.2035 </x1-m>
+      <y1-m>  2.2079 </y1-m>
+      <z1-m>  1.2224 </z1-m>
+      <x2-m>  0.4491 </x2-m>
+      <y2-m>  0.7926 </y2-m>
+      <z2-m>  1.1814 </z2-m>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>translate</type>
+    <object-name>Flap-R</object-name>
+    <property>surface-positions/flap-pos-norm</property>
+    <factor>0.2</factor>
+    <offset-m>0.0</offset-m>
+    <axis>
+      <x>1</x>
+      <y>0</y>
+      <z>0.7</z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <object-name>Aileron-L</object-name>
+    <type>rotate</type>
+    <property>surface-positions/left-aileron-pos-norm</property>
+    <factor>-15</factor>
+    <offset-deg>0</offset-deg>
+    <axis>
+      <x1-m>  1.220 </x1-m>
+      <y1-m> -2.241 </y1-m>
+      <z1-m>  1.293 </z1-m>
+      <x2-m>  2.412 </x2-m>
+      <y2-m> -4.177 </y2-m>
+      <z2-m>  1.320 </z2-m>
+    </axis>
+  </animation>
+  
+  <animation>
+    <object-name>Aileron-R</object-name>
+    <type>rotate</type>
+    <property>surface-positions/right-aileron-pos-norm</property>
+    <factor>-15</factor>
+    <offset-deg>0</offset-deg>
+    <axis>
+      <x1-m>  1.220 </x1-m>
+      <y1-m>  2.241 </y1-m>
+      <z1-m>  1.293 </z1-m>
+      <x2-m>  2.412 </x2-m>
+      <y2-m>  4.177 </y2-m>
+      <z2-m>  1.320 </z2-m>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>Elevator-L</object-name>
+    <property>surface-positions/elevator-pos-norm</property>
+    <factor>-15</factor>
+    <axis>
+      <x1-m>  3.9100 </x1-m>
+      <y1-m> -0.3580 </y1-m>
+      <z1-m>  1.9864 </z1-m>
+      <x2-m>  4.5669 </x2-m>
+      <y2-m> -1.5625 </y2-m>
+      <z2-m>  2.0296 </z2-m>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>Elevator-R</object-name>
+    <property>surface-positions/elevator-pos-norm</property>
+    <factor>15</factor>
+    <axis>
+      <x1-m>  3.9100 </x1-m>
+      <y1-m>  0.3580 </y1-m>
+      <z1-m>  1.9864 </z1-m>
+      <x2-m>  4.5669 </x2-m>
+      <y2-m>  1.5625 </y2-m>
+      <z2-m>  2.0296 </z2-m>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>Rudder</object-name>
+    <property>surface-positions/rudder-pos-norm</property>
+    <factor>15</factor>
+    <axis>
+      <x1-m> 4.1953 </x1-m>
+      <y1-m> 0.0000 </y1-m>
+      <z1-m> 2.4037 </z1-m>
+      <x2-m> 4.6849 </x2-m>
+      <y2-m> 0.0000 </y2-m>
+      <z2-m> 3.5626 </z2-m>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>Rudder-Trim</object-name>
+    <property>surface-positions/rudder-pos-norm</property>
+    <factor>15</factor>
+    <axis>
+      <x1-m> 4.2797 </x1-m>
+      <y1-m> 0.0000 </y1-m>
+      <z1-m> 2.5559 </z1-m>
+      <x2-m> 4.4981 </x2-m>
+      <y2-m> 0.0000 </y2-m>
+      <z2-m> 2.9598 </z2-m>
+    </axis>
+  </animation>
+  
+  <!-- Engine Element Groups -->
+  
+  <animation>
+    <name>Coll-Orpheus-Blades-Glass</name>
+    <object-name>Orpheus-Blades.002</object-name>
+    <object-name>Orpheus.007</object-name>
+    <object-name>Orpheus.008</object-name>
+    <object-name>Orpheus.009</object-name>
+    <object-name>Orpheus.011</object-name>
+  </animation>
+  
+  <animation>
+    <name>Orpheus-Dark</name>
+    <object-name>Orpheus.000</object-name>
+    <object-name>Orpheus.001</object-name>
+    <object-name>Orpheus.002</object-name>
+    <object-name>Orpheus.003</object-name>
+    <object-name>Orpheus.004</object-name>
+    <object-name>Orpheus.005</object-name>
+    <object-name>Orpheus.006</object-name>
+    <object-name>Orpheus.010</object-name>
+    <object-name>Orpheus-Blades.000</object-name>
+    <object-name>Orpheus-Blades.001</object-name>
+  </animation>
+  
+  <!-- Start Engine - Smoke Effects -->
+  
+  <model>
+    <path>Aircraft/Fiat-G-91R/Models/Effects/start_exhaust_eng_proxy.xml</path>
+    <offsets>
+      <x-m> 1.5 </x-m>
+      <y-m> 0.5 </y-m>
+      <z-m> 1.7 </z-m>
+      <heading-deg> 125 </heading-deg>
+      <roll-deg> 0 </roll-deg>
+      <pitch-deg> 0 </pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Fiat-G-91R/Models/Effects/start_exhaust_eng.xml</path>
+    <offsets>
+      <x-m> 1.5 </x-m>
+      <y-m> 1.5 </y-m>
+      <z-m> 1.7 </z-m>
+      <heading-deg> 125 </heading-deg>
+      <roll-deg> 0 </roll-deg>
+      <pitch-deg> 0 </pitch-deg>
+    </offsets>
+  </model>
+  
+  <!-- Engine Blades Rotation -->
+  
+  <animation>
+    <object-name>Orpheus-Blades.000</object-name>
+    <type>spin</type>
+    <condition>
+      <or>
+        <property>/engines/engine[0]/running</property>
+	<greater-than>		
+	  <property>velocities/airspeed-kt</property>
+	  <value>200</value>
+	</greater-than>
+      </or>
+    </condition>
+    <property>engines/engine/n1</property>
+    <factor>25</factor>
+    <center>
+      <x-m> 0.00000 </x-m>
+      <y-m> 0.00000 </y-m>
+      <z-m> 1.55749 </z-m>
+    </center>
+    <axis>
+      <x>1</x>
+      <y>0</y>
+      <z>0</z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <object-name>Orpheus-Blades.001</object-name>
+    <type>spin</type>
+    <condition>
+      <or>
+        <property>/engines/engine[0]/running</property>
+	<greater-than>		
+	  <property>velocities/airspeed-kt</property>
+	  <value>200</value>
+	</greater-than>
+      </or>
+    </condition>
+    <property>engines/engine/n1</property>
+    <factor>25</factor>
+    <center>
+      <x-m> 0.00000 </x-m>
+      <y-m> 0.00000 </y-m>
+      <z-m> 1.55749 </z-m>
+    </center>
+    <axis>
+      <x>1</x>
+      <y>0</y>
+      <z>0</z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <object-name>Orpheus-Blades.002</object-name>
+    <type>spin</type>
+    <condition>
+      <or>
+        <property>/engines/engine[0]/running</property>
+	<greater-than>		
+	  <property>velocities/airspeed-kt</property>
+	  <value>200</value>
+	</greater-than>
+      </or>
+    </condition>
+    <property>engines/engine/n1</property>
+    <factor>-79</factor>
+    <center>
+      <x-m> 0.00 </x-m>
+      <y-m> 0.01 </y-m>
+      <z-m> 1.54 </z-m>
+    </center>
+    <axis>
+      <x>1</x>
+      <y>0</y>
+      <z>0</z>
+    </axis>
+  </animation>
+  
+  <!-- Engine Hot Exaust Effect -->
+  
+  <animation>
+    <type>material</type> 
+    <object-name>Orpheus.007</object-name>
+    <condition>
+      <and>
+	<greater-than>		
+	  <property>/sim/time/sun-angle-rad</property>
+	  <value>1.6</value>
+	</greater-than>
+	<property>engines/engine/running</property>
+      </and>
+    </condition>
+    <emission>	
+      <red> 0.0007</red>	
+      <green> 0.0 </green>	
+      <blue> 0.0 </blue>
+      <factor-prop>engines/engine/n1</factor-prop>
+    </emission>
+    <texture>Light-White.png</texture>
+  </animation>
+  
+  <animation>
+    <type>material</type> 
+    <object-name>Orpheus.008</object-name>
+    <condition>		
+      <and>
+	<greater-than>		
+	  <property>/sim/time/sun-angle-rad</property>
+	  <value>1.6</value>
+	</greater-than>
+	<property>engines/engine/running</property>
+      </and>
+    </condition>
+    <emission>	
+      <red> 0.0005 </red>	
+      <green> 0.0001 </green>	
+      <blue> 0.0 </blue>
+      <factor-prop>engines/engine/n1</factor-prop>
+    </emission>
+    <texture>Light-White.png</texture>
+  </animation>
+  
+  <animation>
+    <type>material</type> 
+    <object-name>Orpheus.009</object-name>
+    <condition>		
+      <and>
+	<greater-than>		
+	  <property>/sim/time/sun-angle-rad</property>
+	  <value>1.6</value>
+	</greater-than>
+	<property>engines/engine/running</property>
+      </and>
+    </condition>
+    <emission>	
+      <red> 0.001 </red>	
+      <green> 0.0 </green>	
+      <blue> 0.0 </blue>
+      <factor-prop>engines/engine/n1</factor-prop>
+    </emission>
+    <texture>Light-White.png</texture>
+  </animation>
+  
+  <animation>
+    <type>material</type> 
+    <object-name>Orpheus.011</object-name>
+    <condition>		
+      <and>
+	<greater-than>		
+	  <property>/sim/time/sun-angle-rad</property>
+	  <value>1.6</value>
+	</greater-than>
+	<property>engines/engine/running</property>
+      </and>
+    </condition>
+    <emission>	
+      <red> 0.0008 </red>	
+      <green> 0.00015 </green>	
+      <blue> 0.0 </blue>
+      <factor-prop>engines/engine/n1</factor-prop>
+    </emission>
+    <texture>Light-White.png</texture>
+  </animation>
+  
+  <animation>
+    <type>material</type> 
+    <object-name>Orpheus-Blades.002</object-name>
+    <condition>		
+      <and>
+	<greater-than>		
+	  <property>/sim/time/sun-angle-rad</property>
+	  <value>1.6</value>
+	</greater-than>
+	<property>engines/engine/running</property>
+      </and>
+    </condition>
+    <emission>	
+      <red> 0.001 </red>	
+      <green> 0.0 </green>	
+      <blue> 0.003 </blue>
+      <factor-prop>engines/engine/n1</factor-prop>
+    </emission>
+    <texture>Light-White.png</texture>
+  </animation>
+  
+  <animation>
+    <object-name>Coll-Orpheus-Blades-Glass</object-name>
+    <type>select</type>
+    <condition>
+      <and>
+	<greater-than>		
+	  <property>/sim/time/sun-angle-rad</property>
+	  <value>1.7</value>
+	</greater-than>
+	<property>engines/engine/running</property>
+      </and>
+    </condition>
+  </animation>
+    
+  <!--  Landing Gear Animations -->
+
+  <animation>
+    <object-name>G_91_landed</object-name>
+    <object-name>G_91_landed.001</object-name>
+    <object-name>G_91_landed.002</object-name>
+    <object-name>G_91_landed.003</object-name>
+    <object-name>G_91_landed.004</object-name>
+    <object-name>G_91_landed.005</object-name>
+    <object-name>G_91_landed.006</object-name>
+    <object-name>G_91_landed.007</object-name>
+    <object-name>G_91_landed.008</object-name>
+    <object-name>G_91_landed.009</object-name>
+    <object-name>G_91_landed.010</object-name>
+    <object-name>G_91_landed.011</object-name>
+    <object-name>Wheel-F</object-name>
+    <object-name>Wheel-L</object-name>
+    <object-name>Wheel-R</object-name>
+    <object-name>Sphere.000</object-name>
+    <object-name>Sphere.001</object-name>
+    <object-name>Sphere.002</object-name>
+    <object-name>Sphere.003</object-name>
+    <object-name>Sphere.004</object-name>
+    <object-name>Sphere.005</object-name>
+    <object-name>Sphere.006</object-name>
+    <object-name>Sphere.007</object-name>
+    <type>select</type>
+    <condition>
+      <greater-than>
+	<property>gear/gear/position-norm</property>
+	<value>0.5</value>
+      </greater-than>
+    </condition>
+  </animation>
+  
+  <!-- Light Effects -->
+  
+  <animation>
+    <type>material</type>
+    <object-name>Glass-Red-Lamp</object-name>
+    <object-name>Light-Red</object-name>
+    <condition>		
+      <greater-than>		
+	<property>/sim/time/sun-angle-rad</property>
+	<value>1.4</value>
+      </greater-than>
+    </condition>
+    <emission>	
+      <red>1</red>	
+      <green>0</green>	
+      <blue>0</blue>
+    </emission>
+    <texture>Lights/Light-White.png</texture>
+  </animation>
+  
+  <animation>
+    <type>material</type> 
+    <object-name>Glass-Red-Lamp</object-name>
+    <object-name>Light-Red</object-name>
+    <condition>		
+      <less-than-equals>		
+	<property>/sim/time/sun-angle-rad</property>
+	<value>1.4</value>
+      </less-than-equals>
+    </condition>
+    <emission>	
+      <red>0.3</red>	
+      <green>0</green>	
+      <blue>0</blue>
+    </emission>
+    <texture>Lights/Light-White.png</texture>
+  </animation>
+  
+  <animation>
+    <type>material</type>
+    <object-name>Glass-Green-Lamp</object-name>
+    <object-name>Light-Green</object-name>
+    <condition>		
+      <greater-than>		
+	<property>/sim/time/sun-angle-rad</property>
+	<value>1.4</value>
+      </greater-than>
+    </condition>
+    <emission>	
+      <red>0</red>	
+      <green>1</green>	
+      <blue>0</blue>
+    </emission>
+    <texture>Lights/Light-White.png</texture>
+  </animation>
+  
+  <animation>
+    <type>material</type> 
+    <object-name>Glass-Green-Lamp</object-name>
+    <object-name>Light-Green</object-name>
+    <condition>		
+      <less-than-equals>		
+	<property>/sim/time/sun-angle-rad</property>
+	<value>1.4</value>
+      </less-than-equals>
+    </condition>
+    <emission>	
+      <red>0</red>	
+      <green>0.3</green>	
+      <blue>0</blue>
+    </emission>
+    <texture>Lights/Light-White.png</texture>
+  </animation>
+  
+  <animation>
+    <type>material</type>
+    <object-name>Glass-White-Lamp</object-name>
+    <object-name>Light-White</object-name>
+    <condition>		
+      <greater-than>		
+	<property>/sim/time/sun-angle-rad</property>
+	<value>1.4</value>
+      </greater-than>
+    </condition>
+    <emission>	
+      <red>1</red>	
+      <green>1</green>	
+      <blue>1</blue>
+    </emission>
+    <texture>Lights/Light-White.png</texture>
+  </animation>
+  
+  <animation>
+    <type>material</type> 
+    <object-name>Glass-White-Lamp</object-name>
+    <object-name>Light-White</object-name>
+    <condition>		
+      <less-than-equals>		
+	<property>/sim/time/sun-angle-rad</property>
+	<value>1.4</value>
+      </less-than-equals>
+    </condition>
+    <emission>	
+      <red>0.3</red>	
+      <green>0.3</green>	
+      <blue>0.3</blue>
+    </emission>
+    <texture>Lights/Light-White.png</texture>
+  </animation>
+  
+  <animation>
+    <type>material</type>
+    <object-name>Glass-Red-Lamp-Top</object-name>
+    <object-name>Light-Red-Top</object-name>
+    <condition>		
+      <greater-than>		
+	<property>/sim/time/sun-angle-rad</property>
+	<value>1.4</value>
+      </greater-than>
+    </condition>
+    <emission>	
+      <red>1</red>	
+      <green>0</green>	
+      <blue>0</blue>
+    </emission>
+    <texture>Lights/Light-White.png</texture>
+  </animation>
+  
+  <animation>
+    <type>material</type> 
+    <object-name>Glass-Red-Lamp-Top</object-name>
+    <object-name>Light-Red-Top</object-name>
+    <condition>		
+      <less-than-equals>		
+	<property>/sim/time/sun-angle-rad</property>
+	<value>1.4</value>
+      </less-than-equals>
+    </condition>
+    <emission>	
+      <red>0.3</red>	
+      <green>0</green>	
+      <blue>0</blue>
+    </emission>
+    <texture>Lights/Light-White.png</texture>
+  </animation>
+  
+  <animation>
+    <type>material</type>
+    <object-name>Sphere.003</object-name>
+    <object-name>Sphere.004</object-name>
+    <object-name>Sphere.006</object-name>
+    <object-name>Sphere.007</object-name>
+    <condition>		
+      <greater-than>		
+	<property>/sim/time/sun-angle-rad</property>
+	<value>1.4</value>
+      </greater-than>
+    </condition>
+    <emission>	
+      <red>1</red>	
+      <green>1</green>	
+      <blue>1</blue>
+    </emission>
+    <texture>Lights/Light-White.png</texture>
+  </animation>
+  
+  <animation>
+    <type>material</type> 
+    <object-name>Sphere.003</object-name>
+    <object-name>Sphere.004</object-name>
+    <object-name>Sphere.006</object-name>
+    <object-name>Sphere.007</object-name>
+    <condition>		
+      <less-than-equals>		
+	<property>/sim/time/sun-angle-rad</property>
+	<value>1.4</value>
+      </less-than-equals>
+    </condition>
+    <emission>	
+      <red>0.5</red>	
+      <green>0.5</green>	
+      <blue>0.5</blue>
+    </emission>
+    <texture>Lights/Light-White.png</texture>
+  </animation>
+  
+  <!-- Strobe lights -->
+  
+  <animation>
+    <type>select</type>
+    <object-name>Light-Red-top</object-name>
+    <condition>
+      <property>/sim/model/lights/strobe/state</property>
+    </condition>
+  </animation>
+  
+  <!-- Landing Lights -->
+  <model>
+    <path>Aircraft/Fiat-G-91R/Models/Lights/light-cone.xml</path>
+    <offsets>
+      <x-m> -1.57755 </x-m>
+      <y-m> -0.10410 </y-m>
+      <z-m>  0.70058 </z-m>
+      <pitch-deg> -7.5 </pitch-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Fiat-G-91R/Models/Lights/light-cone.xml</path>
+    <offsets>
+      <x-m> -1.57755 </x-m>
+      <y-m>  0.10410 </y-m>
+      <z-m>  0.70058 </z-m>
+      <pitch-deg> -7.5 </pitch-deg>
+    </offsets>
+  </model>
+  
+</PropertyList>
