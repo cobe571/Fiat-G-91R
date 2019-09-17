@@ -12,7 +12,7 @@ var G91_engine = {
   
   # constructor, for making new objects
   new: func() {
-    print("Creating new object/g91_engine of type/template:g91_engine");
+    print("Creating new object/G91_engine of type/template:G91_engine");
     var obj = { parents:[G91_engine] };
     return obj;
   },
