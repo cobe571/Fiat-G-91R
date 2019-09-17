@@ -19,7 +19,7 @@
     
     <author>Patrizio Melis (3D, FDM), Joshua Davidson (JSBsim Flight Dynamics, FDM, Systems), Necolatis (Datcom+)</author>
     <status>alpha</status>
-    <aircraft-version>2.19</aircraft-version>
+    <aircraft-version>2</aircraft-version>
     
     <rating>
       <FDM type="int">     4 </FDM>
