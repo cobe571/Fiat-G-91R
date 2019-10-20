@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- The Fuel file for the Fiat G-91R 3D model                   -->
-<!-- License:  GNU GENERAL PUBLIC LICENSE Version 2, June 1991   -->
-<!-- Author:   Patrizio Melis     https://github.com/cobe571     -->
-<!-- Author:   Joshua Davidson    https://github.com/Octal450    -->
- 
+<!-- The Fuel file for the Fiat G-91R 3D model                       -->
+<!-- License:  GNU GENERAL PUBLIC LICENSE Version 2, June 1991       -->
+<!-- Author:  Patrizio Melis https://github.com/cobe571/Fiat-G-91R   -->
+
 <system name="fuel"> 
   <!--
   General Info from the Fiat G-91R Flight Manual

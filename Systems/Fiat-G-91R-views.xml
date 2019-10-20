@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- The Views file for the Fiat G-91R 3D model                  -->
-<!-- License:  GNU GENERAL PUBLIC LICENSE Version 2, June 1991   -->
-<!-- Author:   Patrizio Melis     https://github.com/cobe571     -->
-<!-- Author:   Joshua Davidson    https://github.com/Octal450    -->
+<!-- The Views file for the Fiat G-91R 3D model                      -->
+<!-- License:  GNU GENERAL PUBLIC LICENSE Version 2, June 1991       -->
+<!-- Author:  Patrizio Melis https://github.com/cobe571/Fiat-G-91R   -->
 
 <PropertyList>
 
@@ -28,10 +27,10 @@
   <view n="0">
     <internal archive="y">true</internal>
     <config>
-      <x-offset-m archive="y">  0.00000 </x-offset-m> <!--  Right -->
-      <y-offset-m archive="y">  1.3 </y-offset-m> <!--  Up    -->
-      <z-offset-m archive="y"> -1.8 </z-offset-m> <!--  Back  -->
-      <pitch-offset-deg> -15 </pitch-offset-deg>
+      <x-offset-m archive="y">  0.0000 </x-offset-m> <!--  Right -->
+      <y-offset-m archive="y">  1.3200 </y-offset-m> <!--  Up    -->
+      <z-offset-m archive="y"> -1.9900 </z-offset-m> <!--  Back  -->
+      <pitch-offset-deg> -11 </pitch-offset-deg>
       <default-field-of-view-deg type="double"> 47.6 </default-field-of-view-deg>
     </config>
   </view>
