@@ -1,9 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- The Martin-Baker-MK3.xml file -->
+<!-- The Martin-Baker-MK3 file for the Fiat-G-91R.ac 3D model        -->
+<!-- License: GNU GENERAL PUBLIC LICENSE Version 2, June 1991        -->
+<!-- Author:  Patrizio Melis https://github.com/cobe571/Fiat-G-91R   -->
+
+<!-- The .xml file -->
 
 <PropertyList>
 
   <path>Martin-Baker-MK3.ac</path>
+  
+  <animation>
+  <!-- Oggetti opachi -->
+    <object-name>Martin-Backer.000</object-name>
+    <object-name>Martin-Backer.001</object-name>
+    <object-name>Martin-Backer.002</object-name>
+    <object-name>Martin-Backer.003</object-name>
+    <object-name>Martin-Backer.004</object-name>
+    <object-name>Martin-Backer.005</object-name>
+    <object-name>Martin-Backer.006</object-name>
+    <object-name>Martin-Backer.007</object-name>
+  </animation>
+  
+  <animation>
+    <!-- Objects Linked To Texture -->
+    <type>material</type>
+    <object-name>Martin-Backer.000</object-name>
+    <object-name>Martin-Backer.001</object-name>
+    <object-name>Martin-Backer.002</object-name>
+    <object-name>Martin-Backer.003</object-name>
+    <object-name>Martin-Backer.004</object-name>
+    <object-name>Martin-Backer.005</object-name>
+    <object-name>Martin-Backer.006</object-name>
+    <object-name>Martin-Backer.007</object-name>
+    <property-base>sim/model/livery</property-base>
+    <texture-prop>seat</texture-prop>
+    <texture>Martin-Baker-MK3.png</texture>
+  </animation>
 
 </PropertyList>

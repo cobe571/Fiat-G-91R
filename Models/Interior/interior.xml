@@ -1,48 +1,122 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<!-- The interior file for the Fiat-G-91R.ac 3D model                -->
+<!-- License: GNU GENERAL PUBLIC LICENSE Version 2, June 1991        -->
+<!-- Author:  Patrizio Melis https://github.com/cobe571/Fiat-G-91R   -->
+
 <PropertyList>
 
   <path>interior.ac</path>
-  
-  <offsets>
-   <x-m>0.0</x-m>
-   <y-m>0.0</y-m>
-   <z-m>-1.12</z-m>
-   <pitch-deg>1.5</pitch-deg>
-  </offsets>
 
   <animation>
   <!-- Oggetti opachi -->
-    <object-name>   </object-name>
-    <object-name>   </object-name>
-    <object-name>   </object-name>
-    <object-name>   </object-name>
+    <object-name>Canopy-Front-Garnish</object-name>
+    <object-name>Canopy-Main.002</object-name>
+    <object-name>Inner-Shell</object-name>
+    <object-name>Release-Lever</object-name>
+    <object-name>Support-Plate-Seat</object-name>
 
     <!-- Oggetti trasparenti -->
-    <object-name>   </object-name>
-    <object-name>   </object-name>
+    <object-name>Glass-Canopy.000-IN</object-name>
+    <object-name>Glass-Canopy.001-IN</object-name>
+    <object-name>Glass-Canopy.002-IN</object-name>
+  </animation>
+  
+  <animation>
+    <!-- Objects Linked To Texture -->
+    <type>material</type>
+    <object-name>Canopy-Front-Garnish</object-name>
+    <object-name>Canopy-Main.002</object-name>
+    <object-name>Inner-Shell</object-name>
+    <object-name>Release-Lever</object-name>
+    <object-name>Support-Plate-Seat</object-name>
+    <property-base>sim/model/livery</property-base>
+    <texture-prop>interior</texture-prop>
+    <texture>interior.jpg</texture>
+  </animation>
+  
+  <animation>
+    <type>material</type>
+    <object-name>Glass-Canopy.000-IN</object-name>
+    <object-name>Glass-Canopy.001-IN</object-name>
+    <object-name>Glass-Canopy.002-IN</object-name>
+    <property-base>sim/model/livery</property-base>
+    <texture-prop>glass</texture-prop>
+    <texture>glass.png</texture>
   </animation>
   
   <!-- Effetto Rembrandt -->
   <effect>
     <inherits-from>Aircraft/Fiat-G-91R/Models/Effects/Glass/glass</inherits-from>
-    <object-name>   </object-name>
-    <object-name>   </object-name>
+    <object-name>Glass-Canopy.000-IN</object-name>
+    <object-name>Glass-Canopy.001-IN</object-name>
+    <object-name>Glass-Canopy.002-IN</object-name>
   </effect>
   
   <effect>
     <inherits-from>Effects/model-transparent</inherits-from>
-    <object-name>   </object-name>
-    <object-name>   </object-name>
+    <object-name>Glass-Canopy.000-IN</object-name>
+    <object-name>Glass-Canopy.001-IN</object-name>
+    <object-name>Glass-Canopy.002-IN</object-name>
   </effect>
+
+  <!-- Main Panel -->
+  <model>
+    <path>Aircraft/Fiat-G-91R/Models/Interior/Panel/panel.xml</path>
+    <offsets>
+      <x-m> 0.0000 </x-m>
+      <y-m> 0.0000 </y-m>
+      <z-m> 0.0000 </z-m>
+    </offsets>
+  </model> 
+  
+  <!-- Left Panel -->
+  <model>
+    <path>Aircraft/Fiat-G-91R/Models/Interior/Panel/Left-Panel/left-panel.xml</path>
+    <offsets>
+      <x-m> 0.0000 </x-m>
+      <y-m> 0.0000 </y-m>
+      <z-m> 0.0000 </z-m>
+    </offsets>
+  </model> 
+  
+  <!-- Right Panel -->
+  <model>
+    <path>Aircraft/Fiat-G-91R/Models/Interior/Panel/Right-Panel/right-panel.xml</path>
+    <offsets>
+      <x-m> 0.0000 </x-m>
+      <y-m> 0.0000 </y-m>
+      <z-m> 0.0000 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- Seat -->
+  <model>
+    <path>Aircraft/Fiat-G-91R/Models/Interior/Seat/Martin-Baker-MK3.xml</path>
+    <offsets>
+      <x-m>  0.0000 </x-m>
+      <y-m>  0.0000 </y-m>
+      <z-m>  0.0000 </z-m>
+    </offsets>
+  </model> 
+  
+  <!-- Pilot 
+  <model>
+    <path>Aircraft/Fiat-G-91R/Models/Interior/Pilot/pilot.xml</path>
+    <offsets>
+      <x-m> -2.44815 </x-m>
+      <y-m>  0.00000 </y-m>
+      <z-m>  1.85425 </z-m>
+    </offsets>
+  </model> -->
   
   <!-- Yoke -->
   <model>
     <path>Aircraft/Fiat-G-91R/Models/Interior/Yoke/yoke.xml</path>
     <offsets>
-      <x-m> -3.49 </x-m>
-      <y-m>  0.00 </y-m>
-      <z-m> -1.01 </z-m>
+      <x-m> -2.74140 </x-m>
+      <y-m>  0.00000 </y-m>
+      <z-m>  1.64407 </z-m>
     </offsets>
   </model> 
   
@@ -55,58 +129,7 @@
       <z-m>  2.02330</z-m>
     </offsets>
   </model>
-  
-  <!-- Pilot -->
-  <model>
-    <path>Aircraft/Fiat-G-91R/Models/Interior/Pilot/pilot.xml</path>
-    <offsets>
-      <x-m> -2.44203 </x-m>
-      <y-m>  0.00000 </y-m>
-      <z-m> -0.10555 </z-m>
-    </offsets>
-  </model>
-  
-  <!-- Seat -->
-  <model>
-    <path>Aircraft/Fiat-G-91R/Models/Interior/Seat/Martin-Baker-MK3.xml</path>
-    <offsets>
-      <x-m> -2.47183 </x-m>
-      <y-m>  0.00000 </y-m>
-      <z-m> -0.11882 </z-m>
-    </offsets>
-  </model>
-  
-  <!-- Pannello di bordo principale/Main Panel -->
-  <model>
-    <path>Aircraft/Fiat-G-91R/Models/Interior/Panel/panel.xml</path>
-    <offsets>
-      <x-m> -3.25520 </x-m>
-      <y-m>  0.00000 </y-m>
-      <z-m>  0.02543 </z-m>
-      <pitch-deg> -10 </pitch-deg>
-    </offsets>
-  </model>
-  
-  <!-- Left Panel -->
-  <model>
-    <path>Aircraft/Fiat-G-91R/Models/Interior/Panel/Left-Panel/left-panel.xml</path>
-    <offsets>
-      <x-m> -2.83440 </x-m>
-      <y-m> -0.33910 </y-m>
-      <z-m> -0.13230 </z-m>
-    </offsets>
-  </model>
-  
-  <!-- Right Panel -->
-  <model>
-    <path>Aircraft/Fiat-G-91R/Models/Interior/Panel/Right-Panel/right-panel.xml</path>
-    <offsets>
-      <x-m> -2.83440 </x-m>
-      <y-m>  0.33778 </y-m>
-      <z-m> -0.10549 </z-m>
-    </offsets>
-  </model>
-  
+
   <!-- Canopy 
   <animation>
     <name>CanopyInterne</name>

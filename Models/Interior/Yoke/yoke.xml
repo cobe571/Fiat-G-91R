@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<!-- The yoke file for the Fiat-G-91R.ac 3D model                    -->
+<!-- License: GNU GENERAL PUBLIC LICENSE Version 2, June 1991        -->
+<!-- Author:  Patrizio Melis https://github.com/cobe571/Fiat-G-91R   -->
+
 <PropertyList>
 
-  <path>Yoke.ac</path>
+  <path>yoke.ac</path>
   
   <!-- Object List -->
 
@@ -31,6 +35,7 @@
 	<object-name>Yoke.006</object-name>
     <object-name>Yoke.007</object-name>
 	<object-name>Yoke.008</object-name>
+    <object-name>Yoke.009</object-name>
 	<object-name>Yoke.010</object-name>
 	
   </animation>
