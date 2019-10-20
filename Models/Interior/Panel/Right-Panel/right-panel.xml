@@ -1,4 +1,8 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- The right panel file for the Fiat-G-91R.ac 3D model             -->
+<!-- License: GNU GENERAL PUBLIC LICENSE Version 2, June 1991        -->
+<!-- Author:  Patrizio Melis https://github.com/cobe571/Fiat-G-91R   -->
 
 <PropertyList>
 
@@ -6,14 +10,24 @@
 
   <animation>
     <!-- Objets opaques -->
-    <object-name>right</object-name>
-  
+    <object-name>Panel-Right</object-name>
+    <object-name>Panel.001R_Panel.001a</object-name>
     <!-- Objets transparents -->
   </animation>
 
-  <!-- TACAN
+  <animation>
+    <!-- Objects Linked To Texture -->
+    <type>material</type>
+    <object-name>Panel-Left</object-name>
+    <object-name>Panel.001L_Panel.002a</object-name>
+    <property-base>sim/model/livery</property-base>
+    <texture-prop>right-panel</texture-prop>
+    <texture>right-panel.png</texture>
+  </animation>
+
+  <!-- TACAN 
   <model>
-    <path>Aircraft/Aermacchi-MB-339/Models/Interior/Panel/Right/Instruments/tacan/tacan.xml</path>
+    <path>Aircraft/Fiat-G-91R/Models/Interior/Panel/Right-Panel/Instruments/tacan/tacan.xml</path>
     <offsets>
       <x-m> -0.108 </x-m>
       <y-m> -0.020 </y-m>
@@ -22,9 +36,9 @@
     </offsets>
   </model> -->
   
-  <!-- VOR-ILS
+  <!-- VOR-ILS 
   <model>
-    <path>Aircraft/Aermacchi-MB-339/Models/Interior/Panel/Right/Instruments/vor-ils/vor-ils.xml</path>
+    <path>Aircraft/Fiat-G-91R/Models/Interior/Panel/Right-Panel/Instruments/vor-ils/vor-ils.xml</path>
     <offsets>
       <x-m> -0.062 </x-m>
       <y-m> -0.020 </y-m>
@@ -33,9 +47,9 @@
     </offsets>
   </model> -->
   
-  <!-- ADF CONTROL
+  <!-- ADF CONTROL 
   <model>
-    <path>Aircraft/Aermacchi-MB-339/Models/Interior/Panel/Right/Instruments/adf/adf.xml</path>
+    <path>Aircraft/Fiat-G-91R/Models/Interior/Panel/Right-Panel/Instruments/adf/adf.xml</path>
     <offsets>
       <x-m> -0.016 </x-m>
       <y-m> -0.020 </y-m>
@@ -44,9 +58,9 @@
     </offsets>
   </model> -->
   
-  <!-- AIR CONTROL PANEL
+  <!-- AIR CONTROL PANEL 
   <model>
-    <path>Aircraft/Aermacchi-MB-339/Models/Interior/Panel/Right/Instruments/air/air.xml</path>
+    <path>Aircraft/Fiat-G-91R/Models/Interior/Panel/Right-Panel/Instruments/air/air.xml</path>
     <offsets>
       <x-m>  0.033 </x-m>
       <y-m> -0.020 </y-m>
@@ -55,9 +69,9 @@
     </offsets>
   </model> -->
   
-  <!-- LIGHT CONTROL PANEL
+  <!-- LIGHT CONTROL PANEL 
   <model>
-    <path>Aircraft/Aermacchi-MB-339/Models/Interior/Panel/Right/Instruments/light/light.xml</path>
+    <path>Aircraft/Fiat-G-91R/Models/Interior/Panel/Right-Panel/Instruments/light/light.xml</path>
     <offsets>
       <x-m>  0.089 </x-m>
       <y-m> -0.020 </y-m>
@@ -66,9 +80,9 @@
     </offsets>
   </model> -->
   
-  <!-- ANTI-ICE
+  <!-- ANTI-ICE 
   <model>
-    <path>Aircraft/Aermacchi-MB-339/Models/Interior/Panel/Right/Instruments/ice/ice.xml</path>
+    <path>Aircraft/Fiat-G-91R/Models/Interior/Panel/Right-Panel/Instruments/ice/ice.xml</path>
     <offsets>
       <x-m> -0.030 </x-m>
       <y-m>  0.048 </y-m>
