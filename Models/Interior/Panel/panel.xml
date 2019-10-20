@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- The main panel file for the Fiat-G-91R.ac 3D model              -->
+<!-- License: GNU GENERAL PUBLIC LICENSE Version 2, June 1991        -->
+<!-- Author:  Patrizio Melis https://github.com/cobe571/Fiat-G-91R   -->
+
+<PropertyList>
+
+  <path>panel.ac</path>
+
+  <animation>
+    <!-- Objects: Opaque List -->
+    <object-name>Dish.000</object-name>
+    <object-name>Dish.001</object-name>
+    <object-name>Dish.002</object-name>
+    <object-name>Dish.003</object-name>
+    <object-name>Dish.004</object-name>
+    <object-name>Panel-Base.000</object-name>
+    <object-name>Panel-Base.001</object-name>
+    <object-name>Panel-Base.002</object-name>
+    <object-name>Panel.000</object-name>
+    <object-name>Panel.001</object-name>
+    <object-name>Panel.002_Vert.002</object-name>
+    <object-name>Panel.003</object-name>
+    <object-name>Panel.004</object-name>
+    <!-- Objects: Transparent List -->
+  </animation>
+  
+  <animation>
+    <!-- Objects Linked To Texture -->
+    <type>material</type>
+    <object-name>Dish.000</object-name>
+    <object-name>Dish.001</object-name>
+    <object-name>Dish.002</object-name>
+    <object-name>Dish.003</object-name>
+    <object-name>Dish.004</object-name>
+    <object-name>Panel-Base.000</object-name>
+    <object-name>Panel-Base.001</object-name>
+    <object-name>Panel-Base.002</object-name>
+    <object-name>Panel.000</object-name>
+    <object-name>Panel.001</object-name>
+    <object-name>Panel.002_Vert.002</object-name>
+    <object-name>Panel.003</object-name>
+    <object-name>Panel.004</object-name>
+    <property-base>sim/model/livery</property-base>
+    <texture-prop>panel</texture-prop>
+    <texture>panel.png</texture>
+  </animation>
+  
+  <!-- ASI 
+  <model>
+    <path>Aircraft/Fiat-G-91R/Models/Interior/Panel/Instruments/asi/asi.xml</path>
+    <offsets>
+      <x-m> -0.001 </x-m>
+      <y-m> -0.107 </y-m>
+      <z-m>  0.018 </z-m>
+    </offsets>
+  </model> -->
+  
+  <!-- AI 
+  <model>
+    <path>Aircraft/Fiat-G-91R/Models/Interior/Panel/Instruments/ai/ai.xml</path>
+    <offsets>
+      <x-m> 0.000 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.002 </z-m>
+    </offsets>
+  </model> -->
+  
+  <!-- HSI
+  <model>
+    <path>Aircraft/Fiat-G-91R/Models/Interior/Panel/Instruments/hsi/hsi.xml</path>
+    <offsets>
+      <x-m>  0.002 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -0.117 </z-m>
+    </offsets>
+  </model> -->
+  
+  <!-- ALT 
+  <model>
+    <path>Aircraft/Fiat-G-91R/Models/Interior/Panel/Instruments/alt/alt.xml</path>
+    <offsets>
+      <x-m> 0.000 </x-m>
+      <y-m> 0.106 </y-m>
+      <z-m> 0.019 </z-m>
+    </offsets>
+  </model> -->
+  
+  <!-- ADI 
+  <model>
+    <path>Aircraft/Fiat-G-91R/Models/Interior/Panel/Instruments/adi/adi.xml</path>
+    <offsets>
+      <x-m> -0.018 </x-m>
+      <y-m> -0.096 </y-m>
+      <z-m> -0.053 </z-m>
+    </offsets>
+  </model> -->
+  
+  <!-- VSI 
+  <model>
+    <path>Aircraft/Fiat-G-91R/Models/Interior/Panel/Instruments/vsi/vsi.xml</path>
+    <offsets>
+      <x-m> -0.018 </x-m>
+      <y-m>  0.096 </y-m>
+      <z-m> -0.053 </z-m>
+    </offsets>
+  </model> -->
+  
+  <!-- AOA 
+  <model>
+    <path>Aircraft/Fiat-G-91R/Models/Interior/Panel/Instruments/aoa/aoa.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m> -0.189 </y-m>
+      <z-m>  0.029 </z-m>
+    </offsets>
+  </model> -->
+  
+  <!-- G-METER 
+  <model>
+    <path>Aircraft/Fiat-G-91R/Models/Interior/Panel/Instruments/gmeter/gmeter.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m> -0.189 </y-m>
+      <z-m> -0.033 </z-m>
+    </offsets>
+  </model> -->
+  
+  <!-- LOAD 
+  <model>
+    <path>Aircraft/Fiat-G-91R/Models/Interior/Panel/Instruments/load/load.xml</path>
+    <offsets>
+      <x-m> -0.006 </x-m>
+      <y-m> -0.219 </y-m>
+      <z-m> -0.118 </z-m>
+    </offsets>
+  </model>  -->
+  
+  <!-- SPOILER 
+  <model>
+    <path>Aircraft/Fiat-G-91R/Models/Interior/Panel/Instruments/spoiler/spoiler.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m> -0.268 </y-m>
+      <z-m> -0.049 </z-m>
+    </offsets>
+  </model> -->
+  
+  <!-- FLAPS 
+  <model>
+    <path>Aircraft/Fiat-G-91R/Models/Interior/Panel/Instruments/flaps/flaps.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m> -0.237 </y-m>
+      <z-m> -0.049 </z-m>
+    </offsets>
+  </model> -->
+  
+  <!-- CLOCK 
+  <model>
+    <path>Aircraft/Fiat-G-91R/Models/Interior/Panel/Instruments/clock/clock.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m> -0.253 </y-m>
+      <z-m> -0.005 </z-m>
+    </offsets>
+  </model> -->
+  
+  <!-- JETTISON 
+  <model>
+    <path>Aircraft/Fiat-G-91R/Models/Interior/Panel/Instruments/jettison/jettison.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m> -0.140 </y-m>
+      <z-m> -0.054 </z-m>
+    </offsets>
+  </model> -->
+  
+  <!-- CONTROLS 
+  <model>
+    <path>Aircraft/Fiat-G-91R/Models/Interior/Panel/Instruments/controls/controls.xml</path>
+    <offsets>
+      <x-m> -0.005 </x-m>
+      <y-m> -0.109 </y-m>
+      <z-m> -0.128 </z-m>
+    </offsets>
+  </model> -->
+  
+  <!-- TACHIMETER 
+  <model>
+    <path>Aircraft/Fiat-G-91R/Models/Interior/Panel/Instruments/tach/tach.xml</path>
+    <offsets>
+      <x-m> 0.000 </x-m>
+      <y-m> 0.181 </y-m>
+      <z-m> 0.027 </z-m>
+    </offsets>
+  </model> -->
+  
+  <!-- EGT 
+  <model>
+    <path>Aircraft/Fiat-G-91R/Models/Interior/Panel/Instruments/egt/egt.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.181 </y-m>
+      <z-m> -0.030 </z-m>
+    </offsets>
+  </model> -->
+  
+  <!-- FLOW 
+  <model>
+    <path>Aircraft/Fiat-G-91R/Models/Interior/Panel/Instruments/flow/flow.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.181 </y-m>
+      <z-m> -0.087 </z-m>
+    </offsets>
+  </model> -->
+  
+  <!-- OIL PRESSURE 
+  <model>
+    <path>Aircraft/Fiat-G-91R/Models/Interior/Panel/Instruments/oilpress/oilpress.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.181 </y-m>
+      <z-m> -0.143 </z-m>
+    </offsets>
+  </model> -->
+  
+  <!-- OXYGEN FLOW 
+  <model>
+    <path>Aircraft/Fiat-G-91R/Models/Interior/Panel/Instruments/oxygen/oxyflow.xml</path>
+    <offsets>
+      <x-m> -0.001 </x-m>
+      <y-m>  0.138 </y-m>
+      <z-m> -0.053 </z-m>
+    </offsets>
+  </model> -->
+  
+  <!-- OXYGEN PRESSURE 
+  <model>
+    <path>Aircraft/Fiat-G-91R/Models/Interior/Panel/Instruments/oxygen/oxypress.xml</path>
+    <offsets>
+      <x-m> 0.000 </x-m>
+      <y-m> 0.228 </y-m>
+      <z-m> 0.016 </z-m>
+    </offsets>
+  </model> -->
+  
+  <!-- CABIN PRESSURE 
+  <model>
+    <path>Aircraft/Fiat-G-91R/Models/Interior/Panel/Instruments/cabinpress/cabinpress.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.246 </y-m>
+      <z-m> -0.138 </z-m>
+    </offsets>
+  </model> -->
+  
+  <!-- TRIM 
+  <model>
+    <path>Aircraft/Fiat-G-91R/Models/Interior/Panel/Instruments/trim/trim.xml</path>
+    <offsets>
+      <x-m> -0.001 </x-m>
+      <y-m> -0.237 </y-m>
+      <z-m>  0.043 </z-m>
+    </offsets>
+  </model> -->
+  
+  <!-- DEICE 
+  <model>
+    <path>Aircraft/Fiat-G-91R/Models/Interior/Panel/Instruments/deice/deice.xml</path>
+    <offsets>
+      <x-m> -0.006 </x-m>
+      <y-m>  0.246 </y-m>
+      <z-m> -0.015 </z-m>
+    </offsets>
+  </model> -->
+  
+  <!-- FUEL 
+  <model>
+    <path>Aircraft/Fiat-G-91R/Models/Interior/Panel/Instruments/fuel/fuel.xml</path>
+    <offsets>
+      <x-m> -0.005 </x-m>
+      <y-m>  0.246 </y-m>
+      <z-m> -0.063 </z-m>
+    </offsets>
+  </model> -->
+  
+  <!-- UHF FREQUENCY INDICATOR 
+  <model>
+    <path>Aircraft/Fiat-G-91R/Models/Interior/Panel/Instruments/uhf/uhf.xml</path>
+    <offsets>
+      <x-m> -0.002 </x-m>
+      <y-m> -0.106 </y-m>
+      <z-m>  0.079 </z-m>
+    </offsets>
+  </model> -->
+  
+  <!-- RNAV INDICATOR 
+  <model>
+    <path>Aircraft/Fiat-G-91R/Models/Interior/Panel/Instruments/rnav/rnav.xml</path>
+    <offsets>
+      <x-m> -0.002 </x-m>
+      <y-m>  0.106 </y-m>
+      <z-m>  0.079 </z-m>
+    </offsets>
+  </model> -->
+  
+  <!-- SMOKES 
+  <model>
+    <name>SmokeControl</name>
+    <path>Aircraft/Fiat-G-91R/Models/Interior/Panel/Instruments/Smokes/smokes.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m> -0.077 </y-m>
+      <z-m>  0.117 </z-m>
+    </offsets>
+  </model> -->
+  
+  <animation>
+    <type>select</type>
+    <object-name>SmokeControl</object-name>
+    <condition>
+      <!-- /sim/model/hide-smoketanks -->
+      <property>sim/multiplay/generic/int[11]</property>
+    </condition>
+  </animation>
+  
+  <!-- HSI CONTROL 
+  <model>
+    <path>Aircraft/Fiat-G-91R/Models/Interior/Panel/Instruments/hsicontrol/hsicontrol.xml</path>
+    <offsets>
+      <x-m> -0.002 </x-m>
+      <y-m>  0.109 </y-m>
+      <z-m> -0.105 </z-m>
+    </offsets>
+  </model> -->
+  
+  <!-- BEACON CONTROL 
+  <model>
+    <path>Aircraft/Fiat-G-91R/Models/Interior/Panel/Instruments/beaconcontrol/beaconcontrol.xml</path>
+    <offsets>
+      <x-m> -0.002 </x-m>
+      <y-m>  0.109 </y-m>
+      <z-m> -0.146 </z-m>
+    </offsets>
+  </model> -->
+  
+</PropertyList>
