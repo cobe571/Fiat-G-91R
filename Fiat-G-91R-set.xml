@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- The wrapper file for the Fiat-G-91R model                   -->
-<!-- License:  GNU GENERAL PUBLIC LICENSE Version 2, June 1991   -->
-<!-- Author:   Patrizio Melis     https://github.com/cobe571     -->
-<!-- Author:   Joshua Davidson    https://github.com/Octal450    -->
+<!-- The wrapper file for the Fiat-G-91R model                       -->
+<!-- License:  GNU GENERAL PUBLIC LICENSE Version 2, June 1991       -->
+<!-- Author:  Patrizio Melis https://github.com/cobe571/Fiat-G-91R   -->
 
 <PropertyList include="Fiat-G-91R-common.xml">
   
@@ -17,7 +16,7 @@
       <tag>turbine</tag>
     </tags>
     
-    <author>Patrizio Melis (3D, FDM), Joshua Davidson (JSBsim Flight Dynamics, FDM, Systems)</author>
+    <author>Patrizio Melis (3D, FDM, JSBsim Flight Dynamics, Systems)</author>
     <status>alpha</status>
     <aircraft-version>2</aircraft-version>
     

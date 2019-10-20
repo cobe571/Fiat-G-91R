@@ -1,10 +1,8 @@
 *** Fiat G.91 History English/Italian ***
 
-<!-- The History file for the G-91R model                        -->
-<!-- License:  GNU GENERAL PUBLIC LICENSE Version 2, June 1991   -->
-<!-- Author:   Patrizio Melis     https://github.com/cobe571     -->
-<!-- Author:   Joshua Davidson    https://github.com/Octal450    -->
-
+<!-- The History file for the G-91R model                            -->
+<!-- License:  GNU GENERAL PUBLIC LICENSE Version 2, June 1991       -->
+<!-- Author:   Patrizio Melis https://github.com/cobe571/Fiat-G-91R  -->
 
 *** ENGLISH ***
 

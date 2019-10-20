@@ -4,11 +4,11 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:noNamespaceSchemaLocation="http://jsbsim.sourceforge.net/JSBSim.xsd">
   
-  <!-- Joshua Davidson (Octal450) Aeromatic. Integration data for aerodynamics with Datcom+ Pro version By Necolatis -->
+  <!-- Patrizio Melis (cobe571) Aeromatic. Integration data for aerodynamics with Datcom+ Pro version -->
 
   <fileheader>
-    <author> Aeromatic v 0.95, Joshua Davidson, Patrizio Melis </author>
-    <filecreationdate> 2019-09-17 </filecreationdate>
+    <author> Aeromatic v 0.95, Patrizio Melis </author>
+    <filecreationdate> 2019-09-19 </filecreationdate>
     <version> $Revision: 2.0 $ </version>
     <description> Fiat-G-91R </description>
   </fileheader>

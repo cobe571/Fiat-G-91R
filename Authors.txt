@@ -4,13 +4,5 @@
               MELIS Patrizio
          3D Model, FDM, Liveries
 
-       https://github.com/cobe571
-==========================================
-           ### Other Authors ###
-==========================================
-        Joshua Davidson (Octal450)
-   JSBsim Flight Dynamics, FDM, Systems 
-    
-      
-       https://github.com/Octal450
+   https://github.com/cobe571/Fiat-G-91R 
 ==========================================
