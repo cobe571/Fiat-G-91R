@@ -1,0 +1,1457 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- The main animation file for the Fiat-G-91R.ac 3D model          -->
+<!-- License: GNU GENERAL PUBLIC LICENSE Version 2, June 1991        -->
+<!-- Author:  Patrizio Melis https://github.com/cobe571/Fiat-G-91R   -->
+
+<PropertyList>
+
+  <path>Fiat-G-91R.ac</path>
+
+  <offsets> <!-- This properly set the 3D model for JSBsim as well for MP -->
+    <x-m>  0.00 </x-m>
+    <y-m>  0.00 </y-m>
+    <z-m> -1.12 </z-m>
+    <pitch-deg> 1.5 </pitch-deg>
+  </offsets>
+
+  <!--  MP Sound Call  -->
+  <sound>
+    <path>Aircraft/Fiat-G-91R/Sounds/mp-sound.xml</path>
+  </sound>
+
+  <nasal>
+    <load>
+      var livery_update = aircraft.livery_update.new("Aircraft/Fiat-G-91R/Models/Liveries", 10);
+	  var self = cmdarg();
+      var float_0 = self.getNode("sim/multiplay/generic/float[0]", 1);
+      var float_1 = self.getNode("sim/multiplay/generic/float[1]", 1);
+      var crew_door = self.getNode("instrumentation/doors/crew/position-norm", 1);
+      var passenger_door = self.getNode("instrumentation/doors/passenger/position-norm", 1);
+      crew_door.alias(float_0);
+      passenger_door.alias(float_1);
+      <!--print ("Load Fiat-G-91R"); -->
+    </load>
+    <unload>
+      livery_update.stop();
+	  crew_door.unalias();
+      passenger_door.unalias();
+    </unload>
+  </nasal>
+  
+  <!-- Fiat-G-91R Full Objects List -->
+  <animation>
+    <!-- Objects: Opaque List -->
+    <object-name>Aileron-L</object-name>
+    <object-name>Aileron-R</object-name>
+    <object-name>Air-Brakes-Adjustable-Rod.000</object-name>
+    <object-name>Air-Brakes-Adjustable-Rod.001</object-name>
+    <object-name>Air-Brakes-Control-Jack.000</object-name>
+    <object-name>Air-Brakes-Control-Jack.001</object-name>
+    <object-name>Air-Brakes-IN-L</object-name>
+    <object-name>Air-Brakes-IN-R</object-name>
+    <object-name>Air-Brakes-OUT-L</object-name>
+    <object-name>Air-Brakes-OUT-R</object-name>
+    <object-name>Air-Brakes-Torsion-Bar</object-name>
+    <object-name>Antennas</object-name>
+    <object-name>Base-Green-Lamp</object-name>
+    <object-name>Base-Red-Lamp</object-name>
+    <object-name>Base-Red-Lamp-Top</object-name>
+    <object-name>Base-White-Lamp</object-name>
+    <object-name>Bottom-Fin.000</object-name>
+    <object-name>Bottom-Fin.001</object-name>
+    <object-name>Camera-Mirror</object-name>
+    <object-name>Cameras</object-name>
+    <object-name>Canopy-Front</object-name>
+    <object-name>Canopy-Front-Garnish</object-name>
+    <object-name>Canopy-Gear-01</object-name>
+    <object-name>Canopy-Gear-02</object-name>
+    <object-name>Canopy-Gear-03</object-name>
+    <object-name>Canopy-Gear-04</object-name>
+    <object-name>Canopy-Gear-05</object-name>
+    <object-name>Canopy-Main.000</object-name>
+    <object-name>Canopy-Main.001</object-name>
+    <object-name>Canopy-Main.002</object-name>
+    <object-name>Cordite-BOX</object-name>
+    <object-name>Cordite-Bottom</object-name>
+    <object-name>Cordite-Panel-IN-L</object-name>
+    <object-name>Cordite-Panel-IN-R</object-name>
+    <object-name>Cordite-Panel-OUT-L</object-name>
+    <object-name>Cordite-Panel-OUT-R</object-name>
+    <object-name>Dividing-Panel.000</object-name>
+    <object-name>Dividing-Panel.001</object-name>
+    <object-name>Dividing-Panel.002</object-name>
+    <object-name>Dividing-Panel.003</object-name>
+    <object-name>Door-Drag-Chute</object-name>
+    <object-name>Door-GearF.IN-C</object-name>
+    <object-name>Door-GearF.IN-L</object-name>
+    <object-name>Door-GearF.IN-R</object-name>
+    <object-name>Door-GearF.OUT-C</object-name>
+    <object-name>Door-GearF.OUT-L</object-name>
+    <object-name>Door-GearF.OUT-R</object-name>
+    <object-name>Door-GearL-IN.001</object-name>
+    <object-name>Door-GearL-IN.002</object-name>
+    <object-name>Door-GearL-IN.003</object-name>
+    <object-name>Door-GearL-MID.001</object-name>
+    <object-name>Door-GearL-MID.002</object-name>
+    <object-name>Door-GearL-MID.003</object-name>
+    <object-name>Door-GearL-OUT.001</object-name>
+    <object-name>Door-GearL-OUT.002</object-name>
+    <object-name>Door-GearL-OUT.003</object-name>
+    <object-name>Door-GearR-IN.001</object-name>
+    <object-name>Door-GearR-IN.002</object-name>
+    <object-name>Door-GearR-IN.003</object-name>
+    <object-name>Door-GearR-MID.001</object-name>
+    <object-name>Door-GearR-MID.002</object-name>
+    <object-name>Door-GearR-MID.003</object-name>
+    <object-name>Door-GearR-OUT.001</object-name>
+    <object-name>Door-GearR-OUT.002</object-name>
+    <object-name>Door-GearR-OUT.003</object-name>
+    <object-name>Elevator-L</object-name>
+    <object-name>Elevator-R</object-name>
+    <object-name>Flap-L</object-name>
+    <object-name>Flap-R</object-name>
+    <object-name>Fuselage</object-name>
+    <object-name>Gear-BOX-AirBrakes </object-name>
+    <object-name>Gear-BOX-Front </object-name>
+    <object-name>Gear-BOX-Rear </object-name>
+    <object-name>Gear-BOX-Wings </object-name>
+    <object-name>Gear-F.000</object-name>
+    <object-name>Gear-F.001</object-name>
+    <object-name>Gear-F.002</object-name>
+    <object-name>Gear-F.003</object-name>
+    <object-name>Gear-F.004</object-name>
+    <object-name>Gear-F.005</object-name>
+    <object-name>Gear-F.006</object-name>
+    <object-name>Gear-F.007</object-name>
+    <object-name>Gear-F.008</object-name>
+    <object-name>Gear-F.009</object-name>
+    <object-name>Gear-F.010</object-name>
+    <object-name>Gear-F.011</object-name>
+    <object-name>Gear-F.012</object-name>
+    <object-name>Gear-F.013</object-name>
+    <object-name>Gear-F.014</object-name>
+    <object-name>Gear-F.015</object-name>
+    <object-name>Gear-F.016</object-name>
+    <object-name>Gear-F.017</object-name>
+    <object-name>Gear-F.018</object-name>
+    <object-name>Gear-F.019</object-name>
+    <object-name>Gear-F.020</object-name>
+    <object-name>Gear-LR.000</object-name>
+    <object-name>Gear-LR.001</object-name>
+    <object-name>Gear-LR.002</object-name>
+    <object-name>Gear-LR.003</object-name>
+    <object-name>Gear-LR.004</object-name>
+    <object-name>Gear-LR.005</object-name>
+    <object-name>Gear-LR.006</object-name>
+    <object-name>Gear-LR.007</object-name>
+    <object-name>Gear-LR.008</object-name>
+    <object-name>Gear-LR.009</object-name>
+    <object-name>Gear-LR.010</object-name>
+    <object-name>Gear-LR.011</object-name>
+    <object-name>Gear-LR.012</object-name>
+    <object-name>Gear-LR.013</object-name>
+    <object-name>Gear-LR.014</object-name>
+    <object-name>Gear-LR.015</object-name>
+    <object-name>Gear-LR.016</object-name>
+    <object-name>Gear-LR.017</object-name>
+    <object-name>Gear-LR.018</object-name>
+    <object-name>Gear-LR.019</object-name>
+    <object-name>Gear-LR.020</object-name>
+    <object-name>Gear-LR.021</object-name>
+    <object-name>Gear-RR.000</object-name>
+    <object-name>Gear-RR.001</object-name>
+    <object-name>Gear-RR.002</object-name>
+    <object-name>Gear-RR.003</object-name>
+    <object-name>Gear-RR.004</object-name>
+    <object-name>Gear-RR.005</object-name>
+    <object-name>Gear-RR.006</object-name>
+    <object-name>Gear-RR.007</object-name>
+    <object-name>Gear-RR.008</object-name>
+    <object-name>Gear-RR.009</object-name>
+    <object-name>Gear-RR.010</object-name>
+    <object-name>Gear-RR.011</object-name>
+    <object-name>Gear-RR.012</object-name>
+    <object-name>Gear-RR.013</object-name>
+    <object-name>Gear-RR.014</object-name>
+    <object-name>Gear-RR.015</object-name>
+    <object-name>Gear-RR.016</object-name>
+    <object-name>Gear-RR.017</object-name>
+    <object-name>Gear-RR.018</object-name>
+    <object-name>Gear-RR.019</object-name>
+    <object-name>Gear-RR.020</object-name>
+    <object-name>Gear-RR.021</object-name>
+    <object-name>Guns-Browning-M2</object-name>
+    <object-name>Guns-Panel-R.000</object-name>
+    <object-name>Guns-Panel-R.001</object-name>
+    <object-name>Horizontal-Stabilizer</object-name>
+    <object-name>Inlet-Adduction</object-name>
+    <object-name>Inlet-Fuselage-IN</object-name>
+    <object-name>Inlet-Fuselage-OUT</object-name>
+    <object-name>Light-Green</object-name>
+    <object-name>Light-Red</object-name>
+    <object-name>Light-Red-Top</object-name>
+    <object-name>Light-White-FL</object-name>
+    <object-name>Light-White-FR</object-name>
+    <object-name>Light-White-R</object-name>
+    <object-name>Mirror-Green-Lamp</object-name>
+    <object-name>Mirror-Lamp-Gear</object-name>
+    <object-name>Mirror-Red-Lamp</object-name>
+    <object-name>Mirror-Red-Lamp-Top</object-name>
+    <object-name>Mirror-White-Lamp</object-name>
+    <object-name>Nose-G-91R.000</object-name>
+    <object-name>Nose-G-91R.001</object-name>
+    <object-name>Nose-G-91R.002</object-name>
+    <object-name>Orpheus-Blades.000</object-name>
+    <object-name>Orpheus-Blades.001</object-name>
+    <object-name>Orpheus-Blades.002</object-name>
+    <object-name>Orpheus.001</object-name>
+    <object-name>Orpheus.002</object-name>
+    <object-name>Orpheus.003</object-name>
+    <object-name>Orpheus.004</object-name>
+    <object-name>Orpheus.005</object-name>
+    <object-name>Orpheus.006</object-name>
+    <object-name>Orpheus.007</object-name>
+    <object-name>Orpheus.008</object-name>
+    <object-name>Orpheus.009</object-name>
+    <object-name>Orpheus.010</object-name>
+    <object-name>Orpheus.011</object-name>
+    <object-name>Pilons.001</object-name>
+    <object-name>Pilons.002</object-name>
+    <object-name>Rudder </object-name>
+    <object-name>Rudder-BOX-Control </object-name>
+    <object-name>Rudder-Control.000 </object-name>
+    <object-name>Rudder-Control.001 </object-name>
+    <object-name>Rudder-Trim </object-name>
+    <object-name>Rudder-Trim-Control.000 </object-name>
+    <object-name>Rudder-Trim-Control.001 </object-name>
+    <object-name>Startup-Exaust</object-name>
+    <object-name>Support-Lamp-Gear</object-name>
+    <object-name>Turboalatori</object-name>
+    <object-name>Weapons-Box-IN.000</object-name>
+    <object-name>Weapons-Box-IN.001</object-name>
+    <object-name>Weapons-Door-IN-L</object-name>
+    <object-name>Weapons-Door-IN-R</object-name>
+    <object-name>Weapons-Door-MID-L</object-name>
+    <object-name>Weapons-Door-MID-R</object-name>
+    <object-name>Weapons-Door-OUT-L</object-name>
+    <object-name>Weapons-Door-OUT-R</object-name>
+    <object-name>Wheel-F</object-name>
+    <object-name>Wheel-L</object-name>
+    <object-name>Wheel-R</object-name>
+    <object-name>Wings</object-name>
+    <object-name>Wings-Fin</object-name>
+    <object-name>Wings-IN</object-name>
+    <object-name>Wings-Tank-Fin-L </object-name>
+    <object-name>Wings-Tank-Fin-R </object-name>
+    <object-name>Wings-Tank-L </object-name>
+    <object-name>Wings-Tank-R </object-name>
+    <!-- Objects: Transparent List -->
+    <object-name>Camera-Lenses</object-name>
+    <object-name>Glass-Camera</object-name>
+    <object-name>Glass-Canopy.000-OUT</object-name>
+    <object-name>Glass-Canopy.001-OUT</object-name>
+    <object-name>Glass-Canopy.002-OUT</object-name>
+    <object-name>Glass-Green-Lamp</object-name>
+    <object-name>Glass-Red-Lamp</object-name>
+    <object-name>Glass-Red-Lamp-Top</object-name>
+    <object-name>Glass-White-Lamp</object-name>
+    <object-name>GlassGear</object-name>
+  </animation>
+
+  <!-- Material Assignments -->
+  <animation>
+    <type>material</type>
+    <object-name>Aileron-L</object-name>
+    <object-name>Aileron-R</object-name>
+    <object-name>Air-Brakes-Adjustable-Rod.000</object-name>
+    <object-name>Air-Brakes-Adjustable-Rod.001</object-name>
+    <object-name>Air-Brakes-Control-Jack.000</object-name>
+    <object-name>Air-Brakes-Control-Jack.001</object-name>
+    <object-name>Air-Brakes-IN-L</object-name>
+    <object-name>Air-Brakes-IN-R</object-name>
+    <object-name>Air-Brakes-OUT-L</object-name>
+    <object-name>Air-Brakes-OUT-R</object-name>
+    <object-name>Air-Brakes-Torsion-Bar</object-name>
+    <object-name>Antennas</object-name>
+    <object-name>Base-Green-Lamp</object-name>
+    <object-name>Base-Red-Lamp</object-name>
+    <object-name>Base-Red-Lamp-Top</object-name>
+    <object-name>Base-White-Lamp</object-name>
+    <object-name>Bottom-Fin.000</object-name>
+    <object-name>Bottom-Fin.001</object-name>
+    <object-name>Cameras</object-name>
+    <object-name>Canopy-Front</object-name>
+    <object-name>Canopy-Gear-01</object-name>
+    <object-name>Canopy-Gear-02</object-name>
+    <object-name>Canopy-Gear-03</object-name>
+    <object-name>Canopy-Gear-04</object-name>
+    <object-name>Canopy-Gear-05</object-name>
+    <object-name>Canopy-Main.000</object-name>
+    <object-name>Canopy-Main.001</object-name>
+    <object-name>Cordite-BOX</object-name>
+    <object-name>Cordite-Bottom</object-name>
+    <object-name>Cordite-Panel-IN-L</object-name>
+    <object-name>Cordite-Panel-IN-R</object-name>
+    <object-name>Cordite-Panel-OUT-L</object-name>
+    <object-name>Cordite-Panel-OUT-R</object-name>
+    <object-name>Dividing-Panel.000</object-name>
+    <object-name>Dividing-Panel.001</object-name>
+    <object-name>Dividing-Panel.002</object-name>
+    <object-name>Dividing-Panel.003</object-name>
+    <object-name>Door-Drag-Chute</object-name>
+    <object-name>Door-GearF.IN-C</object-name>
+    <object-name>Door-GearF.IN-L</object-name>
+    <object-name>Door-GearF.IN-R</object-name>
+    <object-name>Door-GearF.OUT-C</object-name>
+    <object-name>Door-GearF.OUT-L</object-name>
+    <object-name>Door-GearF.OUT-R</object-name>
+    <object-name>Door-GearL-IN.001</object-name>
+    <object-name>Door-GearL-IN.002</object-name>
+    <object-name>Door-GearL-IN.003</object-name>
+    <object-name>Door-GearL-MID.001</object-name>
+    <object-name>Door-GearL-MID.002</object-name>
+    <object-name>Door-GearL-MID.003</object-name>
+    <object-name>Door-GearL-OUT.001</object-name>
+    <object-name>Door-GearL-OUT.002</object-name>
+    <object-name>Door-GearL-OUT.003</object-name>
+    <object-name>Door-GearR-IN.001</object-name>
+    <object-name>Door-GearR-IN.002</object-name>
+    <object-name>Door-GearR-IN.003</object-name>
+    <object-name>Door-GearR-MID.001</object-name>
+    <object-name>Door-GearR-MID.002</object-name>
+    <object-name>Door-GearR-MID.003</object-name>
+    <object-name>Door-GearR-OUT.001</object-name>
+    <object-name>Door-GearR-OUT.002</object-name>
+    <object-name>Door-GearR-OUT.003</object-name>
+    <object-name>Elevator-L</object-name>
+    <object-name>Elevator-R</object-name>
+    <object-name>Flap-L</object-name>
+    <object-name>Flap-R</object-name>
+    <object-name>Fuselage</object-name>
+    <object-name>Guns-Browning-M2</object-name>
+    <object-name>Guns-Panel-R.000</object-name>
+    <object-name>Guns-Panel-R.001</object-name>
+    <object-name>Horizontal-Stabilizer</object-name>
+    <object-name>Inlet-Adduction</object-name>
+    <object-name>Inlet-Fuselage-IN</object-name>
+    <object-name>Inlet-Fuselage-OUT</object-name>
+    <object-name>Light-Green</object-name>
+    <object-name>Light-Red</object-name>
+    <object-name>Light-Red-Top</object-name>
+    <object-name>Light-White-FL</object-name>
+    <object-name>Light-White-FR</object-name>
+    <object-name>Light-White-R</object-name>
+    <object-name>Mirror-Green-Lamp</object-name>
+    <object-name>Mirror-Lamp-Gear</object-name>
+    <object-name>Mirror-Red-Lamp</object-name>
+    <object-name>Mirror-Red-Lamp-Top</object-name>
+    <object-name>Mirror-White-Lamp</object-name>
+    <object-name>Nose-G-91R.000</object-name>
+    <object-name>Nose-G-91R.001</object-name>
+    <object-name>Nose-G-91R.002</object-name>
+    <object-name>Orpheus-Blades.000</object-name>
+    <object-name>Orpheus-Blades.001</object-name>
+    <object-name>Orpheus-Blades.002</object-name>
+    <object-name>Orpheus.001</object-name>
+    <object-name>Orpheus.002</object-name>
+    <object-name>Orpheus.003</object-name>
+    <object-name>Orpheus.004</object-name>
+    <object-name>Orpheus.005</object-name>
+    <object-name>Orpheus.006</object-name>
+    <object-name>Orpheus.007</object-name>
+    <object-name>Orpheus.008</object-name>
+    <object-name>Orpheus.009</object-name>
+    <object-name>Orpheus.010</object-name>
+    <object-name>Orpheus.011</object-name>
+    <object-name>Pilons.001</object-name>
+    <object-name>Pilons.002</object-name>
+    <object-name>Rudder</object-name>
+    <object-name>Rudder-BOX-Control </object-name>
+    <object-name>Rudder-Control.000 </object-name>
+    <object-name>Rudder-Control.001 </object-name>
+    <object-name>Rudder-Trim </object-name>
+    <object-name>Rudder-Trim-Control.000 </object-name>
+    <object-name>Rudder-Trim-Control.001 </object-name>
+    <object-name>Startup-Exaust</object-name>
+    <object-name>Support-Lamp-Gear</object-name>
+    <object-name>Turboalatori</object-name>
+    <object-name>Weapons-Box-IN.000</object-name>
+    <object-name>Weapons-Box-IN.001</object-name>
+    <object-name>Weapons-Door-IN-L</object-name>
+    <object-name>Weapons-Door-IN-R</object-name>
+    <object-name>Weapons-Door-MID-L</object-name>
+    <object-name>Weapons-Door-MID-R</object-name>
+    <object-name>Weapons-Door-OUT-L</object-name>
+    <object-name>Weapons-Door-OUT-R</object-name>
+    <object-name>Wings</object-name>
+    <object-name>Wings-Fin</object-name>
+    <object-name>Wings-IN</object-name>
+    <object-name>Wings-Tank-Fin-L </object-name>
+    <object-name>Wings-Tank-Fin-R </object-name>
+    <object-name>Wings-Tank-L </object-name>
+    <object-name>Wings-Tank-R </object-name>
+    <property-base>sim/model/livery</property-base>
+    <texture-prop>texture</texture-prop>
+    <texture>texture.png</texture>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>Camera-Mirror</object-name>
+    <object-name>Gear-BOX-AirBrakes </object-name>
+    <object-name>Gear-BOX-Front </object-name>
+    <object-name>Gear-BOX-Rear </object-name>
+    <object-name>Gear-BOX-Wings </object-name>
+    <object-name>Gear-F.000</object-name>
+    <object-name>Gear-F.001</object-name>
+    <object-name>Gear-F.002</object-name>
+    <object-name>Gear-F.003</object-name>
+    <object-name>Gear-F.004</object-name>
+    <object-name>Gear-F.005</object-name>
+    <object-name>Gear-F.006</object-name>
+    <object-name>Gear-F.007</object-name>
+    <object-name>Gear-F.008</object-name>
+    <object-name>Gear-F.009</object-name>
+    <object-name>Gear-F.010</object-name>
+    <object-name>Gear-F.011</object-name>
+    <object-name>Gear-F.012</object-name>
+    <object-name>Gear-F.013</object-name>
+    <object-name>Gear-F.014</object-name>
+    <object-name>Gear-F.015</object-name>
+    <object-name>Gear-F.016</object-name>
+    <object-name>Gear-F.017</object-name>
+    <object-name>Gear-F.018</object-name>
+    <object-name>Gear-F.019</object-name>
+    <object-name>Gear-F.020</object-name>
+    <object-name>Gear-LR.000</object-name>
+    <object-name>Gear-LR.001</object-name>
+    <object-name>Gear-LR.002</object-name>
+    <object-name>Gear-LR.003</object-name>
+    <object-name>Gear-LR.004</object-name>
+    <object-name>Gear-LR.005</object-name>
+    <object-name>Gear-LR.006</object-name>
+    <object-name>Gear-LR.007</object-name>
+    <object-name>Gear-LR.008</object-name>
+    <object-name>Gear-LR.009</object-name>
+    <object-name>Gear-LR.010</object-name>
+    <object-name>Gear-LR.011</object-name>
+    <object-name>Gear-LR.012</object-name>
+    <object-name>Gear-LR.013</object-name>
+    <object-name>Gear-LR.014</object-name>
+    <object-name>Gear-LR.015</object-name>
+    <object-name>Gear-LR.016</object-name>
+    <object-name>Gear-LR.017</object-name>
+    <object-name>Gear-LR.018</object-name>
+    <object-name>Gear-LR.019</object-name>
+    <object-name>Gear-LR.020</object-name>
+    <object-name>Gear-LR.021</object-name>
+    <object-name>Gear-RR.000</object-name>
+    <object-name>Gear-RR.001</object-name>
+    <object-name>Gear-RR.002</object-name>
+    <object-name>Gear-RR.003</object-name>
+    <object-name>Gear-RR.004</object-name>
+    <object-name>Gear-RR.005</object-name>
+    <object-name>Gear-RR.006</object-name>
+    <object-name>Gear-RR.007</object-name>
+    <object-name>Gear-RR.008</object-name>
+    <object-name>Gear-RR.009</object-name>
+    <object-name>Gear-RR.010</object-name>
+    <object-name>Gear-RR.011</object-name>
+    <object-name>Gear-RR.012</object-name>
+    <object-name>Gear-RR.013</object-name>
+    <object-name>Gear-RR.014</object-name>
+    <object-name>Gear-RR.015</object-name>
+    <object-name>Gear-RR.016</object-name>
+    <object-name>Gear-RR.017</object-name>
+    <object-name>Gear-RR.018</object-name>
+    <object-name>Gear-RR.019</object-name>
+    <object-name>Gear-RR.020</object-name>
+    <object-name>Gear-RR.021</object-name>
+    <object-name>Wheel-F</object-name>
+    <object-name>Wheel-L</object-name>
+    <object-name>Wheel-R</object-name>
+    <property-base>sim/model/livery</property-base>
+    <texture-prop>gear</texture-prop>
+    <texture>gear.png</texture>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>Camera-Lenses</object-name>
+    <object-name>Glass-Camera</object-name>
+    <object-name>Glass-Canopy.000-OUT</object-name>
+    <object-name>Glass-Canopy.001-OUT</object-name>
+    <object-name>Glass-Canopy.002-OUT</object-name>
+    <object-name>Glass-Green-Lamp</object-name>
+    <object-name>Glass-Red-Lamp</object-name>
+    <object-name>Glass-Red-Lamp-Top</object-name>
+    <object-name>Glass-White-Lamp</object-name>
+    <object-name>GlassGear</object-name>
+    <property-base>sim/model/livery</property-base>
+    <texture-prop>glass</texture-prop>
+    <texture>glass.png</texture>
+  </animation> 
+
+  <!-- Effects on materials -->
+  <effect>
+    <inherits-from>Aircraft/Generic/Effects/Fuselagereflect</inherits-from>
+    <object-name>Aileron-L</object-name>
+    <object-name>Aileron-R</object-name>
+    <object-name>Air-Brakes-Adjustable-Rod.000</object-name>
+    <object-name>Air-Brakes-Adjustable-Rod.001</object-name>
+    <object-name>Air-Brakes-Control-Jack.000</object-name>
+    <object-name>Air-Brakes-Control-Jack.001</object-name>
+    <object-name>Air-Brakes-IN-L</object-name>
+    <object-name>Air-Brakes-IN-R</object-name>
+    <object-name>Air-Brakes-OUT-L</object-name>
+    <object-name>Air-Brakes-OUT-R</object-name>
+    <object-name>Air-Brakes-Torsion-Bar</object-name>
+    <object-name>Antennas</object-name>
+    <object-name>Base-Green-Lamp</object-name>
+    <object-name>Base-Red-Lamp</object-name>
+    <object-name>Base-Red-Lamp-Top</object-name>
+    <object-name>Base-White-Lamp</object-name>
+    <object-name>Bottom-Fin.000</object-name>
+    <object-name>Bottom-Fin.001</object-name>
+    <object-name>Canopy-Front</object-name>
+    <object-name>Canopy-Gear-01</object-name>
+    <object-name>Canopy-Gear-02</object-name>
+    <object-name>Canopy-Gear-03</object-name>
+    <object-name>Canopy-Gear-04</object-name>
+    <object-name>Canopy-Gear-05</object-name>
+    <object-name>Canopy-Main.000</object-name>
+    <object-name>Canopy-Main.001</object-name>
+    <object-name>Cordite-Panel-OUT-L</object-name>
+    <object-name>Cordite-Panel-OUT-R</object-name>
+    <object-name>Door-Drag-Chute</object-name>
+    <object-name>Door-GearF.IN-C</object-name>
+    <object-name>Door-GearF.IN-L</object-name>
+    <object-name>Door-GearF.IN-R</object-name>
+    <object-name>Door-GearF.OUT-C</object-name>
+    <object-name>Door-GearF.OUT-L</object-name>
+    <object-name>Door-GearF.OUT-R</object-name>
+    <object-name>Door-GearL-IN.001</object-name>
+    <object-name>Door-GearL-IN.002</object-name>
+    <object-name>Door-GearL-IN.003</object-name>
+    <object-name>Door-GearL-MID.001</object-name>
+    <object-name>Door-GearL-MID.002</object-name>
+    <object-name>Door-GearL-MID.003</object-name>
+    <object-name>Door-GearL-OUT.001</object-name>
+    <object-name>Door-GearL-OUT.002</object-name>
+    <object-name>Door-GearL-OUT.003</object-name>
+    <object-name>Door-GearR-IN.001</object-name>
+    <object-name>Door-GearR-IN.002</object-name>
+    <object-name>Door-GearR-IN.003</object-name>
+    <object-name>Door-GearR-MID.001</object-name>
+    <object-name>Door-GearR-MID.002</object-name>
+    <object-name>Door-GearR-MID.003</object-name>
+    <object-name>Door-GearR-OUT.001</object-name>
+    <object-name>Door-GearR-OUT.002</object-name>
+    <object-name>Door-GearR-OUT.003</object-name>
+    <object-name>Elevator-L</object-name>
+    <object-name>Elevator-R</object-name>
+    <object-name>Flap-L</object-name>
+    <object-name>Flap-R</object-name>
+    <object-name>Fuselage</object-name>
+    <object-name>Guns-Panel-R.000</object-name>
+    <object-name>Guns-Panel-R.001</object-name>
+    <object-name>Horizontal-Stabilizer</object-name>
+    <object-name>Inlet-Adduction</object-name>
+    <object-name>Inlet-Fuselage-IN</object-name>
+    <object-name>Inlet-Fuselage-OUT</object-name>
+    <object-name>Light-Green</object-name>
+    <object-name>Light-Red</object-name>
+    <object-name>Light-Red-Top</object-name>
+    <object-name>Light-White-FL</object-name>
+    <object-name>Light-White-FR</object-name>
+    <object-name>Light-White-R</object-name>
+    <object-name>Mirror-Green-Lamp</object-name>
+    <object-name>Mirror-Lamp-Gear</object-name>
+    <object-name>Mirror-Red-Lamp</object-name>
+    <object-name>Mirror-Red-Lamp-Top</object-name>
+    <object-name>Mirror-White-Lamp</object-name>
+    <object-name>Nose-G-91R.000</object-name>
+    <object-name>Nose-G-91R.001</object-name>
+    <object-name>Nose-G-91R.002</object-name>
+    <object-name>Pilons.001</object-name>
+    <object-name>Pilons.002</object-name>
+    <object-name>Rudder</object-name>
+    <object-name>Rudder-BOX-Control </object-name>
+    <object-name>Rudder-Control.000 </object-name>
+    <object-name>Rudder-Control.001 </object-name>
+    <object-name>Rudder-Trim </object-name>
+    <object-name>Rudder-Trim-Control.000 </object-name>
+    <object-name>Rudder-Trim-Control.001 </object-name>
+    <object-name>Startup-Exaust</object-name>
+    <object-name>Support-Lamp-Gear</object-name>
+    <object-name>Turboalatori</object-name>
+    <object-name>Weapons-Box-IN.000</object-name>
+    <object-name>Weapons-Box-IN.001</object-name>
+    <object-name>Weapons-Door-IN-L</object-name>
+    <object-name>Weapons-Door-IN-R</object-name>
+    <object-name>Weapons-Door-MID-L</object-name>
+    <object-name>Weapons-Door-MID-R</object-name>
+    <object-name>Weapons-Door-OUT-L</object-name>
+    <object-name>Weapons-Door-OUT-R</object-name>
+    <object-name>Wings</object-name>
+    <object-name>Wings-Fin</object-name>
+    <object-name>Wings-IN</object-name>
+    <object-name>Wings-Tank-Fin-L </object-name>
+    <object-name>Wings-Tank-Fin-R </object-name>
+    <object-name>Wings-Tank-L </object-name>
+    <object-name>Wings-Tank-R </object-name>
+  </effect>
+
+  <effect>
+    <inherits-from>Aircraft/Fiat-G-91R/Models/Effects/Glass/glass</inherits-from>
+    <object-name>Camera-Lenses</object-name>
+    <object-name>Glass-Camera</object-name>
+    <object-name>Glass-Canopy.000-OUT</object-name>
+    <object-name>Glass-Canopy.001-OUT</object-name>
+    <object-name>Glass-Canopy.002-OUT</object-name>
+    <object-name>Glass-Green-Lamp</object-name>
+    <object-name>Glass-Red-Lamp</object-name>
+    <object-name>Glass-Red-Lamp-Top</object-name>
+    <object-name>Glass-White-Lamp</object-name>
+    <object-name>GlassGear</object-name>
+  </effect>
+  
+  <effect>
+    <inherits-from>Aircraft/Fiat-G-91R/Models/Effects/Glass/glass-chrome</inherits-from>
+    <object-name>Guns-Browning-M2</object-name>
+  </effect>
+  
+  <effect>
+    <inherits-from>Aircraft/Fiat-G-91R/Models/Effects/internal_Light_Map</inherits-from>
+    <object-name>Inlet-Adduction</object-name>
+  </effect>
+  
+  <!-- Interior -->
+  <model>
+    <path>Aircraft/Fiat-G-91R/Models/Interior/interior.xml</path>
+	<offsets>
+        <x-m>  0.000 </x-m>
+        <y-m>  0.000 </y-m>
+        <z-m>  0.000 </z-m>
+    </offsets>
+  </model>
+    
+  <!-- Air Surfaces Animation -->
+  <animation>
+    <object-name>Aileron-L</object-name>
+    <type>rotate</type>
+    <property>surface-positions/left-aileron-pos-norm</property>
+    <factor>-15</factor>
+    <offset-deg>0</offset-deg>
+    <axis>
+        <x1-m>  1.220 </x1-m>
+        <y1-m> -2.241 </y1-m>
+        <z1-m>  1.293 </z1-m>
+        <x2-m>  2.412 </x2-m>
+        <y2-m> -4.177 </y2-m>
+        <z2-m>  1.320 </z2-m>
+    </axis>
+  </animation>
+  
+  <animation>
+    <object-name>Aileron-R</object-name>
+    <type>rotate</type>
+    <property>surface-positions/right-aileron-pos-norm</property>
+    <factor>-15</factor>
+    <offset-deg>0</offset-deg>
+    <axis>
+        <x1-m>  1.220 </x1-m>
+        <y1-m>  2.241 </y1-m>
+        <z1-m>  1.293 </z1-m>
+        <x2-m>  2.412 </x2-m>
+        <y2-m>  4.177 </y2-m>
+        <z2-m>  1.320 </z2-m>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>Flap-L</object-name>
+    <property>surface-positions/flap-pos-norm</property>
+    <factor> 40 </factor>
+    <axis>
+        <x1-m>  1.2035 </x1-m>
+        <y1-m> -2.2079 </y1-m>
+        <z1-m>  1.2224 </z1-m>
+        <x2-m>  0.4491 </x2-m>
+        <y2-m> -0.7926 </y2-m>
+        <z2-m>  1.1814 </z2-m>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>translate</type>
+    <object-name>Flap-L</object-name>
+    <property>surface-positions/flap-pos-norm</property>
+    <factor>0.2</factor>
+    <offset-m>0.0</offset-m>
+    <axis>
+        <x>1</x>
+        <y>0</y>
+        <z>0.7</z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>Flap-R</object-name>
+    <property>surface-positions/flap-pos-norm</property>
+    <factor> -40 </factor>
+    <axis>
+        <x1-m>  1.2035 </x1-m>
+        <y1-m>  2.2079 </y1-m>
+        <z1-m>  1.2224 </z1-m>
+        <x2-m>  0.4491 </x2-m>
+        <y2-m>  0.7926 </y2-m>
+        <z2-m>  1.1814 </z2-m>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>translate</type>
+    <object-name>Flap-R</object-name>
+    <property>surface-positions/flap-pos-norm</property>
+    <factor>0.2</factor>
+    <offset-m>0.0</offset-m>
+    <axis>
+        <x>1</x>
+        <y>0</y>
+        <z>0.7</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>Elevator-L</object-name>
+    <property>surface-positions/elevator-pos-norm</property>
+    <factor>-15</factor>
+    <axis>
+        <x1-m>  3.9100 </x1-m>
+        <y1-m> -0.3580 </y1-m>
+        <z1-m>  1.9864 </z1-m>
+        <x2-m>  4.5669 </x2-m>
+        <y2-m> -1.5625 </y2-m>
+        <z2-m>  2.0296 </z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>Elevator-R</object-name>
+    <property>surface-positions/elevator-pos-norm</property>
+    <factor>15</factor>
+    <axis>
+        <x1-m>  3.9100 </x1-m>
+        <y1-m>  0.3580 </y1-m>
+        <z1-m>  1.9864 </z1-m>
+        <x2-m>  4.5669 </x2-m>
+        <y2-m>  1.5625 </y2-m>
+        <z2-m>  2.0296 </z2-m>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>Rudder</object-name>
+    <property>surface-positions/rudder-pos-norm</property>
+    <factor>15</factor>
+    <axis>
+        <x1-m> 4.1953 </x1-m>
+        <y1-m> 0.0000 </y1-m>
+        <z1-m> 2.4037 </z1-m>
+        <x2-m> 4.6849 </x2-m>
+        <y2-m> 0.0000 </y2-m>
+        <z2-m> 3.5626 </z2-m>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>Rudder-Trim</object-name>
+    <property>surface-positions/rudder-pos-norm</property>
+    <factor>15</factor>
+    <axis>
+        <x1-m> 4.2797 </x1-m>
+        <y1-m> 0.0000 </y1-m>
+        <z1-m> 2.5559 </z1-m>
+        <x2-m> 4.4981 </x2-m>
+        <y2-m> 0.0000 </y2-m>
+        <z2-m> 2.9598 </z2-m>
+    </axis>
+  </animation>
+  
+  <!-- Engine Elements Group -->
+  <animation>
+    <name>Coll-Orpheus-Blades-Glass</name>
+    <object-name>Orpheus-Blades.002</object-name>
+    <object-name>Orpheus.007</object-name>
+    <object-name>Orpheus.008</object-name>
+    <object-name>Orpheus.009</object-name>
+    <object-name>Orpheus.011</object-name>
+  </animation>
+  
+  <animation>
+    <name>Orpheus-Dark</name>
+    <object-name>Orpheus.000</object-name>
+    <object-name>Orpheus.001</object-name>
+    <object-name>Orpheus.002</object-name>
+    <object-name>Orpheus.003</object-name>
+    <object-name>Orpheus.004</object-name>
+    <object-name>Orpheus.005</object-name>
+    <object-name>Orpheus.006</object-name>
+    <object-name>Orpheus.010</object-name>
+    <object-name>Orpheus-Blades.000</object-name>
+    <object-name>Orpheus-Blades.001</object-name>
+  </animation>
+  
+  <!-- Start Engine - Smoke Effects -->
+  <model>
+    <path>Aircraft/Fiat-G-91R/Models/Effects/start_exhaust_eng_proxy.xml</path>
+    <offsets>
+        <x-m> 1.5 </x-m>
+        <y-m> 0.5 </y-m>
+        <z-m> 1.7 </z-m>
+      <heading-deg> 125 </heading-deg>
+      <roll-deg> 0 </roll-deg>
+      <pitch-deg> 0 </pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Fiat-G-91R/Models/Effects/start_exhaust_eng.xml</path>
+    <offsets>
+        <x-m> 1.5 </x-m>
+        <y-m> 1.5 </y-m>
+        <z-m> 1.7 </z-m>
+      <heading-deg> 125 </heading-deg>
+      <roll-deg> 0 </roll-deg>
+      <pitch-deg> 0 </pitch-deg>
+    </offsets>
+  </model>
+  
+  <!-- Engine Blades Rotation -->
+  <animation>
+    <object-name>Orpheus-Blades.000</object-name>
+    <type>spin</type>
+    <condition>
+      <or>
+        <property>/engines/engine[0]/running</property>
+	<greater-than>		
+	  <property>velocities/airspeed-kt</property>
+	  <value>200</value>
+	</greater-than>
+      </or>
+    </condition>
+    <property>engines/engine/n1</property>
+    <factor>25</factor>
+    <center>
+        <x-m> 0.00000 </x-m>
+        <y-m> 0.00000 </y-m>
+        <z-m> 1.55749 </z-m>
+    </center>
+    <axis>
+        <x>1</x>
+        <y>0</y>
+        <z>0</z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <object-name>Orpheus-Blades.001</object-name>
+    <type>spin</type>
+    <condition>
+      <or>
+        <property>/engines/engine[0]/running</property>
+	<greater-than>		
+	  <property>velocities/airspeed-kt</property>
+	  <value>200</value>
+	</greater-than>
+      </or>
+    </condition>
+    <property>engines/engine/n1</property>
+    <factor>25</factor>
+    <center>
+        <x-m> 0.00000 </x-m>
+        <y-m> 0.00000 </y-m>
+        <z-m> 1.55749 </z-m>
+    </center>
+    <axis>
+        <x>1</x>
+        <y>0</y>
+        <z>0</z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <object-name>Orpheus-Blades.002</object-name>
+    <type>spin</type>
+    <condition>
+      <or>
+        <property>/engines/engine[0]/running</property>
+	<greater-than>		
+	  <property>velocities/airspeed-kt</property>
+	  <value>200</value>
+	</greater-than>
+      </or>
+    </condition>
+    <property>engines/engine/n1</property>
+    <factor>-79</factor>
+    <center>
+        <x-m> 0.00 </x-m>
+        <y-m> 0.01 </y-m>
+        <z-m> 1.54 </z-m>
+    </center>
+    <axis>
+        <x>1</x>
+        <y>0</y>
+        <z>0</z>
+    </axis>
+  </animation>
+  
+  <!-- Engine Hot Exaust Effect -->
+  <animation>
+    <type>material</type> 
+    <object-name>Orpheus.007</object-name>
+    <condition>
+      <and>
+	<greater-than>		
+	  <property>/sim/time/sun-angle-rad</property>
+	  <value>1.6</value>
+	</greater-than>
+	<property>engines/engine/running</property>
+      </and>
+    </condition>
+    <emission>	
+        <red> 0.0007</red>	
+        <green> 0.0 </green>	
+        <blue> 0.0 </blue>
+      <factor-prop>engines/engine/n1</factor-prop>
+    </emission>
+    <texture>Light-White.png</texture>
+  </animation>
+  
+  <animation>
+    <type>material</type> 
+    <object-name>Orpheus.008</object-name>
+    <condition>		
+      <and>
+	<greater-than>		
+	  <property>/sim/time/sun-angle-rad</property>
+	  <value>1.6</value>
+	</greater-than>
+	<property>engines/engine/running</property>
+      </and>
+    </condition>
+    <emission>	
+        <red> 0.0005 </red>	
+        <green> 0.0001 </green>	
+        <blue> 0.0 </blue>
+      <factor-prop>engines/engine/n1</factor-prop>
+    </emission>
+    <texture>Light-White.png</texture>
+  </animation>
+  
+  <animation>
+    <type>material</type> 
+    <object-name>Orpheus.009</object-name>
+    <condition>		
+      <and>
+	<greater-than>		
+	  <property>/sim/time/sun-angle-rad</property>
+	  <value>1.6</value>
+	</greater-than>
+	<property>engines/engine/running</property>
+      </and>
+    </condition>
+    <emission>	
+        <red> 0.001 </red>	
+        <green> 0.0 </green>	
+        <blue> 0.0 </blue>
+      <factor-prop>engines/engine/n1</factor-prop>
+    </emission>
+    <texture>Light-White.png</texture>
+  </animation>
+  
+  <animation>
+    <type>material</type> 
+    <object-name>Orpheus.011</object-name>
+    <condition>		
+      <and>
+	<greater-than>		
+	  <property>/sim/time/sun-angle-rad</property>
+	  <value>1.6</value>
+	</greater-than>
+	<property>engines/engine/running</property>
+      </and>
+    </condition>
+    <emission>	
+        <red> 0.0008 </red>	
+        <green> 0.00015 </green>	
+        <blue> 0.0 </blue>
+      <factor-prop>engines/engine/n1</factor-prop>
+    </emission>
+    <texture>Light-White.png</texture>
+  </animation>
+  
+  <animation>
+    <type>material</type> 
+    <object-name>Orpheus-Blades.002</object-name>
+    <condition>		
+      <and>
+	<greater-than>		
+	  <property>/sim/time/sun-angle-rad</property>
+	  <value>1.6</value>
+	</greater-than>
+	<property>engines/engine/running</property>
+      </and>
+    </condition>
+    <emission>	
+        <red> 0.001 </red>	
+        <green> 0.0 </green>	
+        <blue> 0.003 </blue>
+      <factor-prop>engines/engine/n1</factor-prop>
+    </emission>
+    <texture>Light-White.png</texture>
+  </animation>
+  
+  <animation>
+    <object-name>Coll-Orpheus-Blades-Glass</object-name>
+    <type>select</type>
+    <condition>
+      <and>
+	<greater-than>		
+	  <property>/sim/time/sun-angle-rad</property>
+	  <value>1.7</value>
+	</greater-than>
+	<property>engines/engine/running</property>
+      </and>
+    </condition>
+  </animation>
+    
+  <!--  Landing Gear Animations -->
+  <animation>
+    <object-name>Gear-F.000</object-name>
+    <object-name>Gear-F.001</object-name>
+    <object-name>Gear-F.002</object-name>
+    <object-name>Gear-F.003</object-name>
+    <object-name>Gear-F.004</object-name>
+    <object-name>Gear-F.005</object-name>
+    <object-name>Gear-F.006</object-name>
+    <object-name>Gear-F.007</object-name>
+    <object-name>Gear-F.008</object-name>
+    <object-name>Gear-F.009</object-name>
+    <object-name>Gear-F.010</object-name>
+    <object-name>Gear-F.011</object-name>
+    <object-name>Gear-F.012</object-name>
+    <object-name>Gear-F.013</object-name>
+    <object-name>Gear-F.014</object-name>
+    <object-name>Gear-F.015</object-name>
+    <object-name>Gear-F.016</object-name>
+    <object-name>Gear-F.017</object-name>
+    <object-name>Gear-F.018</object-name>
+    <object-name>Gear-F.019</object-name>
+    <object-name>Gear-F.020</object-name>
+    <object-name>Gear-LR.000</object-name>
+    <object-name>Gear-LR.001</object-name>
+    <object-name>Gear-LR.002</object-name>
+    <object-name>Gear-LR.003</object-name>
+    <object-name>Gear-LR.004</object-name>
+    <object-name>Gear-LR.005</object-name>
+    <object-name>Gear-LR.006</object-name>
+    <object-name>Gear-LR.007</object-name>
+    <object-name>Gear-LR.008</object-name>
+    <object-name>Gear-LR.009</object-name>
+    <object-name>Gear-LR.010</object-name>
+    <object-name>Gear-LR.011</object-name>
+    <object-name>Gear-LR.012</object-name>
+    <object-name>Gear-LR.013</object-name>
+    <object-name>Gear-LR.014</object-name>
+    <object-name>Gear-LR.015</object-name>
+    <object-name>Gear-LR.016</object-name>
+    <object-name>Gear-LR.017</object-name>
+    <object-name>Gear-LR.018</object-name>
+    <object-name>Gear-LR.019</object-name>
+    <object-name>Gear-LR.020</object-name>
+    <object-name>Gear-LR.021</object-name>
+    <object-name>Gear-RR.000</object-name>
+    <object-name>Gear-RR.001</object-name>
+    <object-name>Gear-RR.002</object-name>
+    <object-name>Gear-RR.003</object-name>
+    <object-name>Gear-RR.004</object-name>
+    <object-name>Gear-RR.005</object-name>
+    <object-name>Gear-RR.006</object-name>
+    <object-name>Gear-RR.007</object-name>
+    <object-name>Gear-RR.008</object-name>
+    <object-name>Gear-RR.009</object-name>
+    <object-name>Gear-RR.010</object-name>
+    <object-name>Gear-RR.011</object-name>
+    <object-name>Gear-RR.012</object-name>
+    <object-name>Gear-RR.013</object-name>
+    <object-name>Gear-RR.014</object-name>
+    <object-name>Gear-RR.015</object-name>
+    <object-name>Gear-RR.016</object-name>
+    <object-name>Gear-RR.017</object-name>
+    <object-name>Gear-RR.018</object-name>
+    <object-name>Gear-RR.019</object-name>
+    <object-name>Gear-RR.020</object-name>
+    <object-name>Gear-RR.021</object-name>
+    <object-name>Wheel-F</object-name>
+    <object-name>Wheel-L</object-name>
+    <object-name>Wheel-R</object-name>
+    <type>select</type>
+    <condition>
+      <greater-than>
+	<property>gear/gear/position-norm</property>
+	<value>0.5</value>
+      </greater-than>
+    </condition>
+  </animation>
+  
+  <!-- Front Wheel Rotation -->
+  <animation>
+    <name>Front-Wheel</name>
+    <object-name>Gear-F.002</object-name>
+    <object-name>Gear-F.003</object-name>
+    <object-name>Gear-F.004</object-name>
+    <object-name>Gear-F.005</object-name>
+    <object-name>Gear-F.006</object-name>
+    <object-name>Gear-F.007</object-name>
+    <object-name>Gear-F.008</object-name>
+    <object-name>Gear-F.009</object-name>
+    <object-name>Gear-F.010</object-name>
+    <object-name>Gear-F.011</object-name>
+    <object-name>Gear-F.012</object-name>
+    <object-name>Gear-F.013</object-name>
+    <object-name>Gear-F.014</object-name>
+    <object-name>Gear-F.015</object-name>
+    <object-name>Gear-F.016</object-name>
+    <object-name>Gear-F.019</object-name>
+    <object-name>Gear-F.020</object-name>
+    <object-name>Wheel-F</object-name>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>Front-Wheel</object-name>
+    <property>surface-positions/rudder-pos-norm</property>
+    <factor> -15 </factor>
+    <axis>
+      <x1-m> -2.93134 </x1-m>
+      <y1-m>  0.00000 </y1-m>
+      <z1-m>  0.38618 </z1-m>
+      <x2-m> -2.93134 </x2-m>
+      <y2-m>  0.00000 </y2-m>
+      <z2-m>  0.73239 </z2-m>
+    </axis>
+  </animation>
+  
+  <!-- Wheels Rotation -->
+  <animation>
+    <type>spin</type>
+    <object-name>Wheel-F</object-name>
+    <property>gear/gear[0]/rollspeed-ms</property>
+    <factor> 30 </factor>
+    <center>
+      <x-m> -2.81765 </x-m>
+      <y-m>  0.00000 </y-m>
+      <z-m>  0.14180 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>spin</type>
+    <object-name>Wheel-L</object-name>
+    <property>/gear/gear[0]/rollspeed-ms</property>
+    <factor> 30 </factor>
+    <center>
+      <x-m>  0.23463 </x-m>
+      <y-m> -1.12134 </y-m>
+      <z-m>  0.31387 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>spin</type>
+    <object-name>Wheel-R</object-name>
+    <property>/gear/gear[1]/rollspeed-ms</property>
+    <factor> 30 </factor>
+    <center>
+      <x-m>  0.23463 </x-m>
+      <y-m>  1.12134 </y-m>
+      <z-m>  0.31387 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+  
+  <!--  Cranking effects  -->
+  <model>
+    <path>Aircraft/Fiat-G-91R/Models/Effects/Cranking/cranking.xml</path>
+  </model>
+  
+  <!--  Ground Effects  -->
+  <!--  Left Wheel  -->
+  <model>
+    <path>Aircraft/Fiat-G-91R/Models/Effects/Ground/ground0.xml</path>
+    <offsets>
+      <x-m>  0.23463 </x-m>
+      <y-m> -0.89021 </y-m>
+      <z-m>  0.04418 </z-m>
+    </offsets>
+  </model>
+  
+  <!--  Right Wheel  -->
+  <model>
+    <path>Aircraft/Fiat-G-91R/Models/Effects/Ground/ground1.xml</path>
+    <offsets>
+      <x-m>  0.23463 </x-m>
+      <y-m>  0.89021 </y-m>
+      <z-m>  0.04418 </z-m>
+    </offsets>
+  </model>
+  
+  <!--  Front Wheel  -->
+  <model>
+    <path>Aircraft/Fiat-G-91R/Models/Effects/Ground/ground2.xml</path>
+    <offsets>
+      <x-m> -2.73341 </x-m>
+      <y-m>  0.00000 </y-m>
+      <z-m>  0.01374 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- Light Effects -->
+  <animation>
+    <type>material</type>
+    <object-name>Glass-Red-Lamp</object-name>
+    <object-name>Light-Red</object-name>
+    <condition>		
+      <greater-than>		
+	<property>/sim/time/sun-angle-rad</property>
+	<value>1.4</value>
+      </greater-than>
+    </condition>
+    <emission>	
+        <red>1</red>	
+        <green>0</green>	
+        <blue>0</blue>
+    </emission>
+    <texture>Lights/Light-White.png</texture>
+  </animation>
+  
+  <animation>
+    <type>material</type> 
+    <object-name>Glass-Red-Lamp</object-name>
+    <object-name>Light-Red</object-name>
+    <condition>		
+      <less-than-equals>		
+	<property>/sim/time/sun-angle-rad</property>
+	<value>1.4</value>
+      </less-than-equals>
+    </condition>
+    <emission>	
+        <red>0.3</red>	
+        <green>0</green>	
+        <blue>0</blue>
+    </emission>
+    <texture>Lights/Light-White.png</texture>
+  </animation>
+  
+  <animation>
+    <type>material</type>
+    <object-name>Glass-Green-Lamp</object-name>
+    <object-name>Light-Green</object-name>
+    <condition>		
+      <greater-than>		
+	<property>/sim/time/sun-angle-rad</property>
+	<value>1.4</value>
+      </greater-than>
+    </condition>
+    <emission>	
+        <red>0</red>	
+        <green>1</green>	
+        <blue>0</blue>
+    </emission>
+    <texture>Lights/Light-White.png</texture>
+  </animation>
+  
+  <animation>
+    <type>material</type> 
+    <object-name>Glass-Green-Lamp</object-name>
+    <object-name>Light-Green</object-name>
+    <condition>		
+      <less-than-equals>		
+	<property>/sim/time/sun-angle-rad</property>
+	<value>1.4</value>
+      </less-than-equals>
+    </condition>
+    <emission>	
+        <red>0</red>	
+        <green>0.3</green>	
+        <blue>0</blue>
+    </emission>
+    <texture>Lights/Light-White.png</texture>
+  </animation>
+  
+  <animation>
+    <type>material</type>
+    <object-name>Glass-White-Lamp</object-name>
+    <object-name>Light-White</object-name>
+    <condition>		
+      <greater-than>		
+	<property>/sim/time/sun-angle-rad</property>
+	<value>1.4</value>
+      </greater-than>
+    </condition>
+    <emission>	
+        <red>1</red>	
+        <green>1</green>	
+        <blue>1</blue>
+    </emission>
+    <texture>Lights/Light-White.png</texture>
+  </animation>
+  
+  <animation>
+    <type>material</type> 
+    <object-name>Glass-White-Lamp</object-name>
+    <object-name>Light-White</object-name>
+    <condition>		
+      <less-than-equals>		
+	<property>/sim/time/sun-angle-rad</property>
+	<value>1.4</value>
+      </less-than-equals>
+    </condition>
+    <emission>	
+        <red>0.3</red>	
+        <green>0.3</green>	
+        <blue>0.3</blue>
+    </emission>
+    <texture>Lights/Light-White.png</texture>
+  </animation>
+  
+  <animation>
+    <type>material</type>
+    <object-name>Glass-Red-Lamp-Top</object-name>
+    <object-name>Light-Red-Top</object-name>
+    <condition>		
+      <greater-than>		
+	<property>/sim/time/sun-angle-rad</property>
+	<value>1.4</value>
+      </greater-than>
+    </condition>
+    <emission>	
+        <red>1</red>	
+        <green>0</green>	
+        <blue>0</blue>
+    </emission>
+    <texture>Lights/Light-White.png</texture>
+  </animation>
+  
+  <animation>
+    <type>material</type> 
+    <object-name>Glass-Red-Lamp-Top</object-name>
+    <object-name>Light-Red-Top</object-name>
+    <condition>		
+      <less-than-equals>		
+	<property>/sim/time/sun-angle-rad</property>
+	<value>1.4</value>
+      </less-than-equals>
+    </condition>
+    <emission>	
+        <red>0.3</red>	
+        <green>0</green>	
+        <blue>0</blue>
+    </emission>
+    <texture>Lights/Light-White.png</texture>
+  </animation>
+  
+  <animation>
+    <type>material</type>
+    <object-name>Sphere.003</object-name>
+    <object-name>Sphere.004</object-name>
+    <object-name>Sphere.006</object-name>
+    <object-name>Sphere.007</object-name>
+    <condition>		
+      <greater-than>		
+	<property>/sim/time/sun-angle-rad</property>
+	<value>1.4</value>
+      </greater-than>
+    </condition>
+    <emission>	
+        <red>1</red>	
+        <green>1</green>	
+        <blue>1</blue>
+    </emission>
+    <texture>Lights/Light-White.png</texture>
+  </animation>
+  
+  <animation>
+    <type>material</type> 
+    <object-name>Sphere.003</object-name>
+    <object-name>Sphere.004</object-name>
+    <object-name>Sphere.006</object-name>
+    <object-name>Sphere.007</object-name>
+    <condition>		
+      <less-than-equals>		
+	<property>/sim/time/sun-angle-rad</property>
+	<value>1.4</value>
+      </less-than-equals>
+    </condition>
+    <emission>	
+        <red>0.5</red>	
+        <green>0.5</green>	
+        <blue>0.5</blue>
+    </emission>
+    <texture>Lights/Light-White.png</texture>
+  </animation>
+  
+  <!-- Strobe lights -->
+  <animation>
+    <type>select</type>
+    <object-name>Light-Red-top</object-name>
+    <condition>
+      <property>/sim/model/lights/strobe/state</property>
+    </condition>
+  </animation>
+  
+  <!-- Landing Lights -->
+  <model>
+    <path>Aircraft/Fiat-G-91R/Models/Lights/light-cone.xml</path>
+    <offsets>
+        <x-m> -1.57755 </x-m>
+        <y-m> -0.10410 </y-m>
+        <z-m>  0.70058 </z-m>
+      <pitch-deg> -7.5 </pitch-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Fiat-G-91R/Models/Lights/light-cone.xml</path>
+    <offsets>
+        <x-m> -1.57755 </x-m>
+        <y-m>  0.10410 </y-m>
+        <z-m>  0.70058 </z-m>
+      <pitch-deg> -7.5 </pitch-deg>
+    </offsets>
+  </model>
+  
+</PropertyList>
