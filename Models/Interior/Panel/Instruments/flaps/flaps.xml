@@ -6,16 +6,15 @@
   
   <animation>
     <object-name>fond</object-name>
-    <object-name>visses</object-name>
     <object-name>face</object-name>
     <object-name>needle</object-name>
     
     <object-name>vitre</object-name>
   </animation>
   
-  <!-- Rembrandt -->
+  <!-- working for Rembrandt -->
   <effect>
-    <inherits-from>Aircraft/Fiat-G91R4/Models/Effects/Glass/glass</inherits-from>
+    <inherits-from>Aircraft/Aermacchi-MB-339/Models/Effects/Glass/glass</inherits-from>
     <object-name>vitre</object-name>
   </effect>
   
@@ -35,12 +34,7 @@
     <type>rotate</type>
     <object-name>needle</object-name>
     <property>surface-positions/flap-pos-norm</property>
-    <factor> -93 </factor>
-    <center>
-      <x-m>  0.00000 </x-m>
-      <y-m> -0.00357 </y-m>
-      <z-m>  0.00000 </z-m>
-    </center>
+    <factor>-90</factor>
     <axis>
       <x> 1 </x>
       <y> 0 </y>

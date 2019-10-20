@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="ISO-8859-1"?> 
+
+<PropertyList>
+
+  <path>load.ac</path>
+
+  <animation>
+    <object-name>fond</object-name>
+    <object-name>info</object-name>
+    <object-name>but0</object-name>
+    <object-name>but1</object-name>
+    <object-name>but2</object-name>
+    <object-name>but3</object-name>
+    <object-name>but4</object-name>
+    <object-name>base</object-name>
+    <object-name>lamp0</object-name>
+    <object-name>lamp1</object-name>
+    <object-name>lamp2</object-name>
+    <object-name>lamp3</object-name>
+    <object-name>lamp4</object-name>
+    <object-name>lamp5</object-name>
+    <object-name>name0</object-name>
+    <object-name>name1</object-name>
+    <object-name>name2</object-name>
+    <object-name>name3</object-name>
+    <object-name>name4</object-name>
+    <object-name>name5</object-name>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>info</object-name>
+    <emission>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
+    </emission>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>lamp0</object-name>
+    <object-name>lamp1</object-name>
+    <object-name>lamp4</object-name>
+    <object-name>lamp5</object-name>
+    <emission>
+      <red>   0.0 </red>
+      <green> 0.1 </green>
+      <blue>  0.0 </blue>
+    </emission>
+  </animation>
+  
+  <animation>
+    <type>material</type>
+    <object-name>lamp2</object-name>
+    <object-name>lamp3</object-name>
+    <emission>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+      <red>   0 </red>
+      <green> 2 </green>
+      <blue>  0 </blue>
+    </emission>
+  </animation>
+  
+</PropertyList>

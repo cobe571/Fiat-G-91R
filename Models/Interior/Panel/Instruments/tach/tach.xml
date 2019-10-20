@@ -13,9 +13,9 @@
     <object-name>vitre</object-name>
   </animation>
 
-  <!-- Rembrandt -->
+  <!-- working for Rembrandt -->
   <effect>
-    <inherits-from>Aircraft/Fiat-G91R4/Models/Effects/Glass/glass</inherits-from>
+    <inherits-from>Aircraft/Aermacchi-MB-339/Models/Effects/Glass/glass</inherits-from>
     <object-name>vitre</object-name>
   </effect>
   
@@ -51,13 +51,13 @@
     <factor> 36 </factor>
     <center>
       <x-m>  0.00000 </x-m>
-      <y-m> -0.00714 </y-m>
-      <z-m>  0.01017 </z-m>
+      <y-m> -0.00793 </y-m>
+      <z-m>  0.01130 </z-m>
     </center>
     <axis>
-      <x> -1 </x>
-      <y>  0 </y>
-      <z>  0 </z>
+      <x>-1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
     </axis>
   </animation>
   

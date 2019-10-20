@@ -7,22 +7,35 @@
   <animation>
     <object-name>fond</object-name>
     <object-name>visses</object-name>
+    <object-name>selector</object-name>
     <object-name>face</object-name>
-    <object-name>needle</object-name>
+    <object-name>needle1</object-name>
+    <object-name>needle2</object-name>
+    <object-name>needle3</object-name>
+    <object-name>U-F</object-name>
+    <object-name>DU-F</object-name>
+    <object-name>CU-F</object-name>
+    <object-name>MU-F</object-name>
     
     <object-name>vitre</object-name>
   </animation>
   
-  <!-- Rembrandt -->
+  <!-- working for Rembrandt -->
   <effect>
-    <inherits-from>Aircraft/Fiat-G91R4/Models/Effects/Glass/glass</inherits-from>
+    <inherits-from>Aircraft/Aermacchi-MB-339/Models/Effects/Glass/glass</inherits-from>
     <object-name>vitre</object-name>
   </effect>
   
   <animation>
     <type>material</type>
     <object-name>face</object-name>
-    <object-name>needle</object-name>
+    <object-name>needle1</object-name>
+    <object-name>needle2</object-name>
+    <object-name>needle3</object-name>
+    <object-name>U-F</object-name>
+    <object-name>DU-F</object-name>
+    <object-name>CU-F</object-name>
+    <object-name>MU-F</object-name>
     <emission>
       <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
       <red>   0.50 </red>
@@ -32,10 +45,185 @@
   </animation>    
   
   <animation>
+    <type>select</type>
+    <object-name>needle1</object-name>
+    <condition>
+      <equals>
+        <property>consumables/fuel/tank-sel</property>
+        <value>0</value>
+      </equals>
+    </condition>
+  </animation>
+  
+  <animation>
+    <type>select</type>
+    <object-name>needle2</object-name>
+    <condition>
+      <equals>
+        <property>consumables/fuel/tank-sel</property>
+        <value>1</value>
+      </equals>
+    </condition>
+  </animation>
+  
+  <animation>
+    <type>select</type>
+    <object-name>needle3</object-name>
+    <condition>
+      <equals>
+        <property>consumables/fuel/tank-sel</property>
+        <value>2</value>
+      </equals>
+    </condition>
+  </animation>
+  
+  <animation>
     <type>rotate</type>
-    <object-name>needle</object-name>
-    <property>consumables/fuel/total-fuel-norm</property>
-    <factor> 255 </factor>
+    <object-name>needle1</object-name>
+    <property>consumables/fuel/tank[0]/level-kg</property>
+    <interpolation>
+      <entry><ind>    0 </ind><dep>   0 </dep></entry>
+      <entry><ind> 1200 </ind><dep> 360 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>needle2</object-name>
+    <property>consumables/fuel/tank[1]/level-kg</property>
+    <interpolation>
+      <entry><ind>    0 </ind><dep>   0 </dep></entry>
+      <entry><ind> 1200 </ind><dep> 360 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>needle3</object-name>
+    <property>consumables/fuel/tank[2]/level-kg</property>
+    <interpolation>
+      <entry><ind>    0 </ind><dep>   0 </dep></entry>
+      <entry><ind> 1200 </ind><dep> 360 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>textranslate</type>
+    <object-name>U-F</object-name>
+    <property>consumables/fuel/total-fuel-kg</property>
+    <factor> 0.1 </factor>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>textranslate</type>
+    <object-name>DU-F</object-name>
+    <property>consumables/fuel/total-fuel-kg</property>
+    <factor> 0.01 </factor>
+    <step>  10 </step>
+    <scroll> 1 </scroll>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>textranslate</type>
+    <object-name>CU-F</object-name>
+    <property>consumables/fuel/total-fuel-kg</property>
+    <factor> 0.001 </factor>
+    <step> 100 </step>
+    <scroll> 1 </scroll>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>textranslate</type>
+    <object-name>MU-F</object-name>
+    <property>consumables/fuel/total-fuel-kg</property>
+    <factor>  0.0001 </factor>
+    <step> 1000 </step>
+    <scroll>  1 </scroll>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>pick</type>
+    <object-name>selector</object-name>
+    <visible>true</visible>
+    <action>
+      <button>3</button>
+      <binding>
+        <command>property-adjust</command>
+        <property>consumables/fuel/tank-sel</property>
+        <step> 1 </step>
+        <min>  0 </min>
+        <max>  2 </max>
+        <wrap>false</wrap>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
+    <type>pick</type>
+    <object-name>selector</object-name>
+    <visible>true</visible>
+    <action>
+      <button>4</button>
+      <binding>
+        <command>property-adjust</command>
+        <property>consumables/fuel/tank-sel</property>
+        <step> -1 </step>
+        <min>  0 </min>
+        <max>  2 </max>
+        <wrap>false</wrap>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>selector</object-name>
+    <property>consumables/fuel/tank-sel</property>
+    <interpolation>
+      <entry><ind> 0 </ind><dep>   0 </dep></entry>
+      <entry><ind> 1 </ind><dep>  60 </dep></entry>
+      <entry><ind> 2 </ind><dep> 120 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m>  0.010 </x-m>
+      <y-m>  0.012 </y-m>
+      <z-m> -0.034 </z-m>
+    </center>
     <axis>
       <x> -1 </x>
       <y>  0 </y>

@@ -1,7 +1,9 @@
 ﻿<?xml version="1.0" encoding="ISO-8859-1"?>
 
-<!-- Based on HCI Lab - University of Udin work -->
+<!-- Based on HCI Lab - University of Udin work
 
+     Updated BARANGER Emmanuel June 2015
+-->
 <PropertyList>
   
   <path>asi.ac</path>
@@ -17,9 +19,9 @@
     <object-name>vitre</object-name>
   </animation>
 
-  <!-- Rembrandt -->
+  <!-- working for Rembrandt -->
   <effect>
-    <inherits-from>Aircraft/Fiat-G91R4/Models/Effects/Glass/glass</inherits-from>
+    <inherits-from>Aircraft/Aermacchi-MB-339/Models/Effects/Glass/glass</inherits-from>
     <object-name>vitre</object-name>
   </effect>
   

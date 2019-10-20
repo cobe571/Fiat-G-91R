@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="ISO-8859-1"?> 
+
+<!-- Based on HCI Lab - University of Udin work
+
+     Updated BARANGER Emmanuel June 2015
+-->
+<PropertyList>
+  
+  <path>gmeter.ac</path>
+  
+  <animation>
+    <object-name>fond</object-name>
+    <object-name>visses</object-name>
+    <object-name>face</object-name>
+    <object-name>needle</object-name>
+    
+    <object-name>vitre</object-name>
+  </animation>
+  
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Aircraft/Aermacchi-MB-339/Models/Effects/Glass/glass</inherits-from>
+    <object-name>vitre</object-name>
+  </effect>
+  
+  <animation>
+    <type>material</type>
+    <object-name>face</object-name>
+    <object-name>needle</object-name>
+    <emission>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
+    </emission>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>needle</object-name>
+    <property>/accelerations/pilot/z-accel-fps_sec[0]</property>
+    <!--  <factor>-0.7482</factor> -->
+    <interpolation>
+      <entry><ind> -320.77150 </ind><dep> -240 </dep></entry>
+      <entry><ind> -288.69435 </ind><dep> -216 </dep></entry>
+      <entry><ind> -256.61720 </ind><dep> -192 </dep></entry>
+      <entry><ind> -224.54005 </ind><dep> -168 </dep></entry>
+      <entry><ind> -192.46290 </ind><dep> -144 </dep></entry>
+      <entry><ind> -160.38575 </ind><dep> -120 </dep></entry>
+      <entry><ind> -128.30860 </ind><dep>  -96 </dep></entry>
+      <entry><ind>  -96.23145 </ind><dep>  -72 </dep></entry>
+      <entry><ind>  -64.15430 </ind><dep>  -48 </dep></entry>
+      <entry><ind>  -32.07715 </ind><dep>  -24 </dep></entry>
+      <entry><ind>    0.00000 </ind><dep>    0 </dep></entry>
+      <entry><ind>   32.07715 </ind><dep>   24 </dep></entry>
+      <entry><ind>   64.15430 </ind><dep>   48 </dep></entry>
+      <entry><ind>   96.23145 </ind><dep>   72 </dep></entry>
+      <entry><ind>  128.30860 </ind><dep>   96 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+</PropertyList>

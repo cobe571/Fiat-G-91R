@@ -12,9 +12,9 @@
     <object-name>vitre</object-name>
   </animation>
   
-  <!-- Rembrandt -->
+  <!-- working for Rembrandt -->
   <effect>
-    <inherits-from>Aircraft/Fiat-G91R4/Models/Effects/Glass/glass</inherits-from>
+    <inherits-from>Aircraft/Aermacchi-MB-339/Models/Effects/Glass/glass</inherits-from>
     <object-name>vitre</object-name>
   </effect>
   

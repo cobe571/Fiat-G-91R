@@ -5,9 +5,8 @@
   <path>hsi.ac</path>
 
   <animation>
+    <!-- Objets opaques -->
     <object-name>fond</object-name>
-    <object-name>button1</object-name>
-    <object-name>button2</object-name>
     <object-name>buttonCRS</object-name>
     <object-name>buttonHDG</object-name>
     <object-name>back</object-name>
@@ -15,19 +14,25 @@
     <object-name>crs01</object-name>
     <object-name>crs02</object-name>
     <object-name>crs03</object-name>
+    <object-name>dist01</object-name>
+    <object-name>dist02</object-name>
+    <object-name>dist03</object-name>
+    <object-name>dist04</object-name>
     <object-name>HDGneedle</object-name>
     <object-name>HDGneedle2</object-name>
     <object-name>bearing-bug</object-name>
     <object-name>heading-bug</object-name>
     <object-name>GSpointer</object-name>
+    <object-name>cache</object-name>
     <object-name>off-flag</object-name>
 
+    <!-- Objets transparents -->
     <object-name>vitre</object-name>
   </animation>
 
-  <!-- Rembrandt -->
+  <!-- working for Rembrandt -->
   <effect>
-    <inherits-from>Aircraft/Fiat-G91R4/Models/Effects/Glass/glass</inherits-from>
+    <inherits-from>Aircraft/Aermacchi-MB-339/Models/Effects/Glass/glass</inherits-from>
     <object-name>vitre</object-name>
   </effect>
   
@@ -38,11 +43,16 @@
     <object-name>crs01</object-name>
     <object-name>crs02</object-name>
     <object-name>crs03</object-name>
+    <object-name>dist01</object-name>
+    <object-name>dist02</object-name>
+    <object-name>dist03</object-name>
+    <object-name>dist04</object-name>
     <object-name>HDGneedle</object-name>
     <object-name>HDGneedle2</object-name>
     <object-name>bearing-bug</object-name>
     <object-name>heading-bug</object-name>
     <object-name>GSpointer</object-name>
+    <object-name>cache</object-name>
     <object-name>off-flag</object-name>
     <emission>
       <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
@@ -50,6 +60,63 @@
       <green> 0.25 </green>
       <blue>  0.25 </blue>
     </emission>
+  </animation>
+
+  <!-- tacan distance digital display -->
+  <animation>
+    <type>textranslate</type>
+    <object-name>dist01</object-name>
+    <property>instrumentation/tacan/indicated-distance-nm</property>
+    <!-- <property>/instrumentation/navcomputer/indicated-distance-nm</property> -->
+    <factor>0.0005</factor>
+    <step>100</step>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>textranslate</type>
+    <object-name>dist02</object-name>
+    <property>instrumentation/tacan/indicated-distance-nm</property>
+    <!-- <property>/instrumentation/navcomputer/indicated-distance-nm</property> -->
+    <factor>0.005</factor>
+    <step>10</step>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>textranslate</type>
+    <object-name>dist03</object-name>
+    <property>instrumentation/tacan/indicated-distance-nm</property>
+    <!-- <property>/instrumentation/navcomputer/indicated-distance-nm</property> -->
+    <factor>0.05</factor>
+    <step>1</step>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>textranslate</type>
+    <object-name>dist04</object-name>
+    <property>instrumentation/tacan/indicated-distance-nm</property>
+    <!-- <property>/instrumentation/navcomputer/indicated-distance-nm</property> -->
+    <factor>1</factor>
+    <step>0.1</step>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
   </animation>
 
   <!-- Course Readout -->
@@ -164,6 +231,23 @@
 
   <animation>
     <type>select</type>
+    <object-name>cache</object-name>
+    <condition>
+      <or>
+        <equals>
+          <property>instrumentation/tacan/in-range</property>
+          <value>false</value>
+        </equals>
+        <equals>
+          <property>instrumentation/tacan/switch-position</property>
+          <value>0</value>
+        </equals>
+      </or>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
     <object-name>off-flag</object-name>
     <condition>
       <less-than>
@@ -257,9 +341,9 @@
     <object-name>buttonCRS</object-name>
     <property>instrumentation/nav[0]/radials/selected-deg</property>
     <center>
-      <x-m>  0.00114 </x-m>
-      <y-m> -0.04276 </y-m>
-      <z-m> -0.04664 </z-m>
+      <x-m>  0.007 </x-m>
+      <y-m> -0.048 </y-m>
+      <z-m> -0.050 </z-m>
     </center>
     <axis>
       <x> -1 </x>
@@ -273,9 +357,9 @@
    <object-name>buttonHDG</object-name>
    <property>instrumentation/heading-indicator/offset-deg</property>
    <center>
-      <x-m>  0.00114 </x-m>
-      <y-m>  0.04274 </y-m>
-      <z-m> -0.04664 </z-m>
+      <x-m>  0.007 </x-m>
+      <y-m> -0.048 </y-m>
+      <z-m> -0.050 </z-m>
    </center>
    <axis>
      <x> -1 </x>
