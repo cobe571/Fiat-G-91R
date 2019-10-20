@@ -2,14 +2,12 @@
 
 <!-- The Engine file for the Fiat G-91R 3D model                 -->
 <!-- License:  GNU GENERAL PUBLIC LICENSE Version 2, June 1991   -->
-<!-- Author:   Patrizio Melis     https://github.com/cobe571     -->
-<!-- Author:   Joshua Davidson    https://github.com/Octal450    -->
-
+<!-- Author:  Patrizio Melis https://github.com/cobe571/Fiat-G-91R   -->
 
 <!--
 File:     ORPHEUS_MK_803.xml
 Author:   Aero-Matic v 0.82
-Modify on Orpheus Engine data by Patrizio Melis 20151124 (4000 ft GS 550 kts)
+Modify on Orpheus Engine data by Patrizio Melis 20191018 (4000 ft GS 550 kts)
 
 Inputs:
 name:           ORPHEUS_MK_803
