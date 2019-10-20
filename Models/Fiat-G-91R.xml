@@ -1433,7 +1433,7 @@
     </condition>
   </animation>
   
-  <!-- Landing Lights -->
+  <!-- Landing Lights 
   <model>
     <path>Aircraft/Fiat-G-91R/Models/Lights/light-cone.xml</path>
     <offsets>
@@ -1452,6 +1452,6 @@
         <z-m>  0.70058 </z-m>
       <pitch-deg> -7.5 </pitch-deg>
     </offsets>
-  </model>
+  </model> -->
   
 </PropertyList>
