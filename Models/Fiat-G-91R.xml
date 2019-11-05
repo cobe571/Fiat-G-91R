@@ -1530,7 +1530,7 @@
     </axis>
   </animation>
 
-  <!-- Wheels Rotation -->
+  <!-- Wheels Spinning -->
 
   <animation>
     <type>spin</type>
@@ -1584,12 +1584,15 @@
   </animation>
   
   <!--  Cranking effects  
+  
   <model>
     <path>Aircraft/Fiat-G-91R/Models/Effects/Cranking/cranking.xml</path>
   </model> -->
   
   <!--  Ground Effects  -->
-  <!--  Left Wheel  -->
+  
+  <!--  Left Wheel Ground Effect  -->
+  
   <model>
     <path>Aircraft/Fiat-G-91R/Models/Effects/Ground/ground0.xml</path>
     <offsets>
@@ -1599,7 +1602,8 @@
     </offsets>
   </model>
   
-  <!--  Right Wheel  -->
+  <!--  Right Wheel Ground Effect  -->
+  
   <model>
     <path>Aircraft/Fiat-G-91R/Models/Effects/Ground/ground1.xml</path>
     <offsets>
@@ -1609,7 +1613,8 @@
     </offsets>
   </model>
   
-  <!--  Front Wheel  -->
+  <!--  Front Wheel Ground Effect  -->
+  
   <model>
     <path>Aircraft/Fiat-G-91R/Models/Effects/Ground/ground2.xml</path>
     <offsets>
@@ -1620,6 +1625,7 @@
   </model>
   
   <!-- Light Effects -->
+  
   <animation>
     <type>material</type>
     <object-name>Glass-Red-Lamp</object-name>
@@ -1811,6 +1817,7 @@
   </animation>
   
   <!-- Strobe Lights -->
+  
   <animation>
     <type>select</type>
     <object-name>Light-Red-top</object-name>
@@ -1820,6 +1827,7 @@
   </animation>
   
   <!-- Landing Lights 
+  
   <model>
     <path>Aircraft/Fiat-G-91R/Models/Lights/light-cone.xml</path>
     <offsets>
