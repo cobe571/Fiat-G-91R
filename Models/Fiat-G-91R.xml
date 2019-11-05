@@ -1294,7 +1294,7 @@
     </axis>
   </animation>
 
-  <!-- Rear right gear animation -->
+  <!-- Rear Right Gear Animation -->
   
   <animation>
     <type>rotate</type>
@@ -1412,7 +1412,7 @@
     </axis>
   </animation>
   
-   <!-- Rear left gear animation -->
+   <!-- Rear Left Gear Animation -->
   
   <animation>
     <type>rotate</type>
@@ -1810,7 +1810,7 @@
     <texture>Lights/Light-White.png</texture>
   </animation>
   
-  <!-- Strobe lights -->
+  <!-- Strobe Lights -->
   <animation>
     <type>select</type>
     <object-name>Light-Red-top</object-name>
@@ -1840,7 +1840,7 @@
     </offsets>
   </model> -->
 
-  <!-- Canopy system -->
+  <!-- Canopy System -->
   
   <animation>
     <type>pick</type>
