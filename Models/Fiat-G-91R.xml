@@ -492,6 +492,8 @@
   </animation> 
 
   <!-- Effects on materials -->
+  
+  <!-- Fuselage Reflect Effect -->
 
   <effect>
     <inherits-from>Aircraft/Generic/Effects/Fuselagereflect</inherits-from>
@@ -602,6 +604,8 @@
     <object-name>Wings-Tank-R </object-name>
   </effect>
 
+  <!-- Glass Effect -->
+
   <effect>
     <inherits-from>Aircraft/Fiat-G-91R/Models/Effects/Glass/glass</inherits-from>
     <object-name>Camera-Lenses</object-name>
@@ -615,6 +619,8 @@
     <object-name>Glass-White-Lamp</object-name>
     <object-name>GlassGear</object-name>
   </effect>
+
+  <!-- Glass-Chrome Effect -->
   
   <effect>
     <inherits-from>Aircraft/Fiat-G-91R/Models/Effects/Glass/glass-chrome</inherits-from>
@@ -625,13 +631,15 @@
     <object-name>Mirror-Red-Lamp-Top</object-name>
     <object-name>Mirror-White-Lamp</object-name>
   </effect>
+
+  <!-- Internal Lightmap Effect -->
   
   <effect>
     <inherits-from>Aircraft/Fiat-G-91R/Models/Effects/internal_Light_Map</inherits-from>
     <object-name>Inlet-Adduction</object-name>
   </effect>
   
-  <!-- Interior -->
+  <!-- The Interior -->
 
   <model>
     <path>Aircraft/Fiat-G-91R/Models/Interior/interior.xml</path>
@@ -876,7 +884,9 @@
       <x>1</x>
     </axis>
     <center>
-      <x-m>2.19894</x-m> <y-m> 0.50603 </y-m> <z-m> 1.94214 </z-m>
+      <x-m> 2.19894 </x-m> 
+      <y-m> 0.50603 </y-m>
+      <z-m> 1.94214 </z-m>
     </center>
   </animation>
   
@@ -909,7 +919,9 @@
       <x>-1</x>
     </axis>
     <center>
-      <x-m>2.19894</x-m> <y-m> -0.50603 </y-m> <z-m> 1.94214 </z-m>
+      <x-m>  2.19894 </x-m>
+      <y-m> -0.50603 </y-m>
+      <z-m>  1.94214 </z-m>
     </center>
   </animation>
   
@@ -1116,7 +1128,7 @@
     
   <!-- Landing Gear Animations -->
 
-  <!-- Front Gear Animations -->
+  <!-- Doors Front Gear Animations -->
   
   <animation>
     <type>rotate</type>
@@ -1130,11 +1142,11 @@
     <property>gear/gear/position-norm</property>
     <factor>-80</factor>
     <axis>
-      <x1-m>  -3.12831</x1-m>
-      <y1-m>  1.0 </y1-m>
+      <x1-m> -3.12831 </x1-m>
+      <y1-m>  1.00000 </y1-m>
       <z1-m>  0.88481 </z1-m>
-      <x2-m>  -3.12831</x2-m>
-      <y2-m>  -1.0 </y2-m>
+      <x2-m> -3.12831</x2-m>
+      <y2-m> -1.00000 </y2-m>
       <z2-m>  0.88481 </z2-m>
     </axis>
   </animation>
@@ -1151,10 +1163,10 @@
       <entry><ind>1.0</ind><dep>90</dep></entry>
     </interpolation>
     <axis>
-      <x1-m>  -2.6683</x1-m>
+      <x1-m> -2.6683 </x1-m>
       <y1-m>  0.3404 </y1-m>
       <z1-m>  0.8612 </z1-m>
-      <x2-m>  -1.7897</x2-m>
+      <x2-m> -1.7897 </x2-m>
       <y2-m>  0.3495 </y2-m>
       <z2-m>  0.8284 </z2-m>
     </axis>
@@ -1172,18 +1184,19 @@
       <entry><ind>1.0</ind><dep>-90</dep></entry>
     </interpolation>
     <axis>
-      <x1-m>  -2.6683</x1-m>
-      <y1-m>  -0.3404 </y1-m>
+      <x1-m> -2.6683 </x1-m>
+      <y1-m> -0.3404 </y1-m>
       <z1-m>  0.8612 </z1-m>
-      <x2-m>  -1.7897</x2-m>
-      <y2-m>  -0.3495 </y2-m>
+      <x2-m> -1.7897 </x2-m>
+      <y2-m> -0.3495 </y2-m>
       <z2-m>  0.8284 </z2-m>
     </axis>
   </animation>
+
+  <!-- Front Landing Gear Animations -->
   
   <animation>
     <type>rotate</type>
-    <object-name>Wheel-F</object-name>
     <object-name>Gear-F.000</object-name>
     <object-name>Gear-F.001</object-name>
     <object-name>Gear-F.002</object-name>
@@ -1203,8 +1216,7 @@
     <object-name>Gear-F.016</object-name>
     <object-name>Gear-F.019</object-name>
     <object-name>Gear-F.020</object-name>
-    <object-name>part_7_LOD_100.001</object-name>
-    <object-name>part_3_LOD_100</object-name>
+    <object-name>Wheel-F</object-name>
     <property>gear/gear/position-norm</property>
     <factor>-85</factor>
     <offset-deg>90</offset-deg>
@@ -1212,8 +1224,8 @@
       <y>-1</y>
     </axis>
     <center>
-      <x-m>  -2.9758</x-m>
-      <y-m>  0 </y-m>
+      <x-m> -2.97580 </x-m>
+      <y-m>  0.00000 </y-m>
       <z-m>  0.94112 </z-m>
     </center>
   </animation>
@@ -1238,8 +1250,6 @@
     <object-name>Gear-F.016</object-name>
     <object-name>Gear-F.019</object-name>
     <object-name>Gear-F.020</object-name>
-    <object-name>part_7_LOD_100.001</object-name>
-    <object-name>part_3_LOD_100</object-name>
     <object-name>Wheel-F</object-name>
     <property>gear/gear/position-norm</property>
     <interpolation>
@@ -1252,13 +1262,39 @@
       <z>1</z>
     </axis>
     <center>
-      <x-m>  -2.9758</x-m>
-      <y-m>  0 </y-m>
+      <x-m> -2.97580 </x-m>
+      <y-m>  0.00000 </y-m>
       <z-m>  0.94112 </z-m>
     </center>
   </animation>
 
-  <!-- Front Wheel Rotation -->
+  <animation>
+    <name>GearF</name>
+    <object-name>Gear-F.017</object-name>
+    <object-name>Gear-F.018</object-name>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>GearF</object-name>
+    <property>gear/gear[0]/position-norm</property>
+    <interpolation>
+      <entry><ind> 0 </ind><dep> 17 </dep></entry>
+      <entry><ind> 1 </ind><dep>  0 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m> -2.03112 </x-m>
+      <y-m>  0.22394 </y-m>
+      <z-m>  0.95194 </z-m>
+    </center>
+    <axis>
+	  <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <!-- Front Wheel Steering -->
 
   <animation>
     <name>Front-Wheel</name>
@@ -1294,47 +1330,8 @@
     </axis>
   </animation>
 
-  <!-- Rear Right Gear Animation -->
-  
-  <animation>
-    <type>rotate</type>
-    <object-name>Wheel-R</object-name>
-    <object-name>Gear-RR.000</object-name>
-    <object-name>Gear-RR.001</object-name>
-    <object-name>Gear-RR.002</object-name>
-    <object-name>Gear-RR.003</object-name>
-    <object-name>Gear-RR.004</object-name>
-    <object-name>Gear-RR.005</object-name>
-    <object-name>Gear-RR.006</object-name>
-    <object-name>Gear-RR.007</object-name>
-    <object-name>Gear-RR.008</object-name>
-    <object-name>Gear-RR.009</object-name>
-    <object-name>Gear-RR.010</object-name>
-    <object-name>Gear-RR.011</object-name>
-    <object-name>Gear-RR.012</object-name>
-    <object-name>Gear-RR.013</object-name>
-    <object-name>Gear-RR.014</object-name>
-    <object-name>Gear-RR.015</object-name>
-    <object-name>Gear-RR.016</object-name>
-    <object-name>Gear-RR.017</object-name>
-    <object-name>Gear-RR.018</object-name>
-    <object-name>Gear-RR.019</object-name>
-    <object-name>Gear-RR.020</object-name>
-    <object-name>Gear-RR.021</object-name>
-    <object-name>part_3_LOD_100.001</object-name>
-    <property>gear/gear/position-norm</property>
-    <factor>-90</factor>
-    <offset-deg>90</offset-deg>
-    <axis>
-      <x>-1</x>
-    </axis>
-    <center>
-      <x-m>  0.3152 </x-m>
-      <y-m>  1.1058 </y-m>
-      <z-m>  1.2044 </z-m>
-    </center>
-  </animation>
-  
+  <!-- Doors Right Gear Animations -->
+
   <animation>
     <type>rotate</type>
     <object-name>Door-GearR-OUT.002</object-name>
@@ -1360,7 +1357,7 @@
     <property>gear/gear/position-norm</property>
     <factor>150</factor>
     <axis>
-      <x1-m>  0.17655</x1-m>
+      <x1-m>  0.17655 </x1-m>
       <y1-m>  1.20638 </y1-m>
       <z1-m>  1.10190 </z1-m>
       <x2-m>  0.39609 </x2-m>
@@ -1391,29 +1388,108 @@
       <z-m>  0.8068 </z-m>
     </center>
   </animation>
+
+  <!-- Doors Left Gear Animations -->
+
+  <animation>
+    <type>rotate</type>
+    <object-name>Door-GearL-OUT.002</object-name>
+    <object-name>Door-GearL-IN.002</object-name>
+    <object-name>Door-GearL-MID.002</object-name>
+    <property>gear/gear/position-norm</property>
+    <factor>-90</factor>
+    <axis>
+      <x>1</x>
+    </axis>
+    <center>
+      <x-m>  0.3152 </x-m>
+      <y-m> -1.1058 </y-m>
+      <z-m>  1.2044 </z-m>
+    </center>
+  </animation>
   
   <animation>
-    <type>spin</type>
-    <object-name>Wheel-R</object-name>
-    <condition>
-      <property>gear/gear[2]/wow</property>
-    </condition>
-    <property>velocities/groundspeed-kt</property>
-    <factor>6.0</factor>
-    <center>
-      <x-m>0.23463</x-m>
-      <y-m>1.13402</y-m>
-      <z-m>0.31387</z-m>
-    </center>
+    <type>rotate</type>
+    <object-name>Door-GearL-OUT.003</object-name>
+    <object-name>Door-GearL-IN.003</object-name>
+    <object-name>Door-GearL-MID.003</object-name>
+    <property>gear/gear/position-norm</property>
+    <factor>-150</factor>
     <axis>
-      <x>0.0</x>
-      <y>-1.0</y>
-      <z>0.0</z>
+      <x1-m>  0.17655 </x1-m>
+      <y1-m> -1.20638 </y1-m>
+      <z1-m>  1.10190 </z1-m>
+      <x2-m>  0.39609 </x2-m>
+      <y2-m> -1.20665 </y2-m>
+      <z2-m>  1.11427 </z2-m>
     </axis>
   </animation>
   
-   <!-- Rear Left Gear Animation -->
+  <animation>
+    <type>rotate</type>
+    <object-name>Door-GearL-OUT.001</object-name>
+    <object-name>Door-GearL-IN.001</object-name>
+    <object-name>Door-GearL-MID.001</object-name>
+    <property>gear/gear/position-norm</property>
+    <interpolation>
+      <entry><ind>0.0</ind><dep>0</dep></entry>
+      <entry><ind>0.05</ind><dep>-90</dep></entry>
+      <entry><ind>0.45</ind><dep>-90</dep></entry>
+      <entry><ind>0.50</ind><dep>-90</dep></entry>
+      <entry><ind>1.0</ind><dep>-90</dep></entry>
+    </interpolation>
+    <axis>
+      <x>-1</x>
+    </axis>
+    <center>
+      <x-m>  0.1805 </x-m>
+      <y-m> -0.0712 </y-m>
+      <z-m>  0.8068 </z-m>
+    </center>
+  </animation>
+
+  <!-- Rear Right Landing Gear Animation -->
   
+  <animation>
+    <type>rotate</type>
+    <object-name>Wheel-R</object-name>
+    <object-name>Gear-RR.000</object-name>
+    <object-name>Gear-RR.001</object-name>
+    <object-name>Gear-RR.002</object-name>
+    <object-name>Gear-RR.003</object-name>
+    <object-name>Gear-RR.004</object-name>
+    <object-name>Gear-RR.005</object-name>
+    <object-name>Gear-RR.006</object-name>
+    <object-name>Gear-RR.007</object-name>
+    <object-name>Gear-RR.008</object-name>
+    <object-name>Gear-RR.009</object-name>
+    <object-name>Gear-RR.010</object-name>
+    <object-name>Gear-RR.011</object-name>
+    <object-name>Gear-RR.012</object-name>
+    <object-name>Gear-RR.013</object-name>
+    <object-name>Gear-RR.014</object-name>
+    <object-name>Gear-RR.015</object-name>
+    <object-name>Gear-RR.016</object-name>
+    <object-name>Gear-RR.017</object-name>
+    <object-name>Gear-RR.018</object-name>
+    <object-name>Gear-RR.019</object-name>
+    <object-name>Gear-RR.020</object-name>
+    <object-name>Gear-RR.021</object-name>
+    <property>gear/gear/position-norm</property>
+    <factor>-90</factor>
+    <offset-deg>90</offset-deg>
+    <axis>
+      <x>-1</x>
+    </axis>
+    <center>
+      <x-m>  0.3152 </x-m>
+      <y-m>  1.1058 </y-m>
+      <z-m>  1.2044 </z-m>
+    </center>
+  </animation>
+
+  <!-- Rear Left Landing Gear Animation -->
+
   <animation>
     <type>rotate</type>
     <object-name>Wheel-L</object-name>
@@ -1439,7 +1515,6 @@
     <object-name>Gear-LR.019</object-name>
     <object-name>Gear-LR.020</object-name>
     <object-name>Gear-LR.021</object-name>
-    <object-name>part_3_LOD_100.002</object-name>
     <property>gear/gear/position-norm</property>
     <factor>-90</factor>
     <offset-deg>90</offset-deg>    <!-- Gears front chrome -->
@@ -1448,86 +1523,9 @@
     </axis>
     <center>
       <x-m>  0.3152 </x-m>
-      <y-m>  -1.0878 </y-m>
+      <y-m> -1.0878 </y-m>
       <z-m>  1.2044 </z-m>
     </center>
-  </animation>
-  
-  <animation>
-    <type>rotate</type>
-    <object-name>Door-GearL-OUT.002</object-name>
-    <object-name>Door-GearL-IN.002</object-name>
-    <object-name>Door-GearL-MID.002</object-name>
-    <property>gear/gear/position-norm</property>
-    <factor>-90</factor>
-    <axis>
-      <x>1</x>
-    </axis>
-    <center>
-      <x-m>  0.3152 </x-m>
-      <y-m>  -1.1058 </y-m>
-      <z-m>  1.2044 </z-m>
-    </center>
-  </animation>
-  
-  <animation>
-    <type>rotate</type>
-    <object-name>Door-GearL-OUT.003</object-name>
-    <object-name>Door-GearL-IN.003</object-name>
-    <object-name>Door-GearL-MID.003</object-name>
-    <property>gear/gear/position-norm</property>
-    <factor>-150</factor>
-    <axis>
-      <x1-m>  0.17655</x1-m>
-      <y1-m>  -1.20638 </y1-m>
-      <z1-m>  1.10190 </z1-m>
-      <x2-m>  0.39609 </x2-m>
-      <y2-m>  -1.20665 </y2-m>
-      <z2-m>  1.11427 </z2-m>
-    </axis>
-  </animation>
-  
-  <animation>
-    <type>rotate</type>
-    <object-name>Door-GearL-OUT.001</object-name>
-    <object-name>Door-GearL-IN.001</object-name>
-    <object-name>Door-GearL-MID.001</object-name>
-    <property>gear/gear/position-norm</property>
-    <interpolation>
-      <entry><ind>0.0</ind><dep>0</dep></entry>
-      <entry><ind>0.05</ind><dep>-90</dep></entry>
-      <entry><ind>0.45</ind><dep>-90</dep></entry>
-      <entry><ind>0.50</ind><dep>-90</dep></entry>
-      <entry><ind>1.0</ind><dep>-90</dep></entry>
-    </interpolation>
-    <axis>
-      <x>-1</x>
-    </axis>
-    <center>
-      <x-m>  0.1805 </x-m>
-      <y-m>  -0.0712 </y-m>
-      <z-m>  0.8068 </z-m>
-    </center>
-  </animation>
-  
-  <animation>
-    <type>spin</type>
-    <object-name>Wheel-L</object-name>
-    <condition>
-      <property>gear/gear[2]/wow</property>
-    </condition>
-    <property>velocities/groundspeed-kt</property>
-    <factor>6.0</factor>
-    <center>
-      <x-m>0.23463</x-m>
-      <y-m>-1.13402</y-m>
-      <z-m>0.31387</z-m>
-    </center>
-    <axis>
-      <x>0.0</x>
-      <y>-1.0</y>
-      <z>0.0</z>
-    </axis>
   </animation>
 
   <!-- Wheels Spinning -->
@@ -1590,6 +1588,17 @@
   </model> -->
   
   <!--  Ground Effects  -->
+
+  <!--  Front Wheel Ground Effect  -->
+  
+  <model>
+    <path>Aircraft/Fiat-G-91R/Models/Effects/Ground/ground2.xml</path>
+    <offsets>
+      <x-m> -2.73341 </x-m>
+      <y-m>  0.00000 </y-m>
+      <z-m>  0.01374 </z-m>
+    </offsets>
+  </model>
   
   <!--  Left Wheel Ground Effect  -->
   
@@ -1612,18 +1621,7 @@
       <z-m>  0.04418 </z-m>
     </offsets>
   </model>
-  
-  <!--  Front Wheel Ground Effect  -->
-  
-  <model>
-    <path>Aircraft/Fiat-G-91R/Models/Effects/Ground/ground2.xml</path>
-    <offsets>
-      <x-m> -2.73341 </x-m>
-      <y-m>  0.00000 </y-m>
-      <z-m>  0.01374 </z-m>
-    </offsets>
-  </model>
-  
+
   <!-- Light Effects -->
   
   <animation>
@@ -1831,9 +1829,9 @@
   <model>
     <path>Aircraft/Fiat-G-91R/Models/Lights/light-cone.xml</path>
     <offsets>
-        <x-m> -1.57755 </x-m>
-        <y-m> -0.10410 </y-m>
-        <z-m>  0.70058 </z-m>
+        <x-m> -3.23277 </x-m>
+        <y-m>  0.14990 </y-m>
+        <z-m>  0.51635 </z-m>
       <pitch-deg> -7.5 </pitch-deg>
     </offsets>
   </model>
@@ -1841,9 +1839,9 @@
   <model>
     <path>Aircraft/Fiat-G-91R/Models/Lights/light-cone.xml</path>
     <offsets>
-        <x-m> -1.57755 </x-m>
-        <y-m>  0.10410 </y-m>
-        <z-m>  0.70058 </z-m>
+        <x-m> -3.23277 </x-m>
+        <y-m> -0.14990 </y-m>
+        <z-m>  0.51635 </z-m>
       <pitch-deg> -7.5 </pitch-deg>
     </offsets>
   </model> -->
