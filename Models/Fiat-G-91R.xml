@@ -1517,7 +1517,7 @@
     <object-name>Gear-LR.021</object-name>
     <property>gear/gear/position-norm</property>
     <factor>-90</factor>
-    <offset-deg>90</offset-deg>    <!-- Gears front chrome -->
+    <offset-deg>90</offset-deg>
     <axis>
       <x>1</x>
     </axis>
@@ -1879,5 +1879,49 @@
       <x-m>-1.50423</x-m> <y-m> 0.00000 </y-m> <z-m> 2.53844 </z-m>
     </center>
   </animation>
+
+  <!-- Weapons Gun Left -->
+
+  <model>
+    <path>Aircraft/Fiat-G-91R/Models/Effects/Guns/fire.xml</path>
+    <offsets>
+      <x-m>        -3.03206 </x-m>
+      <y-m>        -0.56486 </y-m>
+      <z-m>         1.50680 </z-m>
+      <pitch-deg> 180 </pitch-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Fiat-G-91R/Models/Effects/Guns/fire.xml</path>
+    <offsets>
+      <x-m>        -3.03206 </x-m>
+      <y-m>        -0.57635 </y-m>
+      <z-m>         1.20452 </z-m>
+      <pitch-deg> 180 </pitch-deg>
+    </offsets>
+  </model>
+
+  <!-- Weapons Gun Right -->
+
+  <model>
+    <path>Aircraft/Fiat-G-91R/Models/Effects/Guns/fire.xml</path>
+    <offsets>
+      <x-m>        -3.03206 </x-m>
+      <y-m>         0.56486 </y-m>
+      <z-m>         1.50680 </z-m>
+      <pitch-deg> 180 </pitch-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Fiat-G-91R/Models/Effects/Guns/fire.xml</path>
+    <offsets>
+      <x-m>        -3.03206 </x-m>
+      <y-m>         0.57635 </y-m>
+      <z-m>         1.20452 </z-m>
+      <pitch-deg> 180 </pitch-deg>
+    </offsets>
+  </model>
   
 </PropertyList>
