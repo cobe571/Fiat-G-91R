@@ -178,6 +178,22 @@
       <max-dist>1000</max-dist>
     </gear>
 
+    <guns> 
+      <name>gunfire</name>
+      <mode>looped</mode>
+      <path>Aircraft/Fiat-G-91R/Sounds/Guns-Fire.wav</path>
+      <condition> 
+        <property>controls/armament/trigger</property>
+        <property>ai/submodels/submodel/count</property>
+      </condition>
+      <volume> 
+        <factor>1.2</factor>
+        <max>1.0</max>
+      </volume>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
+    </guns>
+
     <squeal>
       <name>Squeal</name>
       <path>Aircraft/Fiat-G-91R/Sounds/Squeal.wav</path>
