@@ -42,7 +42,12 @@
 	<sound>
       <path type="string">Aircraft/Fiat-G-91R/Sounds/Fiat-G-91R-Sound.xml</path>
     </sound>
-    
+
+    <submodels> 
+      <serviceable type="bool">true</serviceable>
+      <path>Aircraft/Fiat-G-91R/Models/Effects/Guns/submodels.xml</path>
+    </submodels>
+
     <menubar include="Dialogs/Fiat-G-91R-menu.xml"/>
 	
    <help>
@@ -74,17 +79,27 @@
   </gear>
   
   <nasal>
-   <sound_reload>
-     <file>Aircraft/Fiat-G-91R/Nasal/Sound/sound_reload.nas</file>
-   </sound_reload>
-   <engine>
-   </engine>
-   <light>
-     <file>Aircraft/Fiat-G-91R/Nasal/Lights/strobe.nas</file>
-   </light>
-   <Fiat-G-91R>
-     <file>Aircraft/Fiat-G-91R/Nasal/liveries.nas</file>
-   </Fiat-G-91R>
+    <sound_reload>
+        <file>Aircraft/Fiat-G-91R/Nasal/Sound/sound_reload.nas</file>
+    </sound_reload>
+    <engine>
+    </engine>
+    <light>
+        <file>Aircraft/Fiat-G-91R/Nasal/Lights/strobe.nas</file>
+    </light>
+    <Fiat-G-91R>
+        <file>Aircraft/Fiat-G-91R/Nasal/liveries.nas</file>
+    </Fiat-G-91R>
+    <doors>
+      <file>Aircraft/Fiat-G-91R/Nasal/doors.nas</file>
+    </doors>
+    <gmeter>
+      <file>Aircraft/Fiat-G-91R/Nasal/gmeter.nas</file>
+    </gmeter>
+    <guns>
+      <file>Aircraft/Fiat-G-91R/Nasal/weapons.nas</file>
+      <file>Aircraft/Fiat-G-91R/Nasal/revi.nas</file>
+    </guns>
   </nasal>
 
 </PropertyList>

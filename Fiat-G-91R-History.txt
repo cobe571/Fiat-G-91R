@@ -18,7 +18,7 @@ The complete gear is a type tricycle gear: the front leg, in withdrawing backwar
 
 Depending on the version, the wing panels are hooked two or four pylons which you can apply fuel tanks or war cargo (usually bombs or unguided rocket launchers).
 
-Throughout its life, the G.91 was powered by the Bristol Siddeley Orpheus MK 803 turbojet (the same engine that powered the Folland Gnat).
+Throughout its life, the G.91 was powered by the Bristol Siddeley Orpheus turbojet (the same engine that powered the Folland Gnat).
 
 The prototype was equipped with a turbo-reactor derived from that used for a missile ground-ground. For this reason he had a life span of only 300 hours (TBO) at the end of which it was to be audited general. Equipped with an excellent weight / thrust, it had a complex system of fuel adjustment composed of parts variously located throughout the engine. Characteristic start system that occurred at the hands of a small gas turbine driven by the combustion of a charge of cordite.
 
@@ -37,7 +37,7 @@ Il carrello è di tipo triciclo anteriore: la gamba anteriore, nel ritrarsi all'i
 
 A seconda delle versioni, alle semiali sono agganciati due o quattro piloni cui è possibile applicare serbatoi di carburante o carichi bellici (in genere bombe non guidate o lanciarazzi).
 
-Durante tutta la propria vita operativa il G.91 venne motorizzato con il turbogetto Bristol Siddeley Orpheus MK 803 (lo stesso motore che equipaggiava il Folland Gnat).
+Durante tutta la propria vita operativa il G.91 venne motorizzato con il turbogetto Bristol Siddeley Orpheus (lo stesso motore che equipaggiava il Folland Gnat).
 
 Il prototipo era equipaggiato con un turboreattore derivato da quello utilizzato per un missile terra-terra. Per questo motivo aveva una durata operativa di sole 300 ore (TBO) al termine delle quali doveva essere sottoposto a revisione generale. Dotato di un eccellente rapporto peso/spinta, aveva un complesso sistema di regolazione del carburante composto di parti variamente dislocate sul motore. Caratteristico il sistema di avviamento che avveniva ad opera di una piccola turbina azionata dai gas prodotti dalla combustione di una carica di cordite.
 
