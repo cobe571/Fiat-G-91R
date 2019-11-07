@@ -1622,272 +1622,6 @@
     </offsets>
   </model>
 
-  <!-- Light Effects -->
-  
-  <animation>
-    <type>material</type>
-    <object-name>Glass-Red-Lamp</object-name>
-    <object-name>Light-Red</object-name>
-    <condition>		
-      <greater-than>		
-	<property>/sim/time/sun-angle-rad</property>
-	<value>1.4</value>
-      </greater-than>
-    </condition>
-    <emission>	
-        <red>1</red>	
-        <green>0</green>	
-        <blue>0</blue>
-    </emission>
-    <texture>Lights/Light-White.png</texture>
-  </animation>
-  
-  <animation>
-    <type>material</type> 
-    <object-name>Glass-Red-Lamp</object-name>
-    <object-name>Light-Red</object-name>
-    <condition>		
-      <less-than-equals>		
-	<property>/sim/time/sun-angle-rad</property>
-	<value>1.4</value>
-      </less-than-equals>
-    </condition>
-    <emission>	
-        <red>0.3</red>	
-        <green>0</green>	
-        <blue>0</blue>
-    </emission>
-    <texture>Lights/Light-White.png</texture>
-  </animation>
-  
-  <animation>
-    <type>material</type>
-    <object-name>Glass-Green-Lamp</object-name>
-    <object-name>Light-Green</object-name>
-    <condition>		
-      <greater-than>		
-	<property>/sim/time/sun-angle-rad</property>
-	<value>1.4</value>
-      </greater-than>
-    </condition>
-    <emission>	
-        <red>0</red>	
-        <green>1</green>	
-        <blue>0</blue>
-    </emission>
-    <texture>Lights/Light-White.png</texture>
-  </animation>
-  
-  <animation>
-    <type>material</type> 
-    <object-name>Glass-Green-Lamp</object-name>
-    <object-name>Light-Green</object-name>
-    <condition>		
-      <less-than-equals>		
-	<property>/sim/time/sun-angle-rad</property>
-	<value>1.4</value>
-      </less-than-equals>
-    </condition>
-    <emission>	
-        <red>0</red>	
-        <green>0.3</green>	
-        <blue>0</blue>
-    </emission>
-    <texture>Lights/Light-White.png</texture>
-  </animation>
-  
-  <animation>
-    <type>material</type>
-    <object-name>Glass-White-Lamp</object-name>
-    <object-name>Light-White-R</object-name>
-    <object-name>Light-White-FR</object-name>
-    <object-name>Light-White-FL</object-name>
-    <object-name>GlassGear</object-name>
-    <condition>		
-      <greater-than>		
-	<property>/sim/time/sun-angle-rad</property>
-	<value>1.4</value>
-      </greater-than>
-    </condition>
-    <emission>	
-        <red>1</red>	
-        <green>1</green>	
-        <blue>1</blue>
-    </emission>
-    <texture>Lights/Light-White.png</texture>
-  </animation>
-  
-  <animation>
-    <type>material</type> 
-    <object-name>Glass-White-Lamp</object-name>
-    <object-name>Light-White-R</object-name>
-    <object-name>Light-White-FR</object-name>
-    <object-name>Light-White-FL</object-name>
-    <object-name>GlassGear</object-name>
-    <condition>		
-      <less-than-equals>		
-	<property>/sim/time/sun-angle-rad</property>
-	<value>1.4</value>
-      </less-than-equals>
-    </condition>
-    <emission>	
-        <red>0.3</red>	
-        <green>0.3</green>	
-        <blue>0.3</blue>
-    </emission>
-    <texture>Lights/Light-White.png</texture>
-  </animation>
-  
-  <animation>
-    <type>material</type>
-    <object-name>Glass-Red-Lamp-Top</object-name>
-    <object-name>Light-Red-Top</object-name>
-    <condition>		
-      <greater-than>		
-	<property>/sim/time/sun-angle-rad</property>
-	<value>1.4</value>
-      </greater-than>
-    </condition>
-    <emission>	
-        <red>1</red>	
-        <green>0</green>	
-        <blue>0</blue>
-    </emission>
-    <texture>Lights/Light-White.png</texture>
-  </animation>
-  
-  <animation>
-    <type>material</type> 
-    <object-name>Glass-Red-Lamp-Top</object-name>
-    <object-name>Light-Red-Top</object-name>
-    <condition>		
-      <less-than-equals>		
-	<property>/sim/time/sun-angle-rad</property>
-	<value>1.4</value>
-      </less-than-equals>
-    </condition>
-    <emission>	
-        <red>0.3</red>	
-        <green>0</green>	
-        <blue>0</blue>
-    </emission>
-    <texture>Lights/Light-White.png</texture>
-  </animation>
-  
-  <animation>
-    <type>material</type>
-    <object-name>Sphere.003</object-name>
-    <object-name>Sphere.004</object-name>
-    <object-name>Sphere.006</object-name>
-    <object-name>Sphere.007</object-name>
-    <condition>		
-      <greater-than>		
-	<property>/sim/time/sun-angle-rad</property>
-	<value>1.4</value>
-      </greater-than>
-    </condition>
-    <emission>	
-        <red>1</red>	
-        <green>1</green>	
-        <blue>1</blue>
-    </emission>
-    <texture>Lights/Light-White.png</texture>
-  </animation>
-  
-  <animation>
-    <type>material</type> 
-    <object-name>Sphere.003</object-name>
-    <object-name>Sphere.004</object-name>
-    <object-name>Sphere.006</object-name>
-    <object-name>Sphere.007</object-name>
-    <condition>		
-      <less-than-equals>		
-	<property>/sim/time/sun-angle-rad</property>
-	<value>1.4</value>
-      </less-than-equals>
-    </condition>
-    <emission>	
-        <red>0.5</red>	
-        <green>0.5</green>	
-        <blue>0.5</blue>
-    </emission>
-    <texture>Lights/Light-White.png</texture>
-  </animation>
-  
-  <!-- Strobe Lights -->
-  
-  <animation>
-    <type>select</type>
-    <object-name>Light-Red-top</object-name>
-    <condition>
-      <property>/sim/model/lights/strobe/state</property>
-    </condition>
-  </animation>
-  
-  <!-- Landing Lights 
-  
-  <model>
-    <path>Aircraft/Fiat-G-91R/Models/Lights/light-cone.xml</path>
-    <offsets>
-        <x-m> -3.23277 </x-m>
-        <y-m>  0.14990 </y-m>
-        <z-m>  0.51635 </z-m>
-      <pitch-deg> -7.5 </pitch-deg>
-    </offsets>
-  </model>
-
-  <model>
-    <path>Aircraft/Fiat-G-91R/Models/Lights/light-cone.xml</path>
-    <offsets>
-        <x-m> -3.23277 </x-m>
-        <y-m> -0.14990 </y-m>
-        <z-m>  0.51635 </z-m>
-      <pitch-deg> -7.5 </pitch-deg>
-    </offsets>
-  </model> -->
-
-  <!-- Canopy System OUT -->
-
-  <animation>
-    <name>CanopyOUT</name>
-    <object-name>Glass-Canopy.000-OUT</object-name>
-    <object-name>Canopy-Main.000</object-name>
-  </animation>
-  
-  <animation>
-    <type>pick</type>
-    <object-name>CanopyOUT</object-name>
-    <visible>true</visible>
-    <action>
-      <button>0</button>
-      <repeatable>false</repeatable>
-      <binding>
-        <command>nasal</command>
-        <script>doors.crew.toggle();</script>
-      </binding>
-    </action>
-  </animation>
-
-  <animation>
-    <type>rotate</type>
-    <object-name>CanopyOUT</object-name>
-    <property>sim/model/door-positions/crew/position-norm</property>
-    <interpolation>
-      <entry><ind> 0 </ind><dep>   0 </dep></entry>
-      <entry><ind> 1 </ind><dep> -45 </dep></entry>
-    </interpolation>
-    <center>
-      <x-m> -1.50423 </x-m>
-      <y-m>  0.00000 </y-m>
-      <z-m>  2.53844 </z-m>
-    </center>
-    <axis>
-      <x>  0 </x>
-      <y> -1 </y>
-      <z>  0 </z>
-    </axis>
-  </animation>
-
   <!-- Weapons Gun Left -->
 
   <model>
@@ -1932,4 +1666,426 @@
     </offsets>
   </model>
   
+  <!-- Strobe Lights -->
+  
+  <animation>
+    <type>select</type>
+    <object-name>Light-Red-top</object-name>
+    <condition>
+      <property>/sim/model/lights/strobe/state</property>
+    </condition>
+  </animation>
+
+  <!-- Light Effects -->
+  
+  <animation>
+    <type>material</type>
+    <object-name>Glass-Red-Lamp</object-name>
+    <object-name>Light-Red</object-name>
+    <condition>		
+      <greater-than>		
+	<property>/sim/time/sun-angle-rad</property>
+	<value>1.7</value>
+      </greater-than>
+    </condition>
+    <emission>	
+        <red>1</red>	
+        <green>0</green>	
+        <blue>0</blue>
+    </emission>
+    <texture>Lights/Light_White.png</texture>
+  </animation>
+  
+  <animation>
+    <type>material</type> 
+    <object-name>Glass-Red-Lamp</object-name>
+    <object-name>Light-Red</object-name>
+    <condition>		
+      <less-than-equals>		
+	<property>/sim/time/sun-angle-rad</property>
+	<value>1.7</value>
+      </less-than-equals>
+    </condition>
+    <emission>	
+        <red>0.3</red>	
+        <green>0</green>	
+        <blue>0</blue>
+    </emission>
+    <texture>Lights/Light_White.png</texture>
+  </animation>
+  
+  <animation>
+    <type>material</type>
+    <object-name>Glass-Green-Lamp</object-name>
+    <object-name>Light-Green</object-name>
+    <condition>		
+      <greater-than>		
+	<property>/sim/time/sun-angle-rad</property>
+	<value>1.7</value>
+      </greater-than>
+    </condition>
+    <emission>	
+        <red>0</red>	
+        <green>1</green>	
+        <blue>0</blue>
+    </emission>
+    <texture>Lights/Light_White.png</texture>
+  </animation>
+  
+  <animation>
+    <type>material</type> 
+    <object-name>Glass-Green-Lamp</object-name>
+    <object-name>Light-Green</object-name>
+    <condition>		
+      <less-than-equals>		
+	<property>/sim/time/sun-angle-rad</property>
+	<value>1.7</value>
+      </less-than-equals>
+    </condition>
+    <emission>	
+        <red>0</red>	
+        <green>0.3</green>	
+        <blue>0</blue>
+    </emission>
+    <texture>Lights/Light_White.png</texture>
+  </animation>
+  
+  <animation>
+    <type>material</type>
+    <object-name>Glass-White-Lamp</object-name>
+    <object-name>Light-White-R</object-name>
+    <object-name>Light-White-FR</object-name>
+    <object-name>Light-White-FL</object-name>
+    <object-name>GlassGear</object-name>
+    <condition>		
+      <greater-than>		
+	<property>/sim/time/sun-angle-rad</property>
+	<value>1.7</value>
+      </greater-than>
+    </condition>
+    <emission>	
+        <red>1</red>	
+        <green>1</green>	
+        <blue>1</blue>
+    </emission>
+    <texture>Lights/Light_White.png</texture>
+  </animation>
+  
+  <animation>
+    <type>material</type> 
+    <object-name>Glass-White-Lamp</object-name>
+    <object-name>Light-White-R</object-name>
+    <object-name>Light-White-FR</object-name>
+    <object-name>Light-White-FL</object-name>
+    <object-name>GlassGear</object-name>
+    <condition>		
+      <less-than-equals>		
+	<property>/sim/time/sun-angle-rad</property>
+	<value>1.7</value>
+      </less-than-equals>
+    </condition>
+    <emission>	
+        <red>0.3</red>	
+        <green>0.3</green>	
+        <blue>0.3</blue>
+    </emission>
+    <texture>Lights/Light_White.png</texture>
+  </animation>
+  
+  <animation>
+    <type>material</type>
+    <object-name>Glass-Red-Lamp-Top</object-name>
+    <object-name>Light-Red-Top</object-name>
+    <condition>		
+      <greater-than>		
+	<property>/sim/time/sun-angle-rad</property>
+	<value>1.7</value>
+      </greater-than>
+    </condition>
+    <emission>	
+        <red>1</red>	
+        <green>0</green>	
+        <blue>0</blue>
+    </emission>
+    <texture>Lights/Light_White.png</texture>
+  </animation>
+  
+  <animation>
+    <type>material</type> 
+    <object-name>Glass-Red-Lamp-Top</object-name>
+    <object-name>Light-Red-Top</object-name>
+    <condition>		
+      <less-than-equals>		
+	<property>/sim/time/sun-angle-rad</property>
+	<value>1.7</value>
+      </less-than-equals>
+    </condition>
+    <emission>	
+        <red>0.3</red>	
+        <green>0</green>	
+        <blue>0</blue>
+    </emission>
+    <texture>Lights/Light_White.png</texture>
+  </animation>
+  
+  <animation>
+    <type>material</type>
+    <object-name>Sphere.003</object-name>
+    <object-name>Sphere.004</object-name>
+    <object-name>Sphere.006</object-name>
+    <object-name>Sphere.007</object-name>
+    <condition>		
+      <greater-than>		
+	<property>/sim/time/sun-angle-rad</property>
+	<value>1.7</value>
+      </greater-than>
+    </condition>
+    <emission>	
+        <red>1</red>	
+        <green>1</green>	
+        <blue>1</blue>
+    </emission>
+    <texture>Lights/Light_White.png</texture>
+  </animation>
+  
+  <animation>
+    <type>material</type> 
+    <object-name>Sphere.003</object-name>
+    <object-name>Sphere.004</object-name>
+    <object-name>Sphere.006</object-name>
+    <object-name>Sphere.007</object-name>
+    <condition>		
+      <less-than-equals>		
+	<property>/sim/time/sun-angle-rad</property>
+	<value>1.7</value>
+      </less-than-equals>
+    </condition>
+    <emission>	
+        <red>0.5</red>	
+        <green>0.5</green>	
+        <blue>0.5</blue>
+    </emission>
+    <texture>Lights/Light_White.png</texture>
+  </animation>
+  
+  <!-- Procedural Lights - ALS Only -->
+  
+  <model>
+    <condition>		
+      <greater-than>		
+	<property>/sim/time/sun-angle-rad</property>
+	<value>1.4</value>
+      </greater-than>
+    </condition>
+    <path>Aircraft/Fiat-G-91R/Models/Effects/red-navlight.xml</path>
+    <offsets>
+      <x-m>  1.85 </x-m>
+      <y-m> -4.24 </y-m>
+      <z-m>  1.31 </z-m>
+    </offsets>
+  </model>
+  <model>
+    <condition>		
+      <greater-than>		
+	<property>/sim/time/sun-angle-rad</property>
+	<value>1.4</value>
+      </greater-than>
+    </condition>
+    <path>Aircraft/Fiat-G-91R/Models/Effects/green-navlight.xml</path>
+    <offsets>
+      <x-m> 1.85 </x-m>
+      <y-m> 4.24 </y-m>
+      <z-m> 1.31 </z-m>
+    </offsets>
+  </model>
+  <model>
+    <condition>		
+      <greater-than>		
+	<property>/sim/time/sun-angle-rad</property>
+	<value>1.4</value>
+      </greater-than>
+    </condition>
+    <path>Aircraft/Fiat-G-91R/Models/Effects/beacon.xml</path>
+    <offsets>
+      <x-m> 0.0 </x-m>
+      <y-m> 0.0 </y-m>
+      <z-m> 2.35 </z-m>
+    </offsets>
+  </model>
+  <model>
+    <condition>		
+      <greater-than>		
+	<property>/sim/time/sun-angle-rad</property>
+	<value>1.4</value>
+      </greater-than>
+    </condition>
+    <path>Aircraft/Fiat-G-91R/Models/Effects/back-navlight.xml</path>
+    <offsets>
+      <x-m> 4.77 </x-m>
+      <y-m> 0.03 </y-m>
+      <z-m> 2.28 </z-m>
+    </offsets>
+  </model>
+  <model>
+    <condition>		
+      <greater-than>		
+	<property>/sim/time/sun-angle-rad</property>
+	<value>1.4</value>
+      </greater-than>
+    </condition>
+    <path>Aircraft/Fiat-G-91R/Models/Effects/back-navlight.xml</path>
+    <offsets>
+      <x-m> 4.77 </x-m>
+      <y-m> -0.03 </y-m>
+      <z-m> 2.28 </z-m>
+    </offsets>
+  </model>
+  <model>
+    <condition>
+      <greater-than>
+	<property>gear/gear/position-norm</property>
+	<value>0.9</value>
+      </greater-than>
+    </condition>
+    <path>Aircraft/Fiat-G-91R/Models/Effects/front-light.xml</path>
+    <offsets>
+      <x-m> -3.15 </x-m>
+      <y-m> 0.16 </y-m>
+      <z-m> 0.71 </z-m>
+    </offsets>
+  </model>
+  <model>
+    <condition>
+      <greater-than>
+	<property>gear/gear/position-norm</property>
+	<value>0.9</value>
+      </greater-than>
+    </condition>
+    <path>Aircraft/Fiat-G-91R/Models/Effects/front-light.xml</path>
+    <offsets>
+      <x-m> -3.15 </x-m>
+      <y-m> -0.16 </y-m>
+      <z-m> 0.71 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- Navigation light -->
+  
+  <!-- sim/multiplay/generic/float[4] il the volt of electric systems for Backlight-->
+  
+  sim/multiplay/generic/float[4]
+
+  <model>
+    <path>Aircraft/Fiat-G-91R/Models/Lights/NavLightL-rembrandt.xml</path>
+    <condition>
+      <property>/sim/rendering/rembrandt/enabled</property>
+    </condition>
+    <offsets>
+      <x-m> 1.8465 </x-m>
+      <y-m> -4.25218 </y-m>
+      <z-m> 1.31442 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Fiat-G-91R/Models/Lights/NavLightR-rembrandt.xml</path>
+    <condition>
+      <property>/sim/rendering/rembrandt/enabled</property>
+    </condition>
+    <offsets>
+      <x-m> 1.8465 </x-m>
+      <y-m> 4.25218 </y-m>
+      <z-m> 1.31442 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Fiat-G-91R/Models/Lights/BackLight-rembrandt.xml</path>
+    <condition>
+      <property>/sim/rendering/rembrandt/enabled</property>
+    </condition>
+    <offsets>
+      <x-m> 4.75690 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 2.28086 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Fiat-G-91R/Models/Lights/StrobeLight-rembrandt.xml</path>
+    <condition>
+      <property>/sim/rendering/rembrandt/enabled</property>
+    </condition>
+    <offsets>
+      <x-m> 0.000 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 2.35345 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Landing Lights 
+  
+  <model>
+    <path>Aircraft/Fiat-G-91R/Models/Lights/light-cone.xml</path>
+    <offsets>
+        <x-m> -3.23277 </x-m>
+        <y-m>  0.14990 </y-m>
+        <z-m>  0.51635 </z-m>
+      <pitch-deg> -7.5 </pitch-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Fiat-G-91R/Models/Lights/light-cone.xml</path>
+    <offsets>
+        <x-m> -3.23277 </x-m>
+        <y-m> -0.14990 </y-m>
+        <z-m>  0.51635 </z-m>
+      <pitch-deg> -7.5 </pitch-deg>
+    </offsets>
+  </model> -->
+
+  <!-- Canopy System OUT -->
+
+  <animation>
+    <name>CanopyOUT</name>
+    <object-name>Glass-Canopy.000-OUT</object-name>
+    <object-name>Canopy-Main.000</object-name>
+    <object-name>Canopy-Main.001</object-name>
+  </animation>
+  
+  <animation>
+    <type>pick</type>
+    <object-name>CanopyOUT</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>doors.crew.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>CanopyOUT</object-name>
+    <property>sim/model/door-positions/crew/position-norm</property>
+    <interpolation>
+      <entry><ind> 0 </ind><dep>   0 </dep></entry>
+      <entry><ind> 1 </ind><dep> -45 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m> -1.50423 </x-m>
+      <y-m>  0.00000 </y-m>
+      <z-m>  2.53844 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
 </PropertyList>
