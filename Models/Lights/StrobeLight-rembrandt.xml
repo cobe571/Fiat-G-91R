@@ -1,13 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- ########################################
-
- # DR400-jsbSim by PAF team
- # April 2012 : Modified by PAF team
- # http://equipe-flightgear.forumactif.com
-
-##########################################-->
-
 <!-- sim/multiplay/generic/float[13] il the volt of electric systems for StrobeLight -->
 
 <PropertyList>

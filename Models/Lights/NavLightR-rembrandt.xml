@@ -1,13 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- ########################################
-
- # DR400-jsbSim by PAF team
- # April 2012 : Modified by PAF team
- # http://equipe-flight-plategear.forumactif.com
-
-##########################################-->
-
 <PropertyList>
   <path>Lights.ac</path>
   <nopreview/>
