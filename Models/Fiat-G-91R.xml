@@ -1846,38 +1846,46 @@
     </offsets>
   </model> -->
 
-  <!-- Canopy System -->
+  <!-- Canopy System OUT -->
+
+  <animation>
+    <name>CanopyOUT</name>
+    <object-name>Glass-Canopy.000-OUT</object-name>
+    <object-name>Canopy-Main.000</object-name>
+  </animation>
   
   <animation>
     <type>pick</type>
-    <object-name>Glass-Canopy.000-OUT</object-name>
-    <object-name>Glass-Canopy.000-IN</object-name>
-    <!-- Normal action, positions 0, 1 -->
+    <object-name>CanopyOUT</object-name>
+    <visible>true</visible>
     <action>
       <button>0</button>
       <repeatable>false</repeatable>
-      <interval-sec>0.2</interval-sec>
-      	<binding>
-	  <command>nasal</command>
-	  <script>canopy.canopy_switch(2)</script>
-	</binding>
+      <binding>
+        <command>nasal</command>
+        <script>doors.crew.toggle();</script>
+      </binding>
     </action>
   </animation>
 
   <animation>
     <type>rotate</type>
-    <object-name>Glass-Canopy.000-OUT</object-name>
-    <object-name>Glass-Canopy.000-IN</object-name>
-    <object-name>Canopy-Main.000</object-name>
-    <object-name>part_61_LOD_100</object-name>
-    <property>/controls/canopy/position-norm</property>
-    <factor>45</factor>
-    <axis>
-      <y>1</y>
-    </axis>
+    <object-name>CanopyOUT</object-name>
+    <property>sim/model/door-positions/crew/position-norm</property>
+    <interpolation>
+      <entry><ind> 0 </ind><dep>   0 </dep></entry>
+      <entry><ind> 1 </ind><dep> -45 </dep></entry>
+    </interpolation>
     <center>
-      <x-m>-1.50423</x-m> <y-m> 0.00000 </y-m> <z-m> 2.53844 </z-m>
+      <x-m> -1.50423 </x-m>
+      <y-m>  0.00000 </y-m>
+      <z-m>  2.53844 </z-m>
     </center>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
   </animation>
 
   <!-- Weapons Gun Left -->
