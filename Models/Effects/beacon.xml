@@ -1,4 +1,5 @@
 <?xml version="1.0"?>
+
 <PropertyList>
   
   <path>beacon.ac</path>
@@ -30,9 +31,8 @@
   </animation>
   
   <effect>
-    <inherits-from>Aircraft/Fiat-G91-Series/Models/Effects/beacon</inherits-from>
+    <inherits-from>Aircraft/Fiat-G-91R/Models/Effects/beacon</inherits-from>
     <object-name>beacon</object-name>
   </effect>
-  
-  
+
 </PropertyList>
