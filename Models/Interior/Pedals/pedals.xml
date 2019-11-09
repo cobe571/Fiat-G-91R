@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<!-- The pedals file for the Fiat-G-91R.ac 3D model                 -->
+<!-- License: GNU GENERAL PUBLIC LICENSE Version 2, June 1991       -->
+<!-- Author:  Patrizio Melis https://github.com/cobe571/Fiat-G-91R  -->
+
 <PropertyList>
 
   <path>pedals.ac</path>
@@ -10,9 +14,9 @@
 		<property>controls/flight/rudder</property>
 		<factor>0.07</factor>
 		<axis>
-			<x>1</x>
-			<y>0</y>
-			<z>0</z>
+			<x>  1 </x>
+			<y>  0 </y>
+			<z>  0 </z>
 		</axis>
 	</animation>
 
@@ -22,16 +26,16 @@
 		<property>controls/flight/rudder</property>
 		<factor>0.07</factor>
 		<axis>
-			<x>-1</x>
-			<y>0</y>
-			<z>0</z>
+			<x> -1 </x>
+			<y>  0 </y>
+			<z>  0 </z>
 		</axis>
 	</animation>
 
 	<animation>
 		<type>range</type>
-		<min-m>0</min-m>
-		<max-m>5</max-m>
+		<min-m> 0 </min-m>
+		<max-m> 5 </max-m>
 	</animation>
  
 </PropertyList>
