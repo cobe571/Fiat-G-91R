@@ -127,9 +127,9 @@
   <model>
     <path>Aircraft/Fiat-G-91R/Models/Interior/Throttle/throttle.xml</path>
     <offsets>
-      <x-m> -2.86683</x-m>
-      <y-m> -0.25844</y-m>
-      <z-m>  2.02330</z-m>
+      <x-m> -2.86683 </x-m>
+      <y-m> -0.25844 </y-m>
+      <z-m>  2.02330 </z-m>
     </offsets>
   </model>
 
