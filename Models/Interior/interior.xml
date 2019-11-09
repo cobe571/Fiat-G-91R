@@ -10,6 +10,7 @@
 
   <animation>
   <!-- Oggetti opachi -->
+
     <object-name>Canopy-Front-Garnish</object-name>
     <object-name>Canopy-Main.002</object-name>
     <object-name>Inner-Shell</object-name>
@@ -17,6 +18,7 @@
     <object-name>Support-Plate-Seat</object-name>
 
     <!-- Oggetti trasparenti -->
+
     <object-name>Glass-Canopy.000-IN</object-name>
     <object-name>Glass-Canopy.001-IN</object-name>
     <object-name>Glass-Canopy.002-IN</object-name>
@@ -46,6 +48,7 @@
   </animation>
 
   <!-- Effects on Glass -->
+
   <effect>
     <inherits-from>Aircraft/Fiat-G-91R/Models/Effects/Glass/glass</inherits-from>
     <object-name>Glass-Canopy.000-IN</object-name>
@@ -54,6 +57,7 @@
   </effect>
 
   <!-- Main Panel -->
+
   <model>
     <path>Aircraft/Fiat-G-91R/Models/Interior/Panel/panel.xml</path>
     <offsets>
@@ -64,6 +68,7 @@
   </model> 
 
   <!-- Left Panel -->
+
   <model>
     <path>Aircraft/Fiat-G-91R/Models/Interior/Panel/Left-Panel/left-panel.xml</path>
     <offsets>
@@ -74,6 +79,7 @@
   </model> 
   
   <!-- Right Panel -->
+
   <model>
     <path>Aircraft/Fiat-G-91R/Models/Interior/Panel/Right-Panel/right-panel.xml</path>
     <offsets>
@@ -84,6 +90,7 @@
   </model>
   
   <!-- Seat -->
+
   <model>
     <path>Aircraft/Fiat-G-91R/Models/Interior/Seat/Martin-Baker-MK3.xml</path>
     <offsets>
@@ -94,6 +101,7 @@
   </model> 
   
   <!-- Pilot 
+
   <model>
     <path>Aircraft/Fiat-G-91R/Models/Interior/Pilot/pilot.xml</path>
     <offsets>
@@ -104,6 +112,7 @@
   </model> -->
   
   <!-- Yoke -->
+
   <model>
     <path>Aircraft/Fiat-G-91R/Models/Interior/Yoke/yoke.xml</path>
     <offsets>
@@ -114,6 +123,7 @@
   </model> 
   
   <!-- Throttle -->
+
   <model>
     <path>Aircraft/Fiat-G-91R/Models/Interior/Throttle/throttle.xml</path>
     <offsets>
@@ -123,7 +133,19 @@
     </offsets>
   </model>
 
+  <!-- Pedals -->
+
+  <model>
+    <path>Aircraft/Fiat-G-91R/Models/Interior/Pedals/pedals.xml</path>
+    <offsets>
+      <x-m> -3.06677 </x-m>
+      <y-m>  0.00000 </y-m>
+      <z-m>  1.71640 </z-m>
+    </offsets>
+  </model>
+
   <!-- Canopy System IN -->
+
   <animation>
     <name>CanopyIN</name>
     <object-name>Glass-Canopy.000-IN</object-name>
