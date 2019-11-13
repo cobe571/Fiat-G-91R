@@ -114,10 +114,10 @@
     <object-name>Flap-L</object-name>
     <object-name>Flap-R</object-name>
     <object-name>Fuselage</object-name>
-    <object-name>Gear-BOX-AirBrakes </object-name>
-    <object-name>Gear-BOX-Front </object-name>
-    <object-name>Gear-BOX-Rear </object-name>
-    <object-name>Gear-BOX-Wings </object-name>
+    <object-name>Gear-BOX-AirBrakes</object-name>
+    <object-name>Gear-BOX-Front</object-name>
+    <object-name>Gear-BOX-Rear</object-name>
+    <object-name>Gear-BOX-Wings</object-name>
     <object-name>Gear-F.000</object-name>
     <object-name>Gear-F.001</object-name>
     <object-name>Gear-F.002</object-name>
@@ -220,13 +220,13 @@
     <object-name>Orpheus.011</object-name>
     <object-name>Pilons.001</object-name>
     <object-name>Pilons.002</object-name>
-    <object-name>Rudder </object-name>
-    <object-name>Rudder-BOX-Control </object-name>
-    <object-name>Rudder-Control.000 </object-name>
-    <object-name>Rudder-Control.001 </object-name>
-    <object-name>Rudder-Trim </object-name>
-    <object-name>Rudder-Trim-Control.000 </object-name>
-    <object-name>Rudder-Trim-Control.001 </object-name>
+    <object-name>Rudder</object-name>
+    <object-name>Rudder-BOX-Control</object-name>
+    <object-name>Rudder-Control.000</object-name>
+    <object-name>Rudder-Control.001</object-name>
+    <object-name>Rudder-Trim</object-name>
+    <object-name>Rudder-Trim-Control.000</object-name>
+    <object-name>Rudder-Trim-Control.001</object-name>
     <object-name>Startup-Exaust</object-name>
     <object-name>Support-Lamp-Gear</object-name>
     <object-name>Turboalatori</object-name>
@@ -244,10 +244,10 @@
     <object-name>Wings</object-name>
     <object-name>Wings-Fin</object-name>
     <object-name>Wings-IN</object-name>
-    <object-name>Wings-Tank-Fin-L </object-name>
-    <object-name>Wings-Tank-Fin-R </object-name>
-    <object-name>Wings-Tank-L </object-name>
-    <object-name>Wings-Tank-R </object-name>
+    <object-name>Wings-Tank-Fin-L</object-name>
+    <object-name>Wings-Tank-Fin-R</object-name>
+    <object-name>Wings-Tank-L</object-name>
+    <object-name>Wings-Tank-R</object-name>
     <!-- Objects: Transparent List -->
     <object-name>Camera-Lenses</object-name>
     <object-name>Glass-Camera</object-name>
@@ -365,12 +365,12 @@
     <object-name>Pilons.001</object-name>
     <object-name>Pilons.002</object-name>
     <object-name>Rudder</object-name>
-    <object-name>Rudder-BOX-Control </object-name>
-    <object-name>Rudder-Control.000 </object-name>
-    <object-name>Rudder-Control.001 </object-name>
-    <object-name>Rudder-Trim </object-name>
-    <object-name>Rudder-Trim-Control.000 </object-name>
-    <object-name>Rudder-Trim-Control.001 </object-name>
+    <object-name>Rudder-BOX-Control</object-name>
+    <object-name>Rudder-Control.000</object-name>
+    <object-name>Rudder-Control.001</object-name>
+    <object-name>Rudder-Trim</object-name>
+    <object-name>Rudder-Trim-Control.000</object-name>
+    <object-name>Rudder-Trim-Control.001</object-name>
     <object-name>Startup-Exaust</object-name>
     <object-name>Turboalatori</object-name>
     <object-name>Weapons-Box-IN.000</object-name>
@@ -384,10 +384,10 @@
     <object-name>Wings</object-name>
     <object-name>Wings-Fin</object-name>
     <object-name>Wings-IN</object-name>
-    <object-name>Wings-Tank-Fin-L </object-name>
-    <object-name>Wings-Tank-Fin-R </object-name>
-    <object-name>Wings-Tank-L </object-name>
-    <object-name>Wings-Tank-R </object-name>
+    <object-name>Wings-Tank-Fin-L</object-name>
+    <object-name>Wings-Tank-Fin-R</object-name>
+    <object-name>Wings-Tank-L</object-name>
+    <object-name>Wings-Tank-R</object-name>
     <property-base>sim/model/livery</property-base>
     <texture-prop>texture</texture-prop>
     <texture>texture.png</texture>
@@ -396,10 +396,10 @@
   <animation>
     <type>material</type>
     <object-name>Camera-Mirror</object-name>
-    <object-name>Gear-BOX-AirBrakes </object-name>
-    <object-name>Gear-BOX-Front </object-name>
-    <object-name>Gear-BOX-Rear </object-name>
-    <object-name>Gear-BOX-Wings </object-name>
+    <object-name>Gear-BOX-AirBrakes</object-name>
+    <object-name>Gear-BOX-Front</object-name>
+    <object-name>Gear-BOX-Rear</object-name>
+    <object-name>Gear-BOX-Wings</object-name>
     <object-name>Gear-F.000</object-name>
     <object-name>Gear-F.001</object-name>
     <object-name>Gear-F.002</object-name>
@@ -578,12 +578,12 @@
     <object-name>Pilons.001</object-name>
     <object-name>Pilons.002</object-name>
     <object-name>Rudder</object-name>
-    <object-name>Rudder-BOX-Control </object-name>
-    <object-name>Rudder-Control.000 </object-name>
-    <object-name>Rudder-Control.001 </object-name>
-    <object-name>Rudder-Trim </object-name>
-    <object-name>Rudder-Trim-Control.000 </object-name>
-    <object-name>Rudder-Trim-Control.001 </object-name>
+    <object-name>Rudder-BOX-Control</object-name>
+    <object-name>Rudder-Control.000</object-name>
+    <object-name>Rudder-Control.001</object-name>
+    <object-name>Rudder-Trim</object-name>
+    <object-name>Rudder-Trim-Control.000</object-name>
+    <object-name>Rudder-Trim-Control.001</object-name>
     <object-name>Startup-Exaust</object-name>
     <object-name>Support-Lamp-Gear</object-name>
     <object-name>Turboalatori</object-name>
@@ -598,10 +598,10 @@
     <object-name>Wings</object-name>
     <object-name>Wings-Fin</object-name>
     <object-name>Wings-IN</object-name>
-    <object-name>Wings-Tank-Fin-L </object-name>
-    <object-name>Wings-Tank-Fin-R </object-name>
-    <object-name>Wings-Tank-L </object-name>
-    <object-name>Wings-Tank-R </object-name>
+    <object-name>Wings-Tank-Fin-L</object-name>
+    <object-name>Wings-Tank-Fin-R</object-name>
+    <object-name>Wings-Tank-L</object-name>
+    <object-name>Wings-Tank-R</object-name>
   </effect>
 
   <!-- Glass Effect -->
@@ -1627,9 +1627,9 @@
   <model>
     <path>Aircraft/Fiat-G-91R/Models/Effects/Guns/fire.xml</path>
     <offsets>
-      <x-m>        -3.03206 </x-m>
-      <y-m>        -0.56486 </y-m>
-      <z-m>         1.50680 </z-m>
+      <x-m> -3.03206 </x-m>
+      <y-m> -0.56486 </y-m>
+      <z-m>  1.50680 </z-m>
       <pitch-deg> 180 </pitch-deg>
     </offsets>
   </model>
@@ -1637,9 +1637,9 @@
   <model>
     <path>Aircraft/Fiat-G-91R/Models/Effects/Guns/fire.xml</path>
     <offsets>
-      <x-m>        -3.03206 </x-m>
-      <y-m>        -0.57635 </y-m>
-      <z-m>         1.20452 </z-m>
+      <x-m> -3.03206 </x-m>
+      <y-m> -0.57635 </y-m>
+      <z-m>  1.20452 </z-m>
       <pitch-deg> 180 </pitch-deg>
     </offsets>
   </model>
@@ -1649,9 +1649,9 @@
   <model>
     <path>Aircraft/Fiat-G-91R/Models/Effects/Guns/fire.xml</path>
     <offsets>
-      <x-m>        -3.03206 </x-m>
-      <y-m>         0.56486 </y-m>
-      <z-m>         1.50680 </z-m>
+      <x-m> -3.03206 </x-m>
+      <y-m>  0.56486 </y-m>
+      <z-m>  1.50680 </z-m>
       <pitch-deg> 180 </pitch-deg>
     </offsets>
   </model>
@@ -1659,9 +1659,9 @@
   <model>
     <path>Aircraft/Fiat-G-91R/Models/Effects/Guns/fire.xml</path>
     <offsets>
-      <x-m>        -3.03206 </x-m>
-      <y-m>         0.57635 </y-m>
-      <z-m>         1.20452 </z-m>
+      <x-m> -3.03206 </x-m>
+      <y-m>  0.57635 </y-m>
+      <z-m>  1.20452 </z-m>
       <pitch-deg> 180 </pitch-deg>
     </offsets>
   </model>
@@ -1893,9 +1893,9 @@
     </condition>
     <path>Aircraft/Fiat-G-91R/Models/Effects/green-navlight.xml</path>
     <offsets>
-      <x-m> 1.85 </x-m>
-      <y-m> 4.24 </y-m>
-      <z-m> 1.31 </z-m>
+      <x-m>  1.85 </x-m>
+      <y-m>  4.24 </y-m>
+      <z-m>  1.31 </z-m>
     </offsets>
   </model>
   <model>
@@ -1907,9 +1907,9 @@
     </condition>
     <path>Aircraft/Fiat-G-91R/Models/Effects/beacon.xml</path>
     <offsets>
-      <x-m> 0.0 </x-m>
-      <y-m> 0.0 </y-m>
-      <z-m> 2.35 </z-m>
+      <x-m>  0.00 </x-m>
+      <y-m>  0.00 </y-m>
+      <z-m>  2.35 </z-m>
     </offsets>
   </model>
   <model>
@@ -1921,9 +1921,9 @@
     </condition>
     <path>Aircraft/Fiat-G-91R/Models/Effects/back-navlight.xml</path>
     <offsets>
-      <x-m> 4.77 </x-m>
-      <y-m> 0.03 </y-m>
-      <z-m> 2.28 </z-m>
+      <x-m>  4.77 </x-m>
+      <y-m>  0.03 </y-m>
+      <z-m>  2.28 </z-m>
     </offsets>
   </model>
   <model>
@@ -1935,9 +1935,9 @@
     </condition>
     <path>Aircraft/Fiat-G-91R/Models/Effects/back-navlight.xml</path>
     <offsets>
-      <x-m> 4.77 </x-m>
+      <x-m>  4.77 </x-m>
       <y-m> -0.03 </y-m>
-      <z-m> 2.28 </z-m>
+      <z-m>  2.28 </z-m>
     </offsets>
   </model>
   <model>
@@ -1950,8 +1950,8 @@
     <path>Aircraft/Fiat-G-91R/Models/Effects/front-light.xml</path>
     <offsets>
       <x-m> -3.15 </x-m>
-      <y-m> 0.16 </y-m>
-      <z-m> 0.71 </z-m>
+      <y-m>  0.16 </y-m>
+      <z-m>  0.71 </z-m>
     </offsets>
   </model>
   <model>
@@ -1965,7 +1965,7 @@
     <offsets>
       <x-m> -3.15 </x-m>
       <y-m> -0.16 </y-m>
-      <z-m> 0.71 </z-m>
+      <z-m>  0.71 </z-m>
     </offsets>
   </model>
   
@@ -1981,9 +1981,9 @@
       <property>/sim/rendering/rembrandt/enabled</property>
     </condition>
     <offsets>
-      <x-m> 1.8465 </x-m>
+      <x-m>  1.84650 </x-m>
       <y-m> -4.25218 </y-m>
-      <z-m> 1.31442 </z-m>
+      <z-m>  1.31442 </z-m>
     </offsets>
   </model>
 
@@ -1993,9 +1993,9 @@
       <property>/sim/rendering/rembrandt/enabled</property>
     </condition>
     <offsets>
-      <x-m> 1.8465 </x-m>
-      <y-m> 4.25218 </y-m>
-      <z-m> 1.31442 </z-m>
+      <x-m>  1.84650 </x-m>
+      <y-m>  4.25218 </y-m>
+      <z-m>  1.31442 </z-m>
     </offsets>
   </model>
   
@@ -2006,7 +2006,7 @@
     </condition>
     <offsets>
       <x-m> 4.75690 </x-m>
-      <y-m> 0.000 </y-m>
+      <y-m> 0.00000 </y-m>
       <z-m> 2.28086 </z-m>
     </offsets>
   </model>
@@ -2017,8 +2017,8 @@
       <property>/sim/rendering/rembrandt/enabled</property>
     </condition>
     <offsets>
-      <x-m> 0.000 </x-m>
-      <y-m> 0.000 </y-m>
+      <x-m> 0.00000 </x-m>
+      <y-m> 0.00000 </y-m>
       <z-m> 2.35345 </z-m>
     </offsets>
   </model>
